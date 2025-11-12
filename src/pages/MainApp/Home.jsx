@@ -37,7 +37,7 @@ function SlideShow(){
 
       {/* Operations */}
       <div style={{display:'flex', flexWrap:'wrap', borderRadius:'5px', padding:"15px",
-      backgroundColor:'rgba(220,220,220,1)',gap:'15px',width:"100^",
+      backgroundColor:'rgba(185, 130, 12, 1)',gap:'15px',width:"100^",
          maxWidth:'700px', justifyContent:'space-between'}}>
         <div style={{fontSize:'50px', fontWeight:600, width:"100%", textAlign:'center',
          paddingBottom:"15px"}}>Operations</div>

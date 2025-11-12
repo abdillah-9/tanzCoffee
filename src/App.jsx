@@ -13,7 +13,7 @@ export default function App() {
     <NavStates.Provider value={{activeLink, setActiveLink}}>
       <div style={Main}>
         <div style={{zIndex:5, position:'fixed', gap:'0px'}}>
-          <TopPic/>
+          {/* <TopPic/> */}
           <TopNavBar/>
         </div>
         <MainApp/>

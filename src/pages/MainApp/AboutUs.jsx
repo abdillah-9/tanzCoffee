@@ -132,7 +132,24 @@ export default function AboutUs() {
           </div>
         </div>
 
-      </div>      
+      </div> 
+
+      {/* Ending paragraph*/}
+      <div style={{display:"flex",flexDirection:'column',
+         alignItems:'center', justifyContent:'center', gap:'20px'}}
+          className='opacityAnimation'
+         >
+        <div style={{fontSize:'50px', fontWeight:600}}>Sustainability Commitment</div>
+        <div 
+        style={{color:'rgba(185, 130, 12, 1)',width:"85vw", maxWidth:"700px",
+        fontSize:'16px',}}>
+          We use electrically powered machines and modern 
+          waste disposal facilities to minimize environmental impact.
+          We are continuously exploring new ways to improve our 
+          sustainability efforts across our supply chain.
+        </div>
+      </div>
+
     </div>
   )
 }
