@@ -28,28 +28,56 @@ export default function AboutUs() {
       </div>
 
       {/* Paragraph for Vision , Mission and Core value */}
-      <div style={{display:'flex', justifyContent:'space-between', flexWrap:'wrap', padding:"0px 15px"}}>
+      <div style={{display:'flex', justifyContent:'space-between', flexWrap:'wrap', 
+        padding:"0px 15px", gap:'20px', width:'100%'}}>
         {/* Mission */}
-        <div style={{display:'flex', flexDirection:'column', gap:'15px', minWidth:"200px", width:'29%'}}>
-          <div style={{fontSize:'20px', fontWeight:500}}>Vision</div>
-          <div>
+        <div style={{display:'flex', flexDirection:'column', gap:'15px', minWidth:"200px",maxWidth:'380px', 
+          width:'25%', flexGrow:1, borderRadius:'20px', borderBottom:'10px solid rgba(185,130,12,1)',
+          boxShadow:'1px 0.5px 10px black', padding:'15px',}}>
+          <div style={{boxShadow:'1px 0.5px 7px black',
+            display:'flex',justifyContent:'center', padding:'10px',
+          }}>
+            <icon>Icon</icon>
+          </div>
+          <div style={{fontSize:'20px', fontWeight:500,
+            textAlign:'center',
+          }}>Vision</div>
+          <div style={{textAlign:'center',}}>
             Dedicated to be the leading world-class green coffee 
             processing and supplying company.
           </div>
         </div>
         {/* Vision */}
-        <div style={{display:'flex', flexDirection:'column', gap:'15px', minWidth:"200px", width:'29%'}}>
-          <div style={{fontSize:'20px', fontWeight:500}}>Mission</div>
-          <div>
+        <div style={{display:'flex', flexDirection:'column', gap:'15px', minWidth:"200px",maxWidth:'380px', 
+          width:'25%', flexGrow:1, borderRadius:'20px', borderBottom:'10px solid rgba(185,130,12,1)',
+          boxShadow:'1px 0.5px 10px black', padding:'15px',}}>
+          <div style={{boxShadow:'1px 0.5px 7px black',
+            display:'flex',justifyContent:'center', padding:'10px',
+          }}>
+            <icon>Icon</icon>
+          </div>
+          <div style={{fontSize:'20px', fontWeight:500,
+            textAlign:'center',
+          }}>Mission</div>
+          <div style={{textAlign:'center',}}>
             Sustainable processing of high quality and quantity coffee 
             beans by utilizing sophisticated machines and maintaining 
             positive business relationship with clients and regional farmers.
           </div>
         </div>
         {/* Core-value */}
-        <div style={{display:'flex', flexDirection:'column', gap:'15px', minWidth:"200px", width:'29%'}}>
-          <div style={{fontSize:'20px', fontWeight:500}}>Core-value</div>
-          <div>
+        <div style={{display:'flex', flexDirection:'column', gap:'15px', minWidth:"200px",maxWidth:'380px', 
+          width:'25%', flexGrow:1, borderRadius:'20px', borderBottom:'10px solid rgba(185,130,12,1)',
+          boxShadow:'1px 0.5px 10px black', padding:'15px',}}>
+          <div style={{boxShadow:'1px 0.5px 7px black',
+            display:'flex',justifyContent:'center', padding:'10px',
+          }}>
+            <icon>Icon</icon>
+          </div>
+          <div style={{fontSize:'20px', fontWeight:500,
+            textAlign:'center',
+          }}>Core-value</div>
+          <div style={{textAlign:'center',}}>
             <div>•	Social Responsibility.</div>
             <div>•	We value collaboration and partnership for growth.</div>
             <div>•	Environment Sustainability. </div>
@@ -62,11 +90,11 @@ export default function AboutUs() {
 
       {/* Founders */}
       <div style={{display:'flex', backgroundColor:'rgba(185, 130, 12, 1)',width:'100%',
-        justifyContent:'space-between', flexWrap:'wrap', padding:"15px"}}>
+        justifyContent:'space-between', flexWrap:'wrap', padding:"15px", gap:'20px'}}>
         {/* Sospeter Gunga Owuor */}
         <div style={{display:'flex', flexDirection:'column', padding:'20px',
           gap:'15px', minWidth:"200px", width:'29%', borderRadius:'5px',
-          backgroundColor:"white",alignItems:'center'
+          backgroundColor:"white",alignItems:'center', flexGrow:1,
           }}>
           <img src={SospeterPic} alt='Sospeter Gunga Owuor' 
           style={{borderRadius:'50%', width:'150px', height:'130px',
@@ -92,7 +120,7 @@ export default function AboutUs() {
         {/* Evodius */}
         <div style={{display:'flex', flexDirection:'column', padding:'20px',
           gap:'15px', minWidth:"200px", width:'29%', borderRadius:'5px',
-          backgroundColor:"white",alignItems:'center'
+          backgroundColor:"white",alignItems:'center', flexGrow:1,
           }}>
           <img src={EvodiusPic} alt='Sospeter Gunga Owuor' 
           style={{borderRadius:'50%', width:'150px', height:'130px',
@@ -112,7 +140,7 @@ export default function AboutUs() {
         {/* Omary */}
         <div style={{display:'flex', flexDirection:'column', padding:'20px',
           gap:'15px', minWidth:"200px", width:'29%', borderRadius:'5px',
-          backgroundColor:"white",alignItems:'center'
+          backgroundColor:"white",alignItems:'center', flexGrow:1,
           }}>
           <img src={OmaryPic} alt='Sospeter Gunga Owuor' 
           style={{borderRadius:'50%', width:'150px', height:'130px',
@@ -135,7 +163,7 @@ export default function AboutUs() {
       </div> 
 
       {/* Ending paragraph*/}
-      <div style={{display:"flex",flexDirection:'column',
+      <div style={{display:"flex",flexDirection:'column',padding:'15px',
          alignItems:'center', justifyContent:'center', gap:'20px'}}
           className='opacityAnimation'
          >
