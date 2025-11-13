@@ -5,7 +5,7 @@ import OmaryPic from '../../assets/Omary.png';
 
 export default function AboutUs() {
   return (
-    <div style={{display:'flex', gap:'50px', padding:"20px 0px",
+    <div style={{display:'flex', gap:'50px', padding:"20px 0px 20px 0px",
     flexDirection:'column', alignItems:'center'}}>
       {/* Pragraph for intro*/}
       <div style={{display:"flex",flexDirection:'column',marginTop:'200px',

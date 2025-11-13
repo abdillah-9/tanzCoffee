@@ -3,7 +3,7 @@ import OperationsPIC from '../../assets/20250527_091654.jpg';
 
 export default function BusinessServices() {
   return (
-    <div style={{display:'flex', gap:'50px', padding:"20px 0px",
+    <div style={{display:'flex', gap:'50px', padding:"20px 0px 20px 0px",
     flexDirection:'column', alignItems:'center'}}>
       {/* Pragraph for intro*/}
       <div style={{display:"flex",flexDirection:'column',marginTop:'200px',textAlign:'center',
