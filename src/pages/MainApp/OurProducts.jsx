@@ -118,20 +118,6 @@ export default function OurProducts() {
             </p>
           </div>
 
-                    <div style={{ backgroundImage:`url(${CoffeeManufacture})`,backgroundSize: '110% 110%',
-            backgroundColor:'white', color:'rgba(185, 130, 12, 1)', width:'100%',
-            borderRadius:'0px',maxWidth:'400px',flexGrow:1,display:'flex',
-            height:'300px',
-            justifyContent:'center',alignItems:'center',gap:'11px',boxShadow:'1px 0.5px 8px black',
-          }}>
-            <p style={{zIndex:1, width:'100%', height:'100%',display:'flex', fontSize:'18px',
-              backgroundColor:'rgba(200,200,200,0.5)',justifyContent:'center',alignItems:'center',
-              fontWeight:500,textAlign:'center',
-              }}>
-              Other coffee products manufacturers
-            </p>
-          </div>
-
         </div>
       </div>
 

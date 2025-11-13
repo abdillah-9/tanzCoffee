@@ -1,5 +1,11 @@
 import React from 'react'
 import OperationsPIC from '../../assets/20250527_091654.jpg';
+import GreenCoffee from '../../assets/WhatsApp Image 2025-07-12 at 14.25.59_5c57bb2a.jpg';
+import ReadyMarket from '../../assets/Screenshot_20240924_194001_Instagram.jpg';
+import FarmingEquipment from '../../assets/20251006_114627 (1).jpg';
+import StorageService from '../../assets/IMG-20220720-WA0027.jpg';
+import CompanyRegistrationService from '../../assets/IMG_20240513_131143_913.jpg';
+import TradeConsultation from '../../assets/IMG-20230301-WA0016.jpg';
 
 export default function BusinessServices() {
   return (
@@ -35,8 +41,8 @@ export default function BusinessServices() {
               display:'flex', alignItems:'center', borderRadius:'5px 5px 0px 0px',
               padding:"15px 0px",
             }}>
-              <img src={OperationsPIC} alt='pic' 
-              style={{width:'150px', height:'130px',borderRadius:'50%', 
+              <img src={GreenCoffee} alt='pic' 
+              style={{width:'190px', height:'170px',borderRadius:'50%', 
               boxShadow:'1px 0.5px 5px black'}}/>              
             </div>
 
@@ -53,8 +59,8 @@ export default function BusinessServices() {
               display:'flex', alignItems:'center', borderRadius:'5px 5px 0px 0px',
               padding:"15px 0px",
             }}>
-              <img src={OperationsPIC} alt='pic' 
-              style={{width:'150px', height:'130px',borderRadius:'50%', 
+              <img src={ReadyMarket} alt='pic' 
+              style={{width:'190px', height:'170px',borderRadius:'50%', 
               boxShadow:'1px 0.5px 5px black'}}/>              
             </div>
 
@@ -71,8 +77,8 @@ export default function BusinessServices() {
               display:'flex', alignItems:'center', borderRadius:'5px 5px 0px 0px',
               padding:"15px 0px",
             }}>
-              <img src={OperationsPIC} alt='pic' 
-              style={{width:'150px', height:'130px',borderRadius:'50%', 
+              <img src={FarmingEquipment} alt='pic' 
+              style={{width:'190px', height:'170px',borderRadius:'50%', 
               boxShadow:'1px 0.5px 5px black'}}/>              
             </div>
 
@@ -89,8 +95,8 @@ export default function BusinessServices() {
               display:'flex', alignItems:'center', borderRadius:'5px 5px 0px 0px',
               padding:"15px 0px",
             }}>
-              <img src={OperationsPIC} alt='pic' 
-              style={{width:'150px', height:'130px',borderRadius:'50%', 
+              <img src={StorageService} alt='pic' 
+              style={{width:'190px', height:'170px',borderRadius:'50%', 
               boxShadow:'1px 0.5px 5px black'}}/>              
             </div>
 
@@ -108,8 +114,8 @@ export default function BusinessServices() {
               display:'flex', alignItems:'center', borderRadius:'5px 5px 0px 0px',
               padding:"15px 0px",
             }}>
-              <img src={OperationsPIC} alt='pic' 
-              style={{width:'150px', height:'130px',borderRadius:'50%', 
+              <img src={CompanyRegistrationService} alt='pic' 
+              style={{width:'190px', height:'170px',borderRadius:'50%', 
               boxShadow:'1px 0.5px 5px black'}}/>              
             </div>
 
@@ -126,8 +132,8 @@ export default function BusinessServices() {
               display:'flex', alignItems:'center', borderRadius:'5px 5px 0px 0px',
               padding:"15px 0px",
             }}>
-              <img src={OperationsPIC} alt='pic' 
-              style={{width:'150px', height:'130px',borderRadius:'50%', 
+              <img src={TradeConsultation} alt='pic' 
+              style={{width:'190px', height:'170px',borderRadius:'50%', 
               boxShadow:'1px 0.5px 5px black'}}/>              
             </div>
 
