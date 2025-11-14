@@ -128,7 +128,7 @@ export default function ContactsInformation() {
           </div>
 
           <div style={{display:'flex',flexDirection:'column',gap:'15px',}}>
-            <label style={{fontWeight:600, fontSize:'15px'}}>Your Email</label>
+            <label style={{fontWeight:600, fontSize:'15px'}}>Your Message</label>
             <textarea name='customer_name' placeholder='Enter your message here...' style={{
               boxShadow:'1px 1px 17px rgba(20,20,20,0.7)',padding:'14px',
               fontSize:'15px', fontWeight:400,border:'2px solid rgba(130,130,130,0.7)',
