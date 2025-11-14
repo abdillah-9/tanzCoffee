@@ -3,10 +3,10 @@
   margin: 0px;
   text-decoration: none;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color:black;
   font-size: 14px;
 }
 html, body{
+  color:black;
   overflow-x: hidden;
   background-color: white;
 }
@@ -16,4 +16,13 @@ html, body{
 @keyframes opacityAnim{
   0%{transform: scale(0); opacity: 0;}
   100%{transform: scale(1); opacity: 1;}
+}
+.whiteColor{
+  color: white;
+}
+.yellowColor{
+  color: rgba(185,130,12,1);
+}
+.yellowBackground{
+  background-color: rgba(185,130,12,1);
 }

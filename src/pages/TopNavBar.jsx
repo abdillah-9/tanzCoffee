@@ -14,7 +14,7 @@ export default function TopNavBar() {
       <NavLinks/>
       {/* Social media links */}
       <div style={{display:'flex', gap:'15px', color:'rgba(185,130,12,1)'}}>
-        <PiWhatsappLogoFill style={{fontSize:'18px', color:'rgba(159, 185, 12, 1)'}} />
+        <PiWhatsappLogoFill style={{fontSize:'18px', color:'rgba(185, 130, 12, 1)'}} />
         <PiInstagramLogoFill style={{fontSize:'18px', color:'rgba(185,130,12,1)'}} />
         <TbBrandLinkedinFilled style={{fontSize:'18px', color:'rgba(185,130,12,1)'}} />
       </div>

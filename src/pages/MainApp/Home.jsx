@@ -110,7 +110,7 @@ function SlideShow(){
             padding:'15px', textAlign:'center',
           }}>
             <div style={{padding:"15px 20px",backgroundColor:'white', borderRadius:'50%'}}>
-              <FaCogs style={{fontSize:'35px'}}/>
+              <FaCogs style={{fontSize:'35px', color:'black'}}/>
             </div>
             <p style={{fontSize:'17px', fontWeight:500}}>
               Reduction of broken coffee and high retention rate through 
@@ -122,7 +122,7 @@ function SlideShow(){
             padding:'15px', textAlign:'center',
           }}>
             <div style={{padding:"15px 20px",backgroundColor:'white', borderRadius:'50%'}}>
-              <FaUserTie style={{fontSize:'35px'}}/>
+              <FaUserTie style={{fontSize:'35px', color:'black'}}/>
             </div>
             <p style={{fontSize:'17px', fontWeight:500}}>
               Maintaining professional services through hiring 
@@ -134,7 +134,7 @@ function SlideShow(){
             padding:'15px', textAlign:'center',
           }}>
             <div style={{padding:"15px 20px",backgroundColor:'white', borderRadius:'50%'}}>
-              <MdFactory style={{fontSize:'35px'}}/>
+              <MdFactory style={{fontSize:'35px', color:'black'}}/>
             </div>
             <p style={{fontSize:'17px', fontWeight:500}}>
               Product quality is ensured by advanced production facilities 
@@ -146,7 +146,7 @@ function SlideShow(){
             padding:'15px', textAlign:'center',
           }}>
             <div style={{padding:"15px 20px",backgroundColor:'white', borderRadius:'50%'}}>
-              <RiCustomerService2Fill style={{fontSize:'35px'}}/>
+              <RiCustomerService2Fill style={{fontSize:'35px', color:'black'}}/>
             </div>
             <p style={{fontSize:'17px', fontWeight:500}}>
               A well-organized firm administrative structure that 

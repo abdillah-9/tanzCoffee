@@ -63,7 +63,7 @@ export default function OurProducts() {
           </div>
   
           <div style={{ backgroundImage:`url(${CoffeeRoaster})`,backgroundSize: '110% 110%',
-            backgroundColor:'white', color:'rgba(185, 130, 12, 1)', width:'100%',
+            backgroundColor:'white', color:'black', width:'100%',
             borderRadius:'0px',maxWidth:'400px',flexGrow:1,display:'flex',
             height:'300px',
             justifyContent:'center',alignItems:'center',gap:'11px',boxShadow:'1px 0.5px 8px black',
@@ -77,7 +77,7 @@ export default function OurProducts() {
           </div>
 
           <div style={{ backgroundImage:`url(${CoffeeUnion})`,backgroundSize: '110% 110%',
-            backgroundColor:'white', color:'rgba(185, 130, 12, 1)', width:'100%',
+            backgroundColor:'white', color:'black', width:'100%',
             borderRadius:'0px',maxWidth:'400px',flexGrow:1,display:'flex',
             height:'300px',
             justifyContent:'center',alignItems:'center',gap:'11px',boxShadow:'1px 0.5px 8px black',
@@ -91,7 +91,7 @@ export default function OurProducts() {
           </div>
 
           <div style={{ backgroundImage:`url(${CoffeeTrader})`,backgroundSize: '110% 110%',
-            backgroundColor:'white', color:'rgba(185, 130, 12, 1)', width:'100%',
+            backgroundColor:'white', color:'black', width:'100%',
             borderRadius:'0px',maxWidth:'400px',flexGrow:1,display:'flex',
             height:'300px',
             justifyContent:'center',alignItems:'center',gap:'11px',boxShadow:'1px 0.5px 8px black',
@@ -105,7 +105,7 @@ export default function OurProducts() {
           </div>
 
           <div style={{ backgroundImage:`url(${CoffeeManufacture})`,backgroundSize: '110% 110%',
-            backgroundColor:'white', color:'rgba(185, 130, 12, 1)', width:'100%',
+            backgroundColor:'white', color:'black', width:'100%',
             borderRadius:'0px',maxWidth:'400px',flexGrow:1,display:'flex',
             height:'300px',
             justifyContent:'center',alignItems:'center',gap:'11px',boxShadow:'1px 0.5px 8px black',
