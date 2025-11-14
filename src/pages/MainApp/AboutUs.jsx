@@ -2,11 +2,14 @@ import React from 'react'
 import SospeterPic from '../../assets/20251016_235737.png';
 import EvodiusPic from '../../assets/Evodius.png';
 import OmaryPic from '../../assets/Omary.png';
+import { FaRegEye } from 'react-icons/fa6';
+import { GiDiamondHard, GiFlyingFlag } from 'react-icons/gi';
 
 export default function AboutUs() {
   return (
     <div style={{display:'flex', gap:'50px', padding:"20px 0px 20px 0px",
     flexDirection:'column', alignItems:'center'}}>
+
       {/* Pragraph for intro*/}
       <div style={{display:"flex",flexDirection:'column',marginTop:'200px',
          alignItems:'center', justifyContent:'center', gap:'20px'}}
@@ -29,15 +32,15 @@ export default function AboutUs() {
 
       {/* Paragraph for Vision , Mission and Core value */}
       <div style={{display:'flex', justifyContent:'space-between', flexWrap:'wrap', 
-        padding:"0px 15px", gap:'20px', width:'100%'}}>
+        padding:"0px 15px", gap:'20px', width:'100%',}}>
         {/* Mission */}
         <div style={{display:'flex', flexDirection:'column', gap:'15px', minWidth:"200px",maxWidth:'380px', 
           width:'25%', flexGrow:1, borderRadius:'20px', borderBottom:'10px solid rgba(185,130,12,1)',
-          boxShadow:'1px 0.5px 10px black', padding:'15px',}}>
-          <div style={{boxShadow:'1px 0.5px 7px black',
-            display:'flex',justifyContent:'center', padding:'10px',
+          boxShadow:'1px 0.5px 5px rgba(10,10,10,0.35)', padding:'15px', alignItems:'center'}}>
+          <div style={{boxShadow:'1px 0.5px 5px rgba(10,10,10,0.35)',
+            display:'flex',justifyContent:'center', padding:'10px',borderRadius:'50%',width:'fit-content',
           }}>
-            <icon>Icon</icon>
+            <GiFlyingFlag style={{fontSize: '40px'}}/>
           </div>
           <div style={{fontSize:'20px', fontWeight:500,
             textAlign:'center',
@@ -50,11 +53,11 @@ export default function AboutUs() {
         {/* Vision */}
         <div style={{display:'flex', flexDirection:'column', gap:'15px', minWidth:"200px",maxWidth:'380px', 
           width:'25%', flexGrow:1, borderRadius:'20px', borderBottom:'10px solid rgba(185,130,12,1)',
-          boxShadow:'1px 0.5px 10px black', padding:'15px',}}>
-          <div style={{boxShadow:'1px 0.5px 7px black',
-            display:'flex',justifyContent:'center', padding:'10px',
+          boxShadow:'1px 0.5px 5px rgba(10,10,10,0.35)', padding:'15px', alignItems:'center'}}>
+          <div style={{boxShadow:'1px 0.5px 5px rgba(10,10,10,0.35)',
+            display:'flex',justifyContent:'center', padding:'10px',borderRadius:'50%',width:'fit-content',
           }}>
-            <icon>Icon</icon>
+            <FaRegEye style={{fontSize:'40px'}}/>
           </div>
           <div style={{fontSize:'20px', fontWeight:500,
             textAlign:'center',
@@ -68,22 +71,22 @@ export default function AboutUs() {
         {/* Core-value */}
         <div style={{display:'flex', flexDirection:'column', gap:'15px', minWidth:"200px",maxWidth:'380px', 
           width:'25%', flexGrow:1, borderRadius:'20px', borderBottom:'10px solid rgba(185,130,12,1)',
-          boxShadow:'1px 0.5px 10px black', padding:'15px',}}>
-          <div style={{boxShadow:'1px 0.5px 7px black',
-            display:'flex',justifyContent:'center', padding:'10px',
+          boxShadow:'1px 0.5px 5px rgba(10,10,10,0.35)', padding:'15px', alignItems:'center'}}>
+          <div style={{boxShadow:'1px 0.5px 5px rgba(10,10,10,0.35)',
+            display:'flex',justifyContent:'center', padding:'10px',borderRadius:'50%',width:'fit-content',
           }}>
-            <icon>Icon</icon>
+            <GiDiamondHard style={{fontSize:'40px'}}/>
           </div>
           <div style={{fontSize:'20px', fontWeight:500,
             textAlign:'center',
           }}>Core-value</div>
           <div style={{textAlign:'center',}}>
-            <div>•	Social Responsibility.</div>
             <div>•	We value collaboration and partnership for growth.</div>
-            <div>•	Environment Sustainability. </div>
-            <div>•	Professionalism.</div>
-            <div>•	Diversity in the workforce.</div>
             <div>•	We embrace new technologies for improvement.</div>
+            <div>•	Environment Sustainability.</div>
+            <div>•	Diversity in the workforce.</div>
+            <div>•	Social Responsibility.</div>
+            <div>•	Professionalism.</div>
           </div>
         </div>
       </div>
