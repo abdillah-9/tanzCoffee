@@ -161,10 +161,19 @@ export default function ContactsInformation() {
         fontSize:'19px',textAlign:'center'}}>
           Visit our processing facilities in Bugene, Karagwe Kagera, Tanzania
         </div>
-        <div style={{width:"100%", maxWidth:"800px", borderRadius:'5px',
+        <div style={{width:"100%", maxWidth:"800px", borderRadius:'10px',
           border:'1px solid black', minWidth:'80vw',height:'70vh',marginTop:'20px',
         }}>
-          Map
+            <iframe
+            title="tanzcoffee-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497.3239107755364!2d31.139272884502027!3d-1.59086576906741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19daf7d68a1a54a5%3A0x428ddd25a929aaf6!2sTanzCoffee%20Trading%20Company%20Ltd!5e0!3m2!1sen!2stz!4v1763143525049!5m2!1sen!2stz"
+            width="100%" 
+            height="100%"
+            style={{ border: 0, borderRadius:'10px' }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
 
         {/* Open hours */}
