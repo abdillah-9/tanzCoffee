@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { IoCallOutline, IoLocationOutline } from 'react-icons/io5'
 import { MdOutlineEmail } from 'react-icons/md';
 import emailjs from '@emailjs/browser';
 
 export default function ContactsInformation() {
+
+  const sendMessageRef = useRef(null);
+
+  const scrollToForm = ()=>{
+     sendMessageRef.current?.scrollIntoView({behavior:'smooth'});
+  }
 
   async function handleSubmit(e){
 
@@ -45,7 +51,8 @@ export default function ContactsInformation() {
           padding:'0px 10px 25px 10px',
         }}>
           <div style={{backgroundColor:'rgba(185, 130, 12, 1)', padding:'15px 30px' 
-            ,borderRadius:'20px', color:'white', fontWeight:500, fontSize:'17px'}}>
+            ,borderRadius:'20px', color:'white', fontWeight:500, fontSize:'17px'}}
+            onClick={scrollToForm}>
             Send Message
           </div>
           <a href='tel:+255788491086' style={{backgroundColor:'white', padding:'15px 30px' 
@@ -117,13 +124,13 @@ export default function ContactsInformation() {
         </div>
 
         {/* FORM */}
-        <form onSubmit={handleSubmit}
+        <form onSubmit={handleSubmit} ref={sendMessageRef}
         style={{flexGrow:1, display:'flex',maxWidth:'550px',
           flexDirection:'column', gap:'35px',padding:'60px', borderRadius:'10px',
           boxShadow:'1px 0.5px 12px black',
           backgroundColor:'white',
         }}>
-          <div style={{display:'flex',flexDirection:'column',gap:'15px',}}>
+          <div style={{display:'flex',flexDirection:'column',gap:'15px',}} >
             <label style={{fontWeight:600, fontSize:'15px'}}>Your Name</label>
             <input type='text' name='name' placeholder='Enter your full name' style={{
               boxShadow:'1px 1px 17px rgba(20,20,20,0.7)',padding:'14px',

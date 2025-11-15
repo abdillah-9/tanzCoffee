@@ -14,9 +14,16 @@ export default function TopNavBar() {
       <NavLinks/>
       {/* Social media links */}
       <div style={{display:'flex', gap:'15px', color:'rgba(185,130,12,1)'}}>
-        <PiWhatsappLogoFill style={{fontSize:'18px', color:'rgba(185, 130, 12, 1)'}} />
-        <PiInstagramLogoFill style={{fontSize:'18px', color:'rgba(185,130,12,1)'}} />
-        <TbBrandLinkedinFilled style={{fontSize:'18px', color:'rgba(185,130,12,1)'}} />
+        <a href='https://wa.me/255788491086' target='_blank'>
+            <PiWhatsappLogoFill style={{fontSize:'22px', color:'rgba(185, 130, 12, 1)'}} />
+        </a>
+        <a href='https://www.instagram.com/tanzcoffee_' target='_blank'>
+            <PiInstagramLogoFill style={{fontSize:'22px', color:'rgba(185,130,12,1)'}} />
+        </a>
+        <a href='https://www.linkedin.com/company/tanzcoffee-trading-company-limited/' 
+        target='_blank'>
+            <TbBrandLinkedinFilled style={{fontSize:'22px', color:'rgba(185,130,12,1)'}} />
+        </a>
       </div>
     </div>
   )
