@@ -132,7 +132,7 @@ export default function ContactsInformation() {
         }}>
           <div style={{display:'flex',flexDirection:'column',gap:'15px',}} >
             <label style={{fontWeight:600, fontSize:'15px'}}>Your Name</label>
-            <input type='text' name='name' placeholder='Enter your full name' style={{
+            <input type='text' required name='name' placeholder='Enter your full name' style={{
               boxShadow:'1px 1px 17px rgba(20,20,20,0.7)',padding:'14px',
               fontSize:'15px', fontWeight:400,border:'2px solid rgba(130,130,130,0.7)',
               borderRadius:'5px',backgroundColor:'rgba(220,220,220,0.7)',
@@ -142,7 +142,7 @@ export default function ContactsInformation() {
 
           <div style={{display:'flex',flexDirection:'column',gap:'15px',}}>
             <label style={{fontWeight:600, fontSize:'15px'}}>Your Email</label>
-            <input type='email' name='email' placeholder='Enter your email address' style={{
+            <input required type='email' name='email' placeholder='Enter your email address' style={{
               boxShadow:'1px 1px 17px rgba(20,20,20,0.7)',padding:'14px',
               fontSize:'15px', fontWeight:400,border:'2px solid rgba(130,130,130,0.7)',
               borderRadius:'5px',backgroundColor:'rgba(220,220,220,0.7)',
@@ -152,7 +152,7 @@ export default function ContactsInformation() {
 
           <div style={{display:'flex',flexDirection:'column',gap:'15px',}}>
             <label style={{fontWeight:600, fontSize:'15px'}}>Your Subject</label>
-            <input type='text' name='subject' placeholder='Enter message subject' style={{
+            <input required type='text' name='subject' placeholder='Enter message subject' style={{
               boxShadow:'1px 1px 17px rgba(20,20,20,0.7)',padding:'14px',
               fontSize:'15px', fontWeight:400,border:'2px solid rgba(130,130,130,0.7)',
               borderRadius:'5px',backgroundColor:'rgba(220,220,220,0.7)',
@@ -162,7 +162,7 @@ export default function ContactsInformation() {
 
           <div style={{display:'flex',flexDirection:'column',gap:'15px',}}>
             <label style={{fontWeight:600, fontSize:'15px'}}>Your Message</label>
-            <textarea name='message' placeholder='Enter your message here...' style={{
+            <textarea required name='message' placeholder='Enter your message here...' style={{
               boxShadow:'1px 1px 17px rgba(20,20,20,0.7)',padding:'14px',
               fontSize:'15px', fontWeight:400,border:'2px solid rgba(130,130,130,0.7)',
               borderRadius:'5px',backgroundColor:'rgba(220,220,220,0.7)',
@@ -246,7 +246,8 @@ export default function ContactsInformation() {
             padding:'15px 18px',alignItems:'center', justifyContent:'center',
             display:'flex',gap:'4px',borderRadius:'10px'
           }}> <IoLocationOutline style={{fontSize:'22px', color:'white'}}  className='whiteColor' /> 
-              <span className='whiteColor'>Get Directions</span> 
+              <a href='https://www.google.com/maps/dir/-1.5907299,31.1395259/TanzCoffee+Trading+Company+Ltd+Urban+Area+Rugarama+Omurushaka+35404/@-1.5908137,31.1390659,19z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x19daf7d68a1a54a5:0x428ddd25a929aaf6!2m2!1d31.1394562!2d-1.5909994?entry=ttu&g_ep=EgoyMDI1MTExMi4wIKXMDSoASAFQAw%3D%3D'
+              target='_blank' className='whiteColor'>Get Directions</a> 
             </div>
         </div>
 
