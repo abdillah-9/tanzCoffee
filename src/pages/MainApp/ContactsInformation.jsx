@@ -1,8 +1,28 @@
 import React from 'react'
 import { IoCallOutline, IoLocationOutline } from 'react-icons/io5'
-import { MdOutlineEmail } from 'react-icons/md'
+import { MdOutlineEmail } from 'react-icons/md';
+import emailjs from '@emailjs/browser';
 
 export default function ContactsInformation() {
+
+  async function handleSubmit(e){
+
+    e.preventDefault();
+
+    try{
+      await emailjs.sendForm(
+        "service_t2gikr8",    // your service ID
+        "template_ygfeq67",   // your template ID
+        e.target,             // the form element
+        "JoCJ-HuexSy-UxwDq"   // your public key
+      )
+      alert('Message is successful sent to TanzaCoffee L.T.D ');
+      e.target.reset();
+    }
+    catch(e){
+      alert('Something went wrong, please try again');
+    }
+  }
   return (
 <div style={{display:'flex', gap:'30px', padding:"20px 0px 0px 0px",
     flexDirection:'column', alignItems:'center'}}>
@@ -21,16 +41,18 @@ export default function ContactsInformation() {
         fontSize:'19px',textAlign:'center',paddingBottom:'20px'}}>
           "Get in touch with us for Inquiries, Business Services and Feedback"
         </div>
-        <div style={{display:'flex', gap:'30px', flexWrap:'wrap',justifyContent:'center'}}>
+        <div style={{display:'flex', gap:'30px', flexWrap:'wrap',justifyContent:'center',
+          padding:'0px 10px 25px 10px',
+        }}>
           <div style={{backgroundColor:'rgba(185, 130, 12, 1)', padding:'15px 30px' 
             ,borderRadius:'20px', color:'white', fontWeight:500, fontSize:'17px'}}>
             Send Message
           </div>
-          <div style={{backgroundColor:'white', padding:'15px 30px' 
+          <a href='tel:+255788491086' style={{backgroundColor:'white', padding:'15px 30px' 
             ,borderRadius:'20px', color:'rgba(185,130,12,1)',
             border:'2px solid rgba(185, 130, 12,1)',fontSize:'17px'}}>
             Call Us Now
-          </div>
+          </a>
         </div>
       </div>
 
@@ -95,44 +117,49 @@ export default function ContactsInformation() {
         </div>
 
         {/* FORM */}
-        <div style={{flexGrow:1, display:'flex',maxWidth:'550px',
+        <form onSubmit={handleSubmit}
+        style={{flexGrow:1, display:'flex',maxWidth:'550px',
           flexDirection:'column', gap:'35px',padding:'60px', borderRadius:'10px',
           boxShadow:'1px 0.5px 12px black',
           backgroundColor:'white',
         }}>
           <div style={{display:'flex',flexDirection:'column',gap:'15px',}}>
             <label style={{fontWeight:600, fontSize:'15px'}}>Your Name</label>
-            <input type='text' name='customer_name' placeholder='Enter your full name' style={{
+            <input type='text' name='name' placeholder='Enter your full name' style={{
               boxShadow:'1px 1px 17px rgba(20,20,20,0.7)',padding:'14px',
               fontSize:'15px', fontWeight:400,border:'2px solid rgba(130,130,130,0.7)',
               borderRadius:'5px',backgroundColor:'rgba(220,220,220,0.7)',
+              color:'black'
             }}/>
           </div>
 
           <div style={{display:'flex',flexDirection:'column',gap:'15px',}}>
             <label style={{fontWeight:600, fontSize:'15px'}}>Your Email</label>
-            <input type='email' name='customer_name' placeholder='Enter your email address' style={{
+            <input type='email' name='email' placeholder='Enter your email address' style={{
               boxShadow:'1px 1px 17px rgba(20,20,20,0.7)',padding:'14px',
               fontSize:'15px', fontWeight:400,border:'2px solid rgba(130,130,130,0.7)',
               borderRadius:'5px',backgroundColor:'rgba(220,220,220,0.7)',
+              color:'black'
             }}/>
           </div>
 
           <div style={{display:'flex',flexDirection:'column',gap:'15px',}}>
             <label style={{fontWeight:600, fontSize:'15px'}}>Your Subject</label>
-            <input type='email' name='customer_name' placeholder='Enter message subject' style={{
+            <input type='text' name='subject' placeholder='Enter message subject' style={{
               boxShadow:'1px 1px 17px rgba(20,20,20,0.7)',padding:'14px',
               fontSize:'15px', fontWeight:400,border:'2px solid rgba(130,130,130,0.7)',
               borderRadius:'5px',backgroundColor:'rgba(220,220,220,0.7)',
+              color:'black'
             }}/>
           </div>
 
           <div style={{display:'flex',flexDirection:'column',gap:'15px',}}>
             <label style={{fontWeight:600, fontSize:'15px'}}>Your Message</label>
-            <textarea name='customer_name' placeholder='Enter your message here...' style={{
+            <textarea name='message' placeholder='Enter your message here...' style={{
               boxShadow:'1px 1px 17px rgba(20,20,20,0.7)',padding:'14px',
               fontSize:'15px', fontWeight:400,border:'2px solid rgba(130,130,130,0.7)',
               borderRadius:'5px',backgroundColor:'rgba(220,220,220,0.7)',
+              color:'black'
             }} rows={10}/>
           </div>
 
@@ -144,7 +171,7 @@ export default function ContactsInformation() {
             }} value={'SEND MESSAGE'}/>
           </div>
 
-        </div>
+        </form>
       </div>
 
      {/* Pragraph for Find Us*/}
