@@ -45,9 +45,9 @@ export default function BusinessServices() {
               padding:"15px 0px",
             }}>
               <div
-              style={{width:'190px', height:'170px',borderRadius:'50%', 
+              style={{padding:'25px 30px', borderRadius:'50%', 
               boxShadow:'1px 0.5px 5px black'}}>
-                <GiCoffeeBeans fontSize={'25px'}/>
+                <GiCoffeeBeans style={{fontSize:'25px', color:'black'}}/>
               </div>              
             </div>
 
@@ -65,8 +65,10 @@ export default function BusinessServices() {
               padding:"15px 0px",
             }}>
               <div
-              style={{width:'190px', height:'170px',borderRadius:'50%', 
-              boxShadow:'1px 0.5px 5px black'}}><PiShoppingCartFill style={{fontSize:'25px'}}/></div>              
+              style={{padding:'25px 30px', borderRadius:'50%', 
+              boxShadow:'1px 0.5px 5px black'}}>
+                <PiShoppingCartFill style={{fontSize:'25px', color:'black'}}/>
+              </div>             
             </div>
 
             <p style={{padding:'10px', color:'white'}}>
@@ -83,8 +85,10 @@ export default function BusinessServices() {
               padding:"15px 0px",
             }}>
               <div
-              style={{width:'190px', height:'170px',borderRadius:'50%', 
-              boxShadow:'1px 0.5px 5px black'}}><GiFarmer style={{fontSize:'25px'}}/></div>                            
+              style={{padding:'25px 30px', borderRadius:'50%', 
+              boxShadow:'1px 0.5px 5px black'}}>
+                <GiFarmer style={{fontSize:'25px', color:'black'}}/>
+              </div>                            
             </div>
 
             <p style={{padding:'10px', color:'white'}}>
@@ -101,8 +105,10 @@ export default function BusinessServices() {
               padding:"15px 0px",
             }}>
               <div
-              style={{width:'190px', height:'170px',borderRadius:'50%', 
-              boxShadow:'1px 0.5px 5px black'}}><FaWarehouse style={{fontSize:'25px'}}/></div>                           
+              style={{padding:'25px 30px', borderRadius:'50%', 
+              boxShadow:'1px 0.5px 5px black'}}>
+                <FaWarehouse style={{fontSize:'25px', color:'black'}}/>
+              </div>                          
             </div>
 
             <p style={{padding:'10px', color:'white'}}>
@@ -120,8 +126,10 @@ export default function BusinessServices() {
               padding:"15px 0px",
             }}>
               <div
-              style={{width:'190px', height:'170px',borderRadius:'50%', 
-              boxShadow:'1px 0.5px 5px black'}}><FaBookOpenReader style={{fontSize:'25px'}}/></div>             
+              style={{padding:'25px 30px', borderRadius:'50%', 
+              boxShadow:'1px 0.5px 5px black'}}>
+                <FaBookOpenReader style={{fontSize:'25px', color:'black'}}/>
+              </div>            
             </div>
 
             <p style={{padding:'10px', color:'white'}}>
@@ -138,8 +146,10 @@ export default function BusinessServices() {
               padding:"15px 0px",
             }}>
               <div
-              style={{width:'190px', height:'170px',borderRadius:'50%', 
-              boxShadow:'1px 0.5px 5px black'}}><FaHandHoldingHand style={{fontSize:'25px'}}/></div>              
+              style={{padding:'25px 30px', borderRadius:'50%', 
+              boxShadow:'1px 0.5px 5px black'}}>
+                <FaHandHoldingHand style={{fontSize:'25px', color:'black'}}/>
+              </div>              
             </div>
 
             <p style={{padding:'10px', color:'white'}}>
