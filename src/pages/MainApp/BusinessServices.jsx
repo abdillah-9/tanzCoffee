@@ -6,6 +6,9 @@ import FarmingEquipment from '../../assets/20251006_114627 (1).jpg';
 import StorageService from '../../assets/IMG-20220720-WA0027.jpg';
 import CompanyRegistrationService from '../../assets/IMG_20240513_131143_913.jpg';
 import TradeConsultation from '../../assets/IMG-20230301-WA0016.jpg';
+import { GiCoffeeBeans, GiFarmer } from 'react-icons/gi';
+import { PiShoppingCartFill } from 'react-icons/pi';
+import { FaBookOpenReader, FaHandHoldingHand, FaWarehouse } from 'react-icons/fa6';
 
 export default function BusinessServices() {
   return (
@@ -41,9 +44,11 @@ export default function BusinessServices() {
               display:'flex', alignItems:'center', borderRadius:'5px 5px 0px 0px',
               padding:"15px 0px",
             }}>
-              <img src={GreenCoffee} alt='pic' 
+              <div
               style={{width:'190px', height:'170px',borderRadius:'50%', 
-              boxShadow:'1px 0.5px 5px black'}}/>              
+              boxShadow:'1px 0.5px 5px black'}}>
+                <GiCoffeeBeans fontSize={'25px'}/>
+              </div>              
             </div>
 
             <p style={{padding:'10px', color:'white'}}>
@@ -59,9 +64,9 @@ export default function BusinessServices() {
               display:'flex', alignItems:'center', borderRadius:'5px 5px 0px 0px',
               padding:"15px 0px",
             }}>
-              <img src={ReadyMarket} alt='pic' 
+              <div
               style={{width:'190px', height:'170px',borderRadius:'50%', 
-              boxShadow:'1px 0.5px 5px black'}}/>              
+              boxShadow:'1px 0.5px 5px black'}}><PiShoppingCartFill style={{fontSize:'25px'}}/></div>              
             </div>
 
             <p style={{padding:'10px', color:'white'}}>
@@ -77,9 +82,9 @@ export default function BusinessServices() {
               display:'flex', alignItems:'center', borderRadius:'5px 5px 0px 0px',
               padding:"15px 0px",
             }}>
-              <img src={FarmingEquipment} alt='pic' 
+              <div
               style={{width:'190px', height:'170px',borderRadius:'50%', 
-              boxShadow:'1px 0.5px 5px black'}}/>              
+              boxShadow:'1px 0.5px 5px black'}}><GiFarmer style={{fontSize:'25px'}}/></div>                            
             </div>
 
             <p style={{padding:'10px', color:'white'}}>
@@ -95,9 +100,9 @@ export default function BusinessServices() {
               display:'flex', alignItems:'center', borderRadius:'5px 5px 0px 0px',
               padding:"15px 0px",
             }}>
-              <img src={StorageService} alt='pic' 
+              <div
               style={{width:'190px', height:'170px',borderRadius:'50%', 
-              boxShadow:'1px 0.5px 5px black'}}/>              
+              boxShadow:'1px 0.5px 5px black'}}><FaWarehouse style={{fontSize:'25px'}}/></div>                           
             </div>
 
             <p style={{padding:'10px', color:'white'}}>
@@ -114,9 +119,9 @@ export default function BusinessServices() {
               display:'flex', alignItems:'center', borderRadius:'5px 5px 0px 0px',
               padding:"15px 0px",
             }}>
-              <img src={CompanyRegistrationService} alt='pic' 
+              <div
               style={{width:'190px', height:'170px',borderRadius:'50%', 
-              boxShadow:'1px 0.5px 5px black'}}/>              
+              boxShadow:'1px 0.5px 5px black'}}><FaBookOpenReader style={{fontSize:'25px'}}/></div>             
             </div>
 
             <p style={{padding:'10px', color:'white'}}>
@@ -132,9 +137,9 @@ export default function BusinessServices() {
               display:'flex', alignItems:'center', borderRadius:'5px 5px 0px 0px',
               padding:"15px 0px",
             }}>
-              <img src={TradeConsultation} alt='pic' 
+              <div
               style={{width:'190px', height:'170px',borderRadius:'50%', 
-              boxShadow:'1px 0.5px 5px black'}}/>              
+              boxShadow:'1px 0.5px 5px black'}}><FaHandHoldingHand style={{fontSize:'25px'}}/></div>              
             </div>
 
             <p style={{padding:'10px', color:'white'}}>
