@@ -1,0 +1,79 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  text-decoration: none;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+}
+html, body{
+  color:black;
+  overflow-x: hidden;
+  background-color: white;
+}
+.opacityAnimation{
+  animation: opacityAnim 0.8s ease-in;
+}
+@keyframes opacityAnim{
+  0%{transform: scale(0); opacity: 0;}
+  100%{transform: scale(1); opacity: 1;}
+}
+.whiteColor{
+  color: white;
+}
+.yellowColor{
+  color: rgba(185,130,12,1);
+}
+.yellowBackground{
+  background-color: rgba(185,130,12,1);
+}
+.slideShowHeight{
+  height: 100vh;
+  position: relative;
+  top: 100px;
+}
+@media screen and (max-width: 480px) {
+  .slideShowHeight{
+    height: 300px;
+    top:140px;
+  }
+}
+
+/* hide mobile icon by default */
+.navIcon {
+  display: none;
+}
+
+/* show full menu by default */
+.navLinks {
+  display: flex;
+}
+
+/* when screen is small */
+@media (max-width: 480px) {
+  .navLinks {
+    display: none;     /* hide desktop nav */
+  }
+
+  .navIcon {
+    display: block;    /* show menu icon */
+  }
+
+  .mobileMenu {
+    display: flex;     /* menu appears ONLY when open===true */
+  }
+}
+
+.homePicSlide2{
+  height:150px
+}
+.homeDescSlide2{
+  height:240px
+}
+@media screen and (min-width: 481px) {
+  .homePicSlide2{
+    height:220px
+  }
+  .homeDescSlide2{
+    height:250px
+  }  
+}
