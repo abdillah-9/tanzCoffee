@@ -19,7 +19,7 @@ export default function AboutUs() {
         <div style={{fontSize:'50px', fontWeight:600}}>About Us</div>
         <div 
         style={{color:'rgba(185, 130, 12, 1)',width:"85vw", maxWidth:"700px",
-        fontSize:'16px',}}>
+        fontSize:'16px',textAlign:'center'}}>
           TanzCoffee Trading Company Limited is a Tanzanian coffee
           processing and exporting company. We have our processing 
           facilities located in Karagwe District, Kagera, Tanzania and
@@ -94,7 +94,7 @@ export default function AboutUs() {
 
       {/* Founders */}
       <div style={{display:'flex', backgroundColor:'rgba(185, 130, 12, 1)',width:'100%',
-        justifyContent:'space-between', flexWrap:'wrap', padding:"15px", gap:'20px'}}>
+        justifyContent:'space-between', flexWrap:'wrap', padding:"30px 15px", gap:'20px'}}>
         {/* Sospeter Gunga Owuor */}
         <div style={{display:'flex', flexDirection:'column', padding:'20px',
           gap:'15px', minWidth:"200px", width:'29%', borderRadius:'5px',
@@ -163,19 +163,20 @@ export default function AboutUs() {
 
           </div>
         </div>
-
       </div> 
 
+      {/* deck image */}
+      <img style={{width:'100%',objectFit:'100% 100%'}} src={TanzCoffee_Investor_Deck} alt='TanzCoffee_Investor_Deck' className='deckPicAspectRation'/>
+
       {/* Ending paragraph*/}
-      <div style={{display:"flex",flexDirection:'column',padding:'15px',
-         alignItems:'center', justifyContent:'center', gap:'20px'}}
+      <div style={{display:"flex",flexDirection:'column',padding:'20px 0px',
+         alignItems:'center', justifyContent:'center', gap:'20px', backgroundColor:'rgba(185,130,12,1)',}}
           className='opacityAnimation'
          >
-        <img style={{width:'100%', aspectRatio:1/0.7, objectFit:'100% 100%'}} src={TanzCoffee_Investor_Deck} alt='TanzCoffee_Investor_Deck'/>
-        <div style={{fontSize:'50px', fontWeight:600}}>Sustainability Commitment</div>
+        <div style={{fontSize:'50px', fontWeight:600, width:'100vw', textAlign:'center'}}>Sustainability Commitment</div>
         <div 
-        style={{color:'rgba(185, 130, 12, 1)',width:"85vw", maxWidth:"700px",
-        fontSize:'16px',}}>
+        style={{color:'white',width:"85vw", maxWidth:"700px",
+        fontSize:'16px', width:'100vw', textAlign:'center'}}>
           We use electrically powered machines and modern 
           waste disposal facilities to minimize environmental impact.
           We are continuously exploring new ways to improve our 
