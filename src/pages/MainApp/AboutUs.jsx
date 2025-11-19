@@ -2,6 +2,7 @@ import React from 'react'
 import SospeterPic from '../../assets/20251016_235737.png';
 import EvodiusPic from '../../assets/Evodius.png';
 import OmaryPic from '../../assets/Omary.png';
+import TanzCoffee_Investor_Deck from '../../assets/TanzCoffee_Investor_Deck.png';
 import { FaRegEye } from 'react-icons/fa6';
 import { GiDiamondHard, GiFlyingFlag } from 'react-icons/gi';
 
@@ -170,6 +171,7 @@ export default function AboutUs() {
          alignItems:'center', justifyContent:'center', gap:'20px'}}
           className='opacityAnimation'
          >
+        <img style={{width:'100%', aspectRatio:1/0.5, objectFit:'100% 100%'}} src={TanzCoffee_Investor_Deck} alt='TanzCoffee_Investor_Deck'/>
         <div style={{fontSize:'50px', fontWeight:600}}>Sustainability Commitment</div>
         <div 
         style={{color:'rgba(185, 130, 12, 1)',width:"85vw", maxWidth:"700px",
