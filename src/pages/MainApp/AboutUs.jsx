@@ -175,7 +175,7 @@ export default function AboutUs() {
          >
         <div style={{fontSize:'50px', fontWeight:600, width:'100vw', textAlign:'center'}}>Sustainability Commitment</div>
         <div 
-        style={{color:'white',width:"85vw", maxWidth:"700px",
+        style={{color:'white',maxWidth:"700px",
         fontSize:'16px', width:'100vw', textAlign:'center'}}>
           We use electrically powered machines and modern 
           waste disposal facilities to minimize environmental impact.
