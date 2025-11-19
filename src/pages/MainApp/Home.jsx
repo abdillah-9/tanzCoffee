@@ -71,7 +71,7 @@ function SlideShow() {
       <img
         src={images[index]}
         alt="slide"
-        style={{ width: "100%", height: "100%", objectFit: "cover" }}
+        style={{ width: "100%", height: "100%", }}
       />
 
       {/* Dark overlay for readability */}
