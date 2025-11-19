@@ -3,6 +3,7 @@ import TopPic from './pages/TopPic';
 import TopNavBar from './pages/TopNavBar';
 import MainApp from './pages/MainApp/MainApp';
 import './App.css'
+import { LuCopyright } from 'react-icons/lu';
 
 export const NavStates = createContext();
 
@@ -17,6 +18,10 @@ export default function App() {
           <TopNavBar/>
         </div>
         <MainApp/>
+        {/*Paragraph for contacts footer */}
+        <div style={{minHeight:'80px', width:'100vw', backgroundColor:'rgba(28, 28, 59, 1)', display:'flex', justifyContent:'center', alignItems:'center'}}>
+          <div style={{fontSize:'18px', color:'white', display:'flex', flexWrap:'wrap',alignItems:'center', gap:'5px'}}><span>Copyright </span><LuCopyright style={{fontSize:'20px'}}/> <span> 2025, All rights reserved</span></div>
+        </div>
       </div>
     </NavStates.Provider>
   )

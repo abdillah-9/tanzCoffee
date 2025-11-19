@@ -219,7 +219,7 @@ export default function ContactsInformation() {
         {/* Open hours */}
         <div style={{width:'100%', borderRadius:'5px',boxShadow:'1px 0.5px 12px black',
           display:'flex',flexWrap:'wrap',gap:'20px',alignItems:'center',minWidth:'80vw',
-          justifyContent:'space-between',padding:'25px',marginTop:'50px',
+          justifyContent:'space-between',padding:'25px',margin:'50px 0px',
         }}>
 
           <div style={{display:'flex',flexDirection:'column', gap:'3px', maxWidth:'500px',
@@ -258,9 +258,6 @@ export default function ContactsInformation() {
         </div>
 
       </div>
-
-      {/*Paragraph for contacts footer */}
-      <div style={{minHeight:'100px', width:'100vw', backgroundColor:'rgba(28, 28, 59, 1)'}}></div>
 </div>
   )
 }

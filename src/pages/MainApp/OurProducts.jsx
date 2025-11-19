@@ -208,7 +208,7 @@ export default function OurProducts() {
       </div>
 
       {/* Ending paragraph*/}
-      <div style={{display:"flex",flexDirection:'column',
+      <div style={{display:"flex",flexDirection:'column',padding:'10px 0px 60px 0px',
          alignItems:'center', justifyContent:'center', gap:'20px'}}
           className='opacityAnimation'
          >

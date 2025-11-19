@@ -8,7 +8,7 @@ import { GiDiamondHard, GiFlyingFlag } from 'react-icons/gi';
 
 export default function AboutUs() {
   return (
-    <div style={{display:'flex', gap:'50px', padding:"20px 0px 20px 0px",
+    <div style={{display:'flex', gap:'50px', padding:"20px 0px 0px 0px",
     flexDirection:'column', alignItems:'center'}}>
 
       {/* Pragraph for intro*/}
@@ -169,7 +169,7 @@ export default function AboutUs() {
       <img style={{width:'100%',objectFit:'100% 100%'}} src={TanzCoffee_Investor_Deck} alt='TanzCoffee_Investor_Deck' className='deckPicAspectRation'/>
 
       {/* Ending paragraph*/}
-      <div style={{display:"flex",flexDirection:'column',padding:'20px 0px',
+      <div style={{display:"flex",flexDirection:'column',padding:'30px 0px 50px 0px',
          alignItems:'center', justifyContent:'center', gap:'20px', backgroundColor:'rgba(185,130,12,1)',}}
           className='opacityAnimation'
          >
