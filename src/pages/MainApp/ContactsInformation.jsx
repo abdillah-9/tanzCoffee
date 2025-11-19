@@ -11,29 +11,30 @@ export default function ContactsInformation() {
      sendMessageRef.current?.scrollIntoView({behavior:'smooth'});
   }
 
-  async function handleSubmit(e) {
-    e.preventDefault();
+async function handleSubmit(e) {
+  e.preventDefault();
 
-    const formData = new FormData(e.target);
+  const formData = new FormData(e.target);
 
-    try {
-      const response = await fetch("https://tanzcoffee.co.tz/api/sendEmail.php", {
-        method: "POST",
-        body: formData
-      });
+  try {
+    const response = await fetch("https://tanzcoffee.co.tz/sendEmail.php", {
+      method: "POST",
+      body: formData,
+    });
 
-      const result = await response.json();
+    const result = await response.json();
 
-      if (result.status === "success") {
-        alert("Message is successfully sent to TanzCoffee L.T.D");
-        e.target.reset();
-      } else {
-        alert("Something went wrong: " + result.message);
-      }
-    } catch (error) {
-      alert("Network error — please try again later.");
+    if (result.status === "success") {
+      alert("Message is successfully sent to TanzCoffee L.T.D");
+      e.target.reset();
+    } else {
+      alert("Something went wrong: " + result.message);
     }
+  } catch (error) {
+    alert("Network error — please try again later.");
   }
+}
+
 
   return (
 <div style={{display:'flex', gap:'30px', padding:"20px 0px 0px 0px",
