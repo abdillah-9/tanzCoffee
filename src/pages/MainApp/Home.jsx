@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import GreenCoffee from '../../assets/TanzCoffeeDeck.png';
-import pic1 from '../../assets/quality_storageCroped3.jpg';
+import pic1 from '../../assets/quality_storageCroped3.jpeg';
 import pic2 from '../../assets/profesionalism_IntergrityCroped.jpg';
 import pic3 from '../../assets/natural_tanzanian_coffee.jpg';
 import pic4 from '../../assets/natural_green_coffeeCroped.jpg';
