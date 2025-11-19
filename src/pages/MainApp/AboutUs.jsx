@@ -171,7 +171,7 @@ export default function AboutUs() {
          alignItems:'center', justifyContent:'center', gap:'20px'}}
           className='opacityAnimation'
          >
-        <img style={{width:'100%', aspectRatio:1/0.5, objectFit:'100% 100%'}} src={TanzCoffee_Investor_Deck} alt='TanzCoffee_Investor_Deck'/>
+        <img style={{width:'100%', aspectRatio:1/0.7, objectFit:'100% 100%'}} src={TanzCoffee_Investor_Deck} alt='TanzCoffee_Investor_Deck'/>
         <div style={{fontSize:'50px', fontWeight:600}}>Sustainability Commitment</div>
         <div 
         style={{color:'rgba(185, 130, 12, 1)',width:"85vw", maxWidth:"700px",
