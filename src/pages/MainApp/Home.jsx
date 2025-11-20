@@ -433,7 +433,7 @@ function Card({ img, text }) {
 
 function Card2({ img, text }) {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', maxWidth: '350px' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', maxWidth: '350px',}}>
       <div
         style={{
           display: 'flex',
@@ -443,11 +443,11 @@ function Card2({ img, text }) {
           maxWidth: '350px',
           width: '100%',
           borderRadius:'10px 10px 0px 0px',
-          overflow:'hidden',
+          overflow:'hidden'
         }}
         className='homePicSlide2'
       >
-        <img src={img} alt="slide" style={{ width: '100%', height: '100%', objectFit:'cover' }} />
+        <img src={img} alt="slide" style={{ width: '100%', height: '100%', objectFit:'cover', }} />
       </div>
 
       <div
@@ -460,7 +460,7 @@ function Card2({ img, text }) {
           fontWeight: 400,
           borderRadius:'0px 0px 10px 10px',
         }}
-        className='homeDescSlide2 slidesHeight'
+        className='homeDescSlide2  slidesHeight'
       >
         {text}
       </div>
