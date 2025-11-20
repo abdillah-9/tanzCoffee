@@ -9,7 +9,7 @@ import naturalCoffee2 from '../../assets/IMG_20241004_114341_116Croped.jpg';
 import { IoLocationOutline } from 'react-icons/io5';
 import { GiCoffeeBeans, GiJellyBeans } from 'react-icons/gi';
 import arabicaSVG from '../../assets/arabicaSVG.svg';
-import Soybeans from '../../assets/soybeans.jpg';
+import Soybeans from '../../assets/soybeans2.png';
 import Sesameseeds from '../../assets/sesameseeds.jpg';
 import Cashewnuts from '../../assets/cashewnuts.jpg';
 import Rice from '../../assets/rice.jpg';
