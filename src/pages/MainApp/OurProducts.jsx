@@ -224,24 +224,24 @@ export default function OurProducts() {
           In addition to coffee, the company supplies maize, beans, sesame seeds, rice, cashew nuts, and red beans to both domestic and foreign markets.
         </div>
         {/* slideshow */}
-        <div style={{display:'flex',flexWrap:'wrap', justifyContent:'center', width:'100vw', padding:"100px 0px"}} className='slidesGap'>
-          <div className='slide1' style={{display:'flex', flexDirection:'column',alignItems:'center', justifyContent:'center', width:'10%', minWidth:'150px', gap:"3px"}}>
+        <div style={{display:'flex',flexWrap:'wrap', justifyContent:'center', gap:'30px', width:'100vw', padding:"50px 0px 0px 0px"}} className='slidesGap'>
+          <div className='slide1' style={{display:'flex', flexDirection:'column',alignItems:'center', justifyContent:'center', width:'10%', minWidth:'150px', gap:"3px", padding:'50px 0px'}}>
             <img src={Soybeans} alt='pic1' style={{width:'50px', aspectRatio:1/0.9, borderRadius:'50%'}}/>
             <div style={{fontSize:'5px',}}>Soy beans</div>
           </div>
-          <div className='slide2' style={{display:'flex', flexDirection:'column',alignItems:'center', justifyContent:'center', width:'10%', minWidth:'150px', gap:"3px"}}>
+          <div className='slide2' style={{display:'flex', flexDirection:'column',alignItems:'center', justifyContent:'center', width:'10%', minWidth:'150px', gap:"3px", padding:'50px 0px'}}>
             <img src={Sesameseeds} alt='pic1' style={{width:'50px', aspectRatio:1/0.9, borderRadius:'50%'}}/>
             <div style={{fontSize:'5px',}}>Sesame seeds</div>
           </div>
-          <div className='slide3' style={{display:'flex', flexDirection:'column',alignItems:'center', justifyContent:'center', width:'10%', minWidth:'150px', gap:"3px"}}>
+          <div className='slide3' style={{display:'flex', flexDirection:'column',alignItems:'center', justifyContent:'center', width:'10%', minWidth:'150px', gap:"3px", padding:'50px 0px'}}>
             <img src={Cashewnuts} alt='pic1' style={{width:'50px', aspectRatio:1/0.9, borderRadius:'50%'}}/>
             <div style={{fontSize:'5px',}}>Cashew nuts</div>
           </div>
-          <div className='slide4' style={{display:'flex', flexDirection:'column',alignItems:'center', justifyContent:'center', width:'10%', minWidth:'150px', gap:"3px"}}>
+          <div className='slide4' style={{display:'flex', flexDirection:'column',alignItems:'center', justifyContent:'center', width:'10%', minWidth:'150px', gap:"3px", padding:'50px 0px'}}>
             <img src={Rice} alt='pic1' style={{width:'50px', aspectRatio:1/0.9, borderRadius:'50%'}}/>
             <div style={{fontSize:'5px',}}>Rice</div>
           </div>
-          <div className='slide5' style={{display:'flex', flexDirection:'column',alignItems:'center', justifyContent:'center', width:'10%', minWidth:'150px', gap:"3px"}}>
+          <div className='slide5' style={{display:'flex', flexDirection:'column',alignItems:'center', justifyContent:'center', width:'10%', minWidth:'150px', gap:"3px", padding:'50px 0px'}}>
             <img src={Allbeans} alt='pic1' style={{width:'50px', aspectRatio:1/0.9, borderRadius:'50%'}}/>
             <div style={{fontSize:'5px',}}>Beans of all types</div>
           </div>
