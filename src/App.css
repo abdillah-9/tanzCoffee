@@ -226,3 +226,12 @@ html, body{
     transform: scale(1);
   }
 }
+.slidesHeight{
+  height:210px;
+}
+@media screen and (min-width: 481px) {
+  .slidesHeight{
+    height:150px;
+  }
+}
+

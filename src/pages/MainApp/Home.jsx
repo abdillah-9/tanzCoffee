@@ -10,7 +10,7 @@ import pic5 from '../../assets/product_handlingCroped.jpg';
 import ReductionBrokenCoffee from '../../assets/pic1.jpg';
 import WellOrganizedFirm from '../../assets/pic2.jpg';
 import ProperFacilities from '../../assets/pic3.jpg';
-import ProfesionalServices from '../../assets/pic4.jpg';
+import ProfesionalServices from '../../assets/pic4.png';
 import ProductQuality from '../../assets/pic5.jpg';
 import SecureTransaction from '../../assets/pic6.jpg'
 //slide2
@@ -396,7 +396,7 @@ function MiniHome() {
 ----------------------------------------------------------- */
 function Card({ img, text }) {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', maxWidth: '350px' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', maxWidth: '350px',}}>
       <div
         style={{
           display: 'flex',
@@ -405,10 +405,12 @@ function Card({ img, text }) {
           // height: '150px',
           maxWidth: '350px',
           width: '100%',
+          borderRadius:'10px 10px 0px 0px',
+          overflow:'hidden'
         }}
         className='homePicSlide2'
       >
-        <img src={img} alt="slide" style={{ width: '100%', height: '100%' }} />
+        <img src={img} alt="slide" style={{ width: '100%', height: '100%', objectFit:'cover', }} />
       </div>
 
       <div
@@ -417,10 +419,11 @@ function Card({ img, text }) {
           backgroundColor: 'rgba(185,130,12,1)',
           color: 'white',
           // height: '200px',
-          fontSize: '17px',
-          fontWeight: 500,
+          fontSize: '16px',
+          fontWeight: 400,
+          borderRadius:'0px 0px 10px 10px',
         }}
-        className='homeDescSlide2'
+        className='homeDescSlide2  slidesHeight'
       >
         {text}
       </div>
@@ -439,10 +442,12 @@ function Card2({ img, text }) {
           // height: '150px',
           maxWidth: '350px',
           width: '100%',
+          borderRadius:'10px 10px 0px 0px',
+          overflow:'hidden',
         }}
         className='homePicSlide2'
       >
-        <img src={img} alt="slide" style={{ width: '100%', height: '100%' }} />
+        <img src={img} alt="slide" style={{ width: '100%', height: '100%', objectFit:'cover' }} />
       </div>
 
       <div
@@ -451,10 +456,11 @@ function Card2({ img, text }) {
           backgroundColor: 'white',
           color: 'rgba(185,130,12,1)',
           // height: '200px',
-          fontSize: '17px',
-          fontWeight: 500,
+          fontSize: '16px',
+          fontWeight: 400,
+          borderRadius:'0px 0px 10px 10px',
         }}
-        className='homeDescSlide2'
+        className='homeDescSlide2 slidesHeight'
       >
         {text}
       </div>

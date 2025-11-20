@@ -34,17 +34,17 @@ export default function OurProducts() {
         <div style={{display:'flex', flexWrap:'wrap', justifyContent:'center',gap:"90px", padding:'15px 0px 55px 0px'}}>
 
           <div style={{display:'flex', flexDirection:'column', gap:'15px', justifyContent:'center', alignItems:'center'}}>
-            <img style={{borderRadius:'50%', width:'170px', height:'160px'}} src={naturalCoffee} alt='natural beans'/>
+            <img style={{borderRadius:'50%', width:'170px', height:'160px', objectFit:'cover'}} src={naturalCoffee} alt='natural beans'/>
             <div style={{textAlign:'center', fontSize:"16px", fontWeight:500}}>Natural Green Coffee Beans</div>
           </div>
 
           <div style={{display:'flex', flexDirection:'column', gap:'15px', justifyContent:'center', alignItems:'center'}}>
-            <img style={{borderRadius:'50%', width:'170px', height:'160px'}} src={Beans} alt='natural beans'/>
+            <img style={{borderRadius:'50%', width:'170px', height:'160px', objectFit:'cover'}} src={Beans} alt='natural beans'/>
             <div style={{textAlign:'center', fontSize:"16px", fontWeight:500}}>Arabica Green Coffee Beans</div>
           </div>
 
           <div style={{display:'flex', flexDirection:'column', gap:'15px', justifyContent:'center', alignItems:'center'}}>
-            <img style={{borderRadius:'50%', width:'170px', height:'160px'}} src={naturalCoffee2} alt='natural beans'/>
+            <img style={{borderRadius:'50%', width:'170px', height:'160px', objectFit:'cover'}} src={naturalCoffee2} alt='natural beans'/>
             <div style={{textAlign:'center', fontSize:"16px", fontWeight:500}}>Robusta Green Coffee Beans</div>
           </div>
 
@@ -187,7 +187,7 @@ export default function OurProducts() {
 
       {/* Images */}
       <div style={{width:'100vw', padding:'50px 0px', display:'flex', flexWrap:'wrap', justifyContent:' center', gap:'50px'}}>
-        <div style={{ backgroundImage:`url(${CoffeeRoaster})`,backgroundSize: '100% 100%',
+        <div style={{ backgroundImage:`url(${CoffeeRoaster})`,backgroundSize: 'cover',
           backgroundColor:'white', color:'black', width:'100%',
           borderRadius:'5px',maxWidth:'300px',flexGrow:1,display:'flex',
           height:'200px',
@@ -195,7 +195,7 @@ export default function OurProducts() {
         }}>
         </div>
 
-        <div style={{ backgroundImage:`url(${CoffeeUnion})`,backgroundSize: '100% 100%',
+        <div style={{ backgroundImage:`url(${CoffeeUnion})`,backgroundSize: 'cover',
           backgroundColor:'white', color:'black', width:'100%',
           borderRadius:'5px',maxWidth:'300px',flexGrow:1,display:'flex',
           height:'200px',
@@ -203,7 +203,7 @@ export default function OurProducts() {
         }}>
         </div>
 
-        <div style={{ backgroundImage:`url(${CoffeeTrader})`,backgroundSize: '100% 100%',
+        <div style={{ backgroundImage:`url(${CoffeeTrader})`,backgroundSize: 'cover',
           backgroundColor:'white', color:'black', width:'100%',
           borderRadius:'5px',maxWidth:'300px',flexGrow:1,display:'flex',
           height:'200px',
@@ -226,23 +226,23 @@ export default function OurProducts() {
         {/* slideshow */}
         <div style={{display:'flex',flexWrap:'wrap', justifyContent:'center', gap:'30px', width:'100vw', padding:"50px 0px 0px 0px"}} className='slidesGap'>
           <div className='slide1' style={{display:'flex', flexDirection:'column',alignItems:'center', justifyContent:'center', width:'10%', minWidth:'150px', gap:"3px", padding:'50px 0px'}}>
-            <img src={Soybeans} alt='pic1' style={{width:'50px', aspectRatio:1/0.9, borderRadius:'50%'}}/>
+            <img src={Soybeans} alt='pic1' style={{width:'50px', objectFit:'cover' ,aspectRatio:1/0.9, borderRadius:'50%'}}/>
             <div style={{fontSize:'5px',}}>Soy beans</div>
           </div>
           <div className='slide2' style={{display:'flex', flexDirection:'column',alignItems:'center', justifyContent:'center', width:'10%', minWidth:'150px', gap:"3px", padding:'50px 0px'}}>
-            <img src={Sesameseeds} alt='pic1' style={{width:'50px', aspectRatio:1/0.9, borderRadius:'50%'}}/>
+            <img src={Sesameseeds} alt='pic1' style={{width:'50px', objectFit:'cover' ,aspectRatio:1/0.9, borderRadius:'50%'}}/>
             <div style={{fontSize:'5px',}}>Sesame seeds</div>
           </div>
           <div className='slide3' style={{display:'flex', flexDirection:'column',alignItems:'center', justifyContent:'center', width:'10%', minWidth:'150px', gap:"3px", padding:'50px 0px'}}>
-            <img src={Cashewnuts} alt='pic1' style={{width:'50px', aspectRatio:1/0.9, borderRadius:'50%'}}/>
+            <img src={Cashewnuts} alt='pic1' style={{width:'50px', objectFit:'cover' ,aspectRatio:1/0.9, borderRadius:'50%'}}/>
             <div style={{fontSize:'5px',}}>Cashew nuts</div>
           </div>
           <div className='slide4' style={{display:'flex', flexDirection:'column',alignItems:'center', justifyContent:'center', width:'10%', minWidth:'150px', gap:"3px", padding:'50px 0px'}}>
-            <img src={Rice} alt='pic1' style={{width:'50px', aspectRatio:1/0.9, borderRadius:'50%'}}/>
+            <img src={Rice} alt='pic1' style={{width:'50px', objectFit:'cover' ,aspectRatio:1/0.9, borderRadius:'50%'}}/>
             <div style={{fontSize:'5px',}}>Rice</div>
           </div>
           <div className='slide5' style={{display:'flex', flexDirection:'column',alignItems:'center', justifyContent:'center', width:'10%', minWidth:'150px', gap:"3px", padding:'50px 0px'}}>
-            <img src={Allbeans} alt='pic1' style={{width:'50px', aspectRatio:1/0.9, borderRadius:'50%'}}/>
+            <img src={Allbeans} alt='pic1' style={{width:'50px', objectFit:'cover' ,aspectRatio:1/0.9, borderRadius:'50%'}}/>
             <div style={{fontSize:'5px',}}>Beans of all types</div>
           </div>
         </div>
