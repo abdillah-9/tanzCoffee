@@ -15,6 +15,7 @@ import Cashewnuts from '../../assets/cashewnuts.jpg';
 import Rice from '../../assets/rice.jpg';
 import Allbeans from '../../assets/allbeans.jpg';
 
+
 export default function OurProducts() {
   return (
     <div style={{display:'flex', gap:'50px', padding:"20px 0px 20px 0px",
