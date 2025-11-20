@@ -224,7 +224,7 @@ export default function OurProducts() {
           In addition to coffee, the company supplies maize, beans, sesame seeds, rice, cashew nuts, and red beans to both domestic and foreign markets.
         </div>
         {/* slideshow */}
-        <div style={{display:'flex',flexWrap:'wrap', justifyContent:'center', gap:'120px', width:'100vw', padding:"100px 0px"}}>
+        <div style={{display:'flex',flexWrap:'wrap', justifyContent:'center', width:'100vw', padding:"100px 0px"}} className='slidesGap'>
           <div className='slide1' style={{display:'flex', flexDirection:'column',alignItems:'center', justifyContent:'center', width:'10%', minWidth:'150px', gap:"3px"}}>
             <img src={Soybeans} alt='pic1' style={{width:'50px', aspectRatio:1/0.9, borderRadius:'50%'}}/>
             <div style={{fontSize:'5px',}}>Soy beans</div>

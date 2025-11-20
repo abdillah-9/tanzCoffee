@@ -95,6 +95,7 @@ export default function AboutUs() {
       {/* Founders */}
       <div style={{display:'flex', backgroundColor:'rgba(185, 130, 12, 1)',width:'100%',
         justifyContent:'space-between', flexWrap:'wrap', padding:"30px 15px", gap:'20px'}}>
+        <div style={{fontSize:'50px', fontWeight:600, width:"100vw", textAlign:'center'}}>About Founder</div>
         {/* Sospeter Gunga Owuor */}
         <div style={{display:'flex', flexDirection:'column', padding:'20px',
           gap:'15px', minWidth:"200px", width:'29%', borderRadius:'5px',
@@ -166,6 +167,7 @@ export default function AboutUs() {
       </div> 
 
       {/* deck image */}
+      <div style={{fontSize:'50px', fontWeight:600}}>Company Structure and Broad Members</div>
       <img style={{width:'100%',objectFit:'100% 100%'}} src={TanzCoffee_Investor_Deck} alt='TanzCoffee_Investor_Deck' className='deckPicAspectRation'/>
 
       {/* Ending paragraph*/}

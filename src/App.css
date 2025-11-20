@@ -226,4 +226,12 @@ html, body{
     transform: scale(1);
   }
 }
+.slidesGap{
+  gap:'100px'
+}
+@media screen and (min-width: 481px) {
+  .slidesGap{
+    gap:'40px';
+  }
+}
 
