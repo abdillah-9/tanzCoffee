@@ -86,3 +86,144 @@ html, body{
   aspect-ratio: 1/0.5;
 }
 }
+
+/* our products slides */
+.slide1{
+  animation-name: ourProductsSlide1;
+  animation-duration: 14s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  width: 10px; 
+  height: 10px;
+}
+@keyframes ourProductsSlide1{
+  0%{
+    transform: scale(1);
+  }
+  3%{
+    transform: scale(3.5);
+  }
+  17%{
+    transform: scale(3.5);
+  }
+  20%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+.slide2{
+  animation-name: ourProductsSlide2;
+  animation-duration: 14s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  width: 10px; 
+  height: 10px;
+}
+@keyframes ourProductsSlide2{
+  0%{
+    transform: scale(1);
+  }
+  20%{
+    transform: scale(1);
+  }
+  23%{
+    transform: scale(3.5);
+  }
+  37%{
+    transform: scale(3.5);
+  }
+  40%{
+    transform: scale(1);    
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+.slide3{
+  animation-name: ourProductsSlide3;
+  animation-duration: 14s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  width: 10px; 
+  height: 10px;
+}
+@keyframes ourProductsSlide3{
+  0%{
+    transform: scale(1);
+  }
+  40%{
+    transform: scale(1);
+  }
+  43%{
+    transform: scale(3.5);
+  }
+  57%{
+    transform: scale(3.5);
+  }
+  60%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+.slide4{
+  animation-name: ourProductsSlide4;
+  animation-duration: 14s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  width: 10px; 
+  height: 10px;
+}
+@keyframes ourProductsSlide4{
+  0%{
+    transform: scale(1);
+  }
+  60%{
+    transform: scale(1);
+  }
+  63%{
+    transform: scale(3.5);
+  }
+  77%{
+    transform: scale(3.5);
+  }
+  80%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+.slide5{
+  animation-name: ourProductsSlide5;
+  animation-duration: 14s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  width: 10px; 
+  height: 10px;
+}
+@keyframes ourProductsSlide5{
+  0%{
+    transform: scale(1);
+  }
+  80%{
+    transform: scale(1);
+  }
+  83%{
+    transform: scale(3.5);
+  }
+  97%{
+    transform: scale(3.5);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+

@@ -9,6 +9,11 @@ import naturalCoffee2 from '../../assets/IMG_20241004_114341_116Croped.jpg';
 import { IoLocationOutline } from 'react-icons/io5';
 import { GiCoffeeBeans, GiJellyBeans } from 'react-icons/gi';
 import arabicaSVG from '../../assets/arabicaSVG.svg';
+import Soybeans from '../../assets/soybeans.jpg';
+import Sesameseeds from '../../assets/sesameseeds.jpg';
+import Cashewnuts from '../../assets/cashewnuts.jpg';
+import Rice from '../../assets/rice.jpg';
+import Allbeans from '../../assets/allbeans.jpg';
 
 export default function OurProducts() {
   return (
@@ -217,6 +222,29 @@ export default function OurProducts() {
         style={{color:'rgba(185, 130, 12, 1)',width:"85vw", maxWidth:"700px",
         fontSize:'16px',}}>
           In addition to coffee, the company supplies maize, beans, sesame seeds, rice, cashew nuts, and red beans to both domestic and foreign markets.
+        </div>
+        {/* slideshow */}
+        <div style={{display:'flex',flexWrap:'wrap', justifyContent:'center', gap:'120px', width:'100vw', padding:"100px 0px"}}>
+          <div className='slide1' style={{display:'flex', flexDirection:'column',alignItems:'center', justifyContent:'center', width:'10%', minWidth:'150px', gap:"3px"}}>
+            <img src={Soybeans} alt='pic1' style={{width:'50px', aspectRatio:1/0.9, borderRadius:'50%'}}/>
+            <div style={{fontSize:'5px',}}>Soy beans</div>
+          </div>
+          <div className='slide2' style={{display:'flex', flexDirection:'column',alignItems:'center', justifyContent:'center', width:'10%', minWidth:'150px', gap:"3px"}}>
+            <img src={Sesameseeds} alt='pic1' style={{width:'50px', aspectRatio:1/0.9, borderRadius:'50%'}}/>
+            <div style={{fontSize:'5px',}}>Sesame seeds</div>
+          </div>
+          <div className='slide3' style={{display:'flex', flexDirection:'column',alignItems:'center', justifyContent:'center', width:'10%', minWidth:'150px', gap:"3px"}}>
+            <img src={Cashewnuts} alt='pic1' style={{width:'50px', aspectRatio:1/0.9, borderRadius:'50%'}}/>
+            <div style={{fontSize:'5px',}}>Cashew nuts</div>
+          </div>
+          <div className='slide4' style={{display:'flex', flexDirection:'column',alignItems:'center', justifyContent:'center', width:'10%', minWidth:'150px', gap:"3px"}}>
+            <img src={Rice} alt='pic1' style={{width:'50px', aspectRatio:1/0.9, borderRadius:'50%'}}/>
+            <div style={{fontSize:'5px',}}>Rice</div>
+          </div>
+          <div className='slide5' style={{display:'flex', flexDirection:'column',alignItems:'center', justifyContent:'center', width:'10%', minWidth:'150px', gap:"3px"}}>
+            <img src={Allbeans} alt='pic1' style={{width:'50px', aspectRatio:1/0.9, borderRadius:'50%'}}/>
+            <div style={{fontSize:'5px',}}>Beans of all types</div>
+          </div>
         </div>
       </div>
 
