@@ -25,10 +25,6 @@ export default function AboutUs() {
           facilities located in Karagwe District, Kagera, Tanzania and
           we are planning to establish our administration office in Dar es Salaam, Tanzania.
         </div>
-        <div style={{backgroundColor:'rgba(185, 130, 12, 1)', padding:'15px 30px' 
-          ,borderRadius:'20px', color:'white'}}>
-          Contact Us
-        </div>
       </div>
 
       {/* Paragraph for Vision , Mission and Core value */}
@@ -95,30 +91,18 @@ export default function AboutUs() {
       {/* Founders */}
       <div style={{display:'flex', backgroundColor:'rgba(185, 130, 12, 1)',width:'100%',
         justifyContent:'space-between', flexWrap:'wrap', padding:"30px 15px", gap:'20px'}}>
-        <div style={{fontSize:'50px', fontWeight:600, width:"100vw", textAlign:'center'}}>About Founder</div>
+        <div style={{fontSize:'50px', fontWeight:600, width:"100vw", textAlign:'center'}}>About Founders</div>
         {/* Sospeter Gunga Owuor */}
         <div style={{display:'flex', flexDirection:'column', padding:'20px',
           gap:'15px', minWidth:"200px", width:'29%', borderRadius:'5px',
           backgroundColor:"white",alignItems:'center', flexGrow:1,
           }}>
           <img src={SospeterPic} alt='Sospeter Gunga Owuor' 
-          style={{borderRadius:'50%', width:'150px', height:'130px',
-                 boxShadow:'1px 2px 20px black'
+          style={{borderRadius:'50%', width:'150px',aspectRatio:1/0.95, objectFit:'cover'
           }}/>
           <div style={{fontSize:'20px', fontWeight:500}}>Sospeter Gunga Owuor</div>
           <div>
-            He holds a bachelor’s degree in Business Administration 
-            (Entrepreneurship Development) from Mzumbe University.
-             He has attended several business courses from 
-             Philanthropy University. He co-founded Brice 
-             Agribusiness Ltd and worked with as company 
-             operation director for 03 years, and has worked 
-             with Room to Read for five years as a Research, 
-             Monitoring and Evaluation Associate. 
-             He has extensive network with coffee 
-             industrial-based government institutions and 
-             he is much experienced with coffee exportation. 
-             He handles all administration activities.
+            He holds a bachelor’s degree in Business Administration (Entrepreneurship Development) from Mzumbe University. He has attended several business courses from Philanthropy University. He co-founded Brice Agribusiness Ltd and worked with as company operation director for 03 years, and has worked with Room to Read for five years as a Research, Monitoring and Evaluation Associate. He has extensive network with coffee industrial-based government institutions and he is much experienced with coffee exportation. He is the Managing Director of the company
           </div>
         </div>
 
@@ -128,17 +112,10 @@ export default function AboutUs() {
           backgroundColor:"white",alignItems:'center', flexGrow:1,
           }}>
           <img src={EvodiusPic} alt='Sospeter Gunga Owuor' 
-          style={{borderRadius:'50%', width:'150px', height:'130px',
-                 boxShadow:'1px 2px 20px black'}}/>
+          style={{borderRadius:'50%', width:'150px',aspectRatio:1/0.95, objectFit:'cover'}}/>
           <div style={{fontSize:'20px', fontWeight:500}}>Evodius Vedastos Tihibika</div>
           <div>
-            He and his family have been active coffee producers for 
-            many years in the Karagwe District of Kagera, the country's 
-            heartland of Robusta coffee. He has over 30 years of substantial 
-            experience in the coffee sector and a wide network of local coffee 
-            stakeholders. He is well acquainted with the product of coffee. 
-            He is the technical director of the company. and manages the 
-            procurement and processing aspects.
+            He and his family have been active coffee producers for many years in the Karagwe District of Kagera, the country's heartland of Robusta coffee. He has over 30 years of substantial experience in the coffee sector and a wide network of local coffee stakeholders. He is well acquainted with the product of coffee. He is the technical director of the company. He is Operations Director of the company
           </div>
         </div>
 
@@ -148,20 +125,10 @@ export default function AboutUs() {
           backgroundColor:"white",alignItems:'center', flexGrow:1,
           }}>
           <img src={OmaryPic} alt='Sospeter Gunga Owuor' 
-          style={{borderRadius:'50%', width:'150px', height:'130px',
-                 boxShadow:'1px 2px 20px black'}}/>
+          style={{borderRadius:'50%', width:'150px',aspectRatio:1/0.95, objectFit:'cover'}}/>
           <div style={{fontSize:'20px', fontWeight:500}}>Omary Khalfani Mkandawile</div>
           <div>
-            He holds a bachelor’s degree in Business Administration 
-            (Entrepreneurship Development) from Mzumbe University. 
-            He has a deep coffee marketing expertise of more than 
-            03 years’ experience. He worked with Salute Finance 
-            for two years an assistant accountant before joining 
-            Brice Agribusiness Ltd as a marketing and sales 
-            director for 03 years. He is knowledgably with 
-            coffee products and very familiar with both local 
-            and international coffee clients. He handles Marketing, Sales and Exportation.
-
+            He holds a bachelor’s degree in Business Administration (Entrepreneurship Development) from Mzumbe University. He has a deep coffee marketing expertise of more than 03 years’ experience. He worked with Salute Finance for two years an assistant accountant before joining Brice Agribusiness Ltd as a marketing and sales director for 03 years. He is knowledgably with coffee products and very familiar with both local and international coffee clients. He handles Marketing and Sales
           </div>
         </div>
       </div> 

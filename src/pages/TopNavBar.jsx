@@ -9,8 +9,7 @@ export default function TopNavBar() {
   return (
     <div style={{display:'flex',flexWrap:'wrap', width:'100vw',minHeight:'100px', 
         padding:'10px 15px',backgroundColor:'rgba(116, 80, 4, 1)',
-        justifyContent:'space-between', alignItems:'center', gap:'20px',
-        boxShadow:'1px 0.5px 7px rgb(200,200,200)'}}>
+        justifyContent:'space-between', alignItems:'center', gap:'20px'}}>
       <LogoxName/>
       <NavLinks/>
       {/* Social media links */}

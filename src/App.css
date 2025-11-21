@@ -231,7 +231,48 @@ html, body{
 }
 @media screen and (min-width: 481px) {
   .slidesHeight{
-    height:150px;
+    height:90px;
   }
 }
+
+.slidesHeight2{
+  height:210px;
+}
+@media screen and (min-width: 481px) {
+  .slidesHeight2{
+    height:68px;
+  }
+}
+
+.slideLeft {
+  animation: slideLeft 0.5s ease;
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slideRight {
+  animation: slideRight 0.5s ease;
+}
+
+@keyframes slideRight {
+  from { 
+    transform: translateX(-40px);  
+    opacity: 0;
+  }
+  to { 
+    transform: translateX(0);    
+    opacity: 1;
+  }
+}
+
+
 

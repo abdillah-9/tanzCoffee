@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import GreenCoffee from '../../assets/TanzCoffeeDeck.png';
-import pic1 from '../../assets/quality_storageCroped3.jpg';
+import pic1 from '../../assets/quality_storageNewCroped.jpg';
 import pic2 from '../../assets/profesionalism_IntergrityCroped.jpg';
 import pic3 from '../../assets/natural_tanzanian_coffee.jpg';
 import pic4 from '../../assets/natural_green_coffeeCroped.jpg';
@@ -14,11 +14,11 @@ import ProfesionalServices from '../../assets/pic4.png';
 import ProductQuality from '../../assets/pic5.jpg';
 import SecureTransaction from '../../assets/pic6.jpg'
 //slide2
-import Slide2pic1 from '../../assets/Slide2pic1.jpg';
+import Slide2pic1 from '../../assets/Slide2pic1NewCroped.jpg';
 import Slide2pic2 from '../../assets/Slide2pic2.jpg';
 import Slide2pic3 from '../../assets/Slide2pic3.jpg';
 import Slide2pic4 from '../../assets/Slide2pic4.jpg';
-import Slide2pic5 from '../../assets/Slide2pic5.jpg';
+import Slide2pic5 from '../../assets/Slide2pic5New.jpg';
 import Slide2pic6 from '../../assets/Slide2pic6.jpg';
 import Slide2pic7 from '../../assets/Slide2pic7.jpg';
 
@@ -50,6 +50,7 @@ function SlideShow() {
   ];
 
   const [index, setIndex] = useState(0);
+  const [index2, setIndex2] = useState(0);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -59,14 +60,21 @@ function SlideShow() {
     return () => clearInterval(timer);
   }, []);
 
+    useEffect(() => {
+    const timer = setInterval(() => {
+      setIndex2(prev => (prev + 1) % images.length);
+    }, 3000);
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
-    <div
+    <div key={index} className='slideRight slideShowHeight'
       style={{
         width: "100vw",
         position: "relative",
         overflow: "hidden",
       }}
-      className='slideShowHeight'
     >
       <img
         src={images[index]}
@@ -110,9 +118,9 @@ function SlideShow() {
    SLIDESHOW 2 — CARDS
 ----------------------------------------------------------- */
 
-function SlideShow2({ index, slides , backgroundColor, color}) {
+function SlideShow2({ index, slides , animeClass}) {
   return (
-    <div
+    <div key={index} className={animeClass}
       style={{
         width: "100%",
         minHeight: "200px",
@@ -133,7 +141,7 @@ function SlideShow2({ index, slides , backgroundColor, color}) {
 
 function MiniHome() {
 
-  /* ----- SLIDES FOR SLIDESHOW 2 ----- */
+  /* ----- SLIDES FOR SLIDESHOW 1 ----- */
   const slides = [
     <Card 
       img={ReductionBrokenCoffee} 
@@ -161,55 +169,45 @@ function MiniHome() {
     />,
   ];
 
+  /* ----- SLIDESHOW 2 ----- */
   const slides2 = [
-    <Card2 
-      img={Slide2pic6} 
-      text="We buy fresh Tanzanian coffee cherries every season"
-    />,
-    <Card2 
-      img={Slide2pic1} 
-      text="We process the products in our own facilities for quality"
-    />,
-    <Card2 
-      img={Slide2pic3} 
-      text="Our coffee products are less broken with high retention due to use of advanced machines"
-    />,
-    <Card2 
-      img={Slide2pic2} 
-      text="We export products on basis of FOB or CIF depending on established agreements"
-    />,
-    <Card2 
-      img={Slide2pic7} 
-      text="The products are then transported to Dar es Salaam port by using food grade containers"
-    />,
-    <Card2 
-      img={Slide2pic4} 
-      text="Q-grader ensures our product quality before delivery"
-    />,
+    <Card2 img={Slide2pic6}  text="We buy fresh Tanzanian coffee cherries every season"/>,
+    <Card2 img={Slide2pic1}  text="We process the products in our own facilities for quality"/>,
+    <Card2 img={Slide2pic3}  text="Our coffee products are less broken with high retention due to use of advanced machines"/>,
+    <Card2 img={Slide2pic2}  text="We export products on basis of FOB or CIF depending on established agreements"/>,
+    <Card2 img={Slide2pic7}  text="The products are then transported to Dar es Salaam port using food grade containers"/>,
+    <Card2 img={Slide2pic5}  text="High-quality storage during transport ensures product safety"/>,
+    <Card2 img={Slide2pic4}  text="Q-grader ensures our product quality before delivery"/>,
   ];
 
-  /* ----- STATE FOR SLIDESHOW 2 ----- */
-  const [index, setIndex] = useState(0);
+  /* ----- INDEPENDENT STATE FOR BOTH ----- */
+  const [index1, setIndex1] = useState(0);
+  const [index2, setIndex2] = useState(0);
 
-  const next = () =>
-    setIndex(prev => (prev + 1) % slides.length);
+  /* ----- HANDLERS FOR SLIDER 1 ----- */
+  const next1 = () => setIndex1(prev => (prev + 1) % slides.length);
+  const prev1 = () => setIndex1(prev => (prev - 1 + slides.length) % slides.length);
 
-  const prev = () =>
-    setIndex(prev => (prev - 1 + slides.length) % slides.length);
+  /* ----- HANDLERS FOR SLIDER 2 ----- */
+  const next2 = () => setIndex2(prev => (prev + 1) % slides2.length);
+  const prev2 = () => setIndex2(prev => (prev - 1 + slides2.length) % slides2.length);
 
-  /* Auto slide */
+  /* ----- AUTO SLIDE 1 ----- */
   useEffect(() => {
-    const timer = setInterval(() => {
-      next();
-    }, 3000);
+    const timer = setInterval(next1, 3000);
+    return () => clearInterval(timer);
+  }, []);
 
+  /* ----- AUTO SLIDE 2 ----- */
+  useEffect(() => {
+    const timer = setInterval(next2, 3000);
     return () => clearInterval(timer);
   }, []);
 
   return (
     <div style={{ display: 'flex', padding: "20px 0px 0px 0px", flexDirection: 'column' }}>
 
-      {/* Overview Section */}
+      {/* Overview */}      
       <div
         style={{
           display: "flex",
@@ -230,13 +228,11 @@ function MiniHome() {
             textAlign: 'center',
           }}
         >
-          Founded in 2024 and registered under the registration number 177486825,
-          TanzCoffee Trading Company Limited is a private limited company with
-          its headquarters in Tanzania.
+          Founded in 2024 and registered under registration number 177486825...
         </div>
       </div>
 
-      {/* OPERATIONS */}
+      {/* OPERATIONS — SLIDER 2 */}
       <div
         style={{
           display: 'flex',
@@ -271,14 +267,13 @@ function MiniHome() {
             fontWeight: 600,
           }}
         >
-          The company trades both high quality Arabica and Robusta coffee products. Our factory processes only premium Robusta green coffee products that suit international market requirements while simultaneously providing a ready market for the increasing coffee production across Kagera region.
+          The company trades both high-quality Arabica and Robusta coffee products...
         </div>
 
-        {/* Slider Controls & View */}
+        {/* Controls for SlideShow2 */}
         <div
           style={{
             display: 'flex',
-            fontSize: '16px',
             width: '100%',
             alignItems: 'center',
             justifyContent:'space-around',
@@ -293,14 +288,14 @@ function MiniHome() {
               backgroundColor: 'white',
               cursor: 'pointer',
             }}
-            onClick={prev}
+            onClick={prev2}
           >
             <CgChevronLeft style={{ fontSize: '25px', color: 'rgba(185,130,12,1)' }} />
           </div>
 
-          {/* SLIDES */}
+          {/* SlideShow2 */}
           <div style={{ maxWidth: '350px' }}>
-            <SlideShow2 index={index} slides={slides2} backgroundColor="rgba(185,130,12,1)" color="white"/>
+            <SlideShow2 index={index2} slides={slides2} animeClass={'slideLeft'}/>
           </div>
 
           {/* RIGHT BUTTON */}
@@ -311,15 +306,14 @@ function MiniHome() {
               backgroundColor: 'white',
               cursor: 'pointer',
             }}
-            onClick={next}
+            onClick={next2}
           >
             <CgChevronRight style={{ fontSize: '25px', color: 'rgba(185,130,12,1)' }} />
           </div>
-
         </div>
       </div>
 
-      {/* WHY OUR COMPANY */}
+      {/* WHY OUR COMPANY — SLIDER 1 */}
       <div
         style={{
           display: 'flex',
@@ -343,11 +337,9 @@ function MiniHome() {
           Why Our Company
         </div>
 
-        {/* Slider Controls & View */}
         <div
           style={{
             display: 'flex',
-            fontSize: '16px',
             width: '100%',
             alignItems: 'center',
             justifyContent:'space-around',
@@ -362,14 +354,14 @@ function MiniHome() {
               backgroundColor: 'rgba(185,130,12,1)',
               cursor: 'pointer',
             }}
-            onClick={prev}
+            onClick={prev1}
           >
             <CgChevronLeft style={{ fontSize: '25px', color: 'white' }} />
           </div>
 
-          {/* SLIDES */}
+          {/* SlideShow1 */}
           <div style={{ maxWidth: '350px' }}>
-            <SlideShow2 index={index} slides={slides} backgroundColor="rgba(185,130,12,1)" color="white"/>
+            <SlideShow2 index={index1} slides={slides} animeClass={'slideRight'}/>
           </div>
 
           {/* RIGHT BUTTON */}
@@ -380,16 +372,17 @@ function MiniHome() {
               backgroundColor: 'rgba(185,130,12,1)',
               cursor: 'pointer',
             }}
-            onClick={next}
+            onClick={next1}
           >
             <CgChevronRight style={{ fontSize: '25px', color: 'white' }} />
           </div>
-
         </div>
       </div>
+
     </div>
   );
 }
+
 
 /* -----------------------------------------------------------
    REUSABLE CARD COMPONENT
@@ -460,7 +453,7 @@ function Card2({ img, text }) {
           fontWeight: 400,
           borderRadius:'0px 0px 10px 10px',
         }}
-        className='homeDescSlide2  slidesHeight'
+        className='homeDescSlide2  slidesHeight2'
       >
         {text}
       </div>

@@ -14,6 +14,9 @@ import Sesameseeds from '../../assets/sesameseeds.jpg';
 import Cashewnuts from '../../assets/cashewnuts.jpg';
 import Rice from '../../assets/rice.jpg';
 import Allbeans from '../../assets/allbeans.jpg';
+import weServe1 from '../../assets/weServe1.jpg';
+import weServe2 from '../../assets/weServe2.jpg';
+import weServe3 from '../../assets/weServe3.jpg';
 
 export default function OurProducts() {
   return (
@@ -210,6 +213,29 @@ export default function OurProducts() {
           justifyContent:'center',alignItems:'center',
         }}>
         </div>
+        <div style={{ backgroundImage:`url(${weServe1})`,backgroundSize: 'cover',
+          backgroundColor:'white', color:'black', width:'100%',
+          borderRadius:'5px',maxWidth:'300px',flexGrow:1,display:'flex',
+          height:'200px',
+          justifyContent:'center',alignItems:'center',
+        }}>
+        </div>
+
+        <div style={{ backgroundImage:`url(${weServe2})`,backgroundSize: 'cover',
+          backgroundColor:'white', color:'black', width:'100%',
+          borderRadius:'5px',maxWidth:'300px',flexGrow:1,display:'flex',
+          height:'200px',
+          justifyContent:'center',alignItems:'center',
+        }}>
+        </div>
+
+        <div style={{ backgroundImage:`url(${weServe3})`,backgroundSize: 'cover',
+          backgroundColor:'white', color:'black', width:'100%',
+          borderRadius:'5px',maxWidth:'300px',flexGrow:1,display:'flex',
+          height:'200px',
+          justifyContent:'center',alignItems:'center',
+        }}>
+        </div>
       </div>
 
       {/* Ending paragraph*/}
@@ -221,7 +247,8 @@ export default function OurProducts() {
         <div 
         style={{color:'rgba(185, 130, 12, 1)',width:"85vw", maxWidth:"700px",
         fontSize:'16px',}}>
-          In addition to coffee, the company supplies maize, beans, sesame seeds, rice, cashew nuts, and red beans to both domestic and foreign markets.
+          In addition to coffee, the company also supplies the following products. 
+          Maize, Rice, Soybeans, All type of beans and Cashew-nuts
         </div>
         {/* slideshow */}
         <div style={{display:'flex',flexWrap:'wrap', justifyContent:'center', gap:'30px', width:'100vw', padding:"50px 0px 0px 0px"}} className='slidesGap'>
