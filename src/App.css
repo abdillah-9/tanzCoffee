@@ -245,7 +245,7 @@ html, body{
 }
 
 .slideLeft {
-  animation: slideLeft 0.5s ease;
+  animation: slideLeft 1s ease;
 }
 
 @keyframes slideLeft {
@@ -260,7 +260,7 @@ html, body{
 }
 
 .slideRight {
-  animation: slideRight 0.5s ease;
+  animation: slideRight 1s ease;
 }
 
 @keyframes slideRight {

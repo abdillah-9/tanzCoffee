@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import GreenCoffee from '../../assets/TanzCoffeeDeck.png';
-import pic1 from '../../assets/quality_storageNewCroped.jpg';
+import pic1 from '../../assets/quality_storageCroped.jpg';
 import pic2 from '../../assets/profesionalism_IntergrityCroped.jpg';
 import pic3 from '../../assets/natural_tanzanian_coffee.jpg';
 import pic4 from '../../assets/natural_green_coffeeCroped.jpg';
@@ -55,7 +55,7 @@ function SlideShow() {
   useEffect(() => {
     const timer = setInterval(() => {
       setIndex(prev => (prev + 1) % images.length);
-    }, 3000);
+    }, 7000);
 
     return () => clearInterval(timer);
   }, []);
@@ -63,7 +63,7 @@ function SlideShow() {
     useEffect(() => {
     const timer = setInterval(() => {
       setIndex2(prev => (prev + 1) % images.length);
-    }, 3000);
+    }, 7000);
 
     return () => clearInterval(timer);
   }, []);
@@ -127,7 +127,7 @@ function SlideShow2({ index, slides , animeClass}) {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        transition: "all 0.5s ease",
+        // transition: "all 0.5s ease",
       }}
     >
       {slides[index]}
@@ -174,10 +174,10 @@ function MiniHome() {
     <Card2 img={Slide2pic6}  text="We buy fresh Tanzanian coffee cherries every season"/>,
     <Card2 img={Slide2pic1}  text="We process the products in our own facilities for quality"/>,
     <Card2 img={Slide2pic3}  text="Our coffee products are less broken with high retention due to use of advanced machines"/>,
-    <Card2 img={Slide2pic2}  text="We export products on basis of FOB or CIF depending on established agreements"/>,
+    <Card2 img={Slide2pic2}  text="Q-grader ensures our product quality before delivery"/>,
     <Card2 img={Slide2pic7}  text="The products are then transported to Dar es Salaam port using food grade containers"/>,
     <Card2 img={Slide2pic5}  text="High-quality storage during transport ensures product safety"/>,
-    <Card2 img={Slide2pic4}  text="Q-grader ensures our product quality before delivery"/>,
+    <Card2 img={Slide2pic4}  text=" We export products on basis of FOB or CIF depending on established agreements "/>,
   ];
 
   /* ----- INDEPENDENT STATE FOR BOTH ----- */
@@ -194,13 +194,13 @@ function MiniHome() {
 
   /* ----- AUTO SLIDE 1 ----- */
   useEffect(() => {
-    const timer = setInterval(next1, 3000);
+    const timer = setInterval(next1, 7000);
     return () => clearInterval(timer);
   }, []);
 
   /* ----- AUTO SLIDE 2 ----- */
   useEffect(() => {
-    const timer = setInterval(next2, 3000);
+    const timer = setInterval(next2, 7000);
     return () => clearInterval(timer);
   }, []);
 

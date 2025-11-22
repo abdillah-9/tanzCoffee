@@ -1,5 +1,5 @@
 import React from 'react'
-import SospeterPic from '../../assets/20251016_235737.png';
+import SospeterPic from '../../assets/SospeterPic2.jpg';
 import EvodiusPic from '../../assets/Evodius.png';
 import OmaryPic from '../../assets/Omary.png';
 import TanzCoffee_Investor_Deck from '../../assets/TanzCoffee_Investor_Deck.png';
