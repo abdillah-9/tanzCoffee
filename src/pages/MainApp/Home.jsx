@@ -118,11 +118,32 @@ function SlideShow() {
         />
       </div>
 
-      {/* Overlay */}
-      <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", backgroundColor: "rgba(0,0,0,0)" }} />
+{/* Reverse Circular Darkening Overlay */}
+<div
+  style={{
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    pointerEvents: "none",
+
+    background: `
+      radial-gradient(
+        circle at center,
+        rgba(0, 0, 0, 0.05) 0%,
+        rgba(0, 0, 0, 0.20) 35%,
+        rgba(0, 0, 0, 0.40) 60%,
+        rgba(0, 0, 0, 0.60) 80%,
+        rgba(0, 0, 0, 0.75) 100%
+      )
+    `
+  }}
+/>
+
 
       {/* Text */}
-      <div className={`${animate ? 'slideTop' : ''}`} style={{ ...topSlideshowTexts, color: 'black' }}>
+      <div className={`${animate ? 'slideTop' : ''}`} style={{ ...topSlideshowTexts, color: 'white' }}>
         {texts[index]}
       </div>
 
