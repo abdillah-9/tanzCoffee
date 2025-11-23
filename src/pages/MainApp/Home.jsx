@@ -12,7 +12,7 @@ import pic5 from '../../assets/product_handlingCroped.avif';
 import ReductionBrokenCoffee from '../../assets/pic1.avif';
 import WellOrganizedFirm from '../../assets/pic2.avif';
 import ProperFacilities from '../../assets/pic3.avif';
-import ProfesionalServices from '../../assets/pic4.avif';
+import ProfesionalServices from '../../assets/pic4.png';
 import ProductQuality from '../../assets/pic5.avif';
 import SecureTransaction from '../../assets/pic6.avif';
 
