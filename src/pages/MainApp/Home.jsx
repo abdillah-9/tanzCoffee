@@ -1,26 +1,26 @@
 import React, { useEffect, useState } from 'react';
 
-import GreenCoffee from '../../assets/TanzCoffeeDeck.png';
-import pic1 from '../../assets/quality_storageCroped.jpg';
-import pic2 from '../../assets/profesionalism_IntergrityCroped.jpg';
-import pic3 from '../../assets/natural_tanzanian_coffee.jpg';
-import pic4 from '../../assets/natural_green_coffeeCroped.jpg';
-import pic5 from '../../assets/product_handlingCroped.png';
+// import GreenCoffee from '../../assets/TanzCoffeeDeck.avif';
+import pic1 from '../../assets/quality_storageCroped.avif';
+import pic2 from '../../assets/profesionalism_IntergrityCroped.avif';
+import pic3 from '../../assets/natural_tanzanian_coffee.avif';
+import pic4 from '../../assets/natural_green_coffeeCroped.avif';
+import pic5 from '../../assets/product_handlingCroped.avif';
 // built
-import ReductionBrokenCoffee from '../../assets/pic1.jpg';
-import WellOrganizedFirm from '../../assets/pic2.jpg';
-import ProperFacilities from '../../assets/pic3.jpg';
-import ProfesionalServices from '../../assets/pic4.png';
-import ProductQuality from '../../assets/pic5.jpg';
-import SecureTransaction from '../../assets/pic6.jpg';
+import ReductionBrokenCoffee from '../../assets/pic1.avif';
+import WellOrganizedFirm from '../../assets/pic2.avif';
+import ProperFacilities from '../../assets/pic3.avif';
+import ProfesionalServices from '../../assets/pic4.avif';
+import ProductQuality from '../../assets/pic5.avif';
+import SecureTransaction from '../../assets/pic6.avif';
 // slide2
-import Slide2pic1 from '../../assets/Slide2pic1NewCroped.jpg';
-import Slide2pic2 from '../../assets/Slide2pic2.jpg';
-import Slide2pic3 from '../../assets/Slide2pic3.jpg';
-import Slide2pic4 from '../../assets/Slide2pic4.jpg';
-import Slide2pic5 from '../../assets/Slide2pic5New.jpg';
-import Slide2pic6 from '../../assets/Slide2pic6.jpg';
-import Slide2pic7 from '../../assets/Slide2pic7.jpg';
+import Slide2pic1 from '../../assets/Slide2pic1NewCroped.avif';
+import Slide2pic2 from '../../assets/Slide2pic2.avif';
+import Slide2pic3 from '../../assets/Slide2pic3.avif';
+import Slide2pic4 from '../../assets/Slide2pic4.avif';
+import Slide2pic5 from '../../assets/Slide2pic5New.avif';
+import Slide2pic6 from '../../assets/Slide2pic6.avif';
+import Slide2pic7 from '../../assets/Slide2pic7.avif';
 
 import { CgChevronLeft, CgChevronRight } from 'react-icons/cg';
 
@@ -108,7 +108,7 @@ function SlideShow() {
       <div className={`${animate ? 'slideTop' : ''}`}
         style={{
           position: "absolute",
-          top: "50%",
+          top: "40%",
           left: "50%",
           transform: "translate(-50%, -50%)",
           color: "white",
