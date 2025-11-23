@@ -9,7 +9,7 @@ import { FaBars } from 'react-icons/fa6';
 export default function TopNavBar() {
   return (
     <div style={{display:'flex',flexWrap:'wrap', width:'100vw',minHeight:'100px', 
-        padding:'10px 15px',backgroundColor:'#1E5128',
+        padding:'10px 15px',backgroundColor:'#0f2914ff',
         justifyContent:'space-between', alignItems:'center', gap:'20px'}}>
       <LogoxName/>
       <NavLinks/>

@@ -71,6 +71,22 @@ function SlideShow() {
     return () => clearInterval(timer);
   }, []);
 
+  const next = () => {
+    setAnimate(false);
+    setTimeout(() => {
+      setIndex(prev => (prev + 1) % images.length);
+      setAnimate(true);
+    }, 20);
+  };
+
+  const prev = () => {
+    setAnimate(false);
+    setTimeout(() => {
+      setIndex(prev => (prev - 1 + images.length) % images.length);
+      setAnimate(true);
+    }, 20);
+  };
+
   return (
     <div className={`slideShowHeight ${animate ? 'slideScale' : ''}`}
       style={{
@@ -79,6 +95,7 @@ function SlideShow() {
         overflow: "hidden",
       }}
     >
+      {/* Image */}
       <div style={{ position: 'relative', width: '100%', paddingTop: '56.25%', minHeight:'400px' }}>
         <img
           src={images[index]}
@@ -94,6 +111,7 @@ function SlideShow() {
         />
       </div>
 
+      {/* Overlay */}
       <div
         style={{
           position: "absolute",
@@ -105,24 +123,56 @@ function SlideShow() {
         }}
       />
 
+      {/* Text */}
       <div className={`${animate ? 'slideTop' : ''}`}
-        style={{
-          position: "absolute",
-          top: "40%",
-          left: "50%",
-          transform: "translate(-50%, -50%)",
-          color: "white",
-          fontSize: "45px",
-          fontWeight: "700",
-          textAlign: "center",
-          width: "90%",
-        }}
+        style={ texts[index] == 'Professionalism & Integrity' ? {...topSlideshowTexts , color : '#0f2914ff'} :
+        texts[index] == "Quality Storage" ? {...topSlideshowTexts , color : '#0f2914ff'} :
+      texts[index] == "Natural Green Coffee" ? {...topSlideshowTexts , color : '#0f2914ff'} :
+    texts[index] == "Natural Tanzanian Coffee" ? {...topSlideshowTexts , color : '#0f2914ff'} :
+  texts[index] == "Product Handling Excellence" ? {...topSlideshowTexts , color : '#0f2914ff'} : 
+  {...topSlideshowTexts , color : 'white'}}
       >
         {texts[index]}
+      </div>
+
+      {/* NEXT/PREV BUTTONS */}
+      <div
+        style={{
+          position: "absolute",
+          top: "50%",
+          left: '2%',
+          transform: "translateY(-50%)",
+          zIndex: 10,
+          borderRadius: '50%',
+          padding: '10px 13px',
+          backgroundColor: '#dd9d6dff',
+          cursor: 'pointer',
+        }}
+        onClick={prev}
+      >
+        <CgChevronLeft style={{ fontSize: '35px', color: 'white' }} />
+      </div>
+
+      <div
+        style={{
+          position: "absolute",
+          top: "50%",
+          right: '2%',
+          transform: "translateY(-50%)",
+          zIndex: 10,
+          borderRadius: '50%',
+          padding: '10px 13px',
+          backgroundColor: '#dd9d6dff',
+          cursor: 'pointer',
+        }}
+        onClick={next}
+      >
+        <CgChevronRight style={{ fontSize: '35px', color: 'white' }} />
       </div>
     </div>
   );
 }
+
 
 /* -----------------------------------------------------------
    SLIDESHOW 2 — CARDS
@@ -351,3 +401,14 @@ function Card2({ img, text }) {
     </div>
   );
 }
+
+const topSlideshowTexts ={
+          position: "absolute",
+          top: "40%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+          fontSize: "45px",
+          fontWeight: "700",
+          textAlign: "center",
+          width: "90%",
+        }
