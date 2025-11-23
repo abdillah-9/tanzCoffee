@@ -193,7 +193,7 @@ html, body{
 
 @keyframes sScale {
   from {
-    transform:scale(1.3);
+    transform:scale(1.03);
   }
   to {
     transform: scale(1);
@@ -207,7 +207,7 @@ html, body{
 @keyframes sTop {
   from {
     opacity: 0;
-    transform: translate(-50%, -50%) translateY(80px);
+    transform: translate(-50%, -50%) translateY(40px);
   }
   to {
     opacity: 1;

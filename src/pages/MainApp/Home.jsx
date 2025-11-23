@@ -79,7 +79,7 @@ function SlideShow() {
         overflow: "hidden",
       }}
     >
-      <img
+      <img width={'300px'} height={'250px'}
         src={images[index]}
         alt="slide"
         style={{ width: "100%", height: "100%", objectFit: "cover" }}
@@ -314,7 +314,7 @@ function Card({ img, text }) {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', maxWidth: '350px' }}>
       <div className='homePicSlide2' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', maxWidth: '350px', width: '100%', borderRadius: '10px 10px 0 0', overflow: 'hidden' }}>
-        <img src={img} alt="slide" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+        <img width={'300px'} height={'250px'} src={img} alt="slide" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
       </div>
       <div className='homeDescSlide2 slidesHeight' style={{ padding: '10px', backgroundColor: 'rgba(185,130,12,1)', color: 'white', fontSize: '16px', fontWeight: 400, borderRadius: '0 0 10px 10px' }}>
         {text}
@@ -327,7 +327,7 @@ function Card2({ img, text }) {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', maxWidth: '350px' }}>
       <div className='homePicSlide2' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', maxWidth: '350px', width: '100%', borderRadius: '10px 10px 0 0', overflow: 'hidden' }}>
-        <img src={img} alt="slide" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+        <img width={'300px'} height={'250px'} src={img} alt="slide" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
       </div>
       <div className='homeDescSlide2 slidesHeight2' style={{ padding: '10px', backgroundColor: 'white', color: 'rgba(185,130,12,1)', fontSize: '16px', fontWeight: 400, borderRadius: '0 0 10px 10px' }}>
         {text}
