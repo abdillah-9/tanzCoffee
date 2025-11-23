@@ -68,6 +68,11 @@ async function handleSubmit(e) {
             Call Us Now
           </a>
         </div>
+        <div style={{fontSize:'18px', fontWeight:500, textAlign:'center', fontStyle:'italic',
+          maxWidth:'85vw'
+        }}>
+          We strongly urge all business communications from clients to use the contact details shown below. The company will not be responsible for any losses incurred by clients who do not use these contact details
+        </div>
       </div>
 
       {/* Contacts links */}
@@ -109,7 +114,7 @@ async function handleSubmit(e) {
               </div>
               <div style={{display:'flex', flexDirection:'column', gap:'10px'}}>
                 <span style={{fontWeight:600, fontSize:'18px'}}>Phone number:</span>
-                <p style={{fontSize:'16px'}}>+255 788-491-086</p>
+                <p style={{fontSize:'16px'}}>+255 788491086</p>
               </div>
           </div>
 

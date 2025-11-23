@@ -5,7 +5,7 @@ import pic1 from '../../assets/quality_storageCroped.jpg';
 import pic2 from '../../assets/profesionalism_IntergrityCroped.jpg';
 import pic3 from '../../assets/natural_tanzanian_coffee.jpg';
 import pic4 from '../../assets/natural_green_coffeeCroped.jpg';
-import pic5 from '../../assets/product_handlingCroped.jpg';
+import pic5 from '../../assets/product_handlingCroped.png';
 // built
 import ReductionBrokenCoffee from '../../assets/pic1.jpg';
 import WellOrganizedFirm from '../../assets/pic2.jpg';

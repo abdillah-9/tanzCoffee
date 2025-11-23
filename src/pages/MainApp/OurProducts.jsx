@@ -14,6 +14,7 @@ import Sesameseeds from '../../assets/sesameseeds.jpg';
 import Cashewnuts from '../../assets/cashewnuts.jpg';
 import Rice from '../../assets/rice.jpg';
 import Allbeans from '../../assets/allbeans.jpg';
+import Maize from '../../assets/whiteMaize.jpg';
 import weServe1 from '../../assets/weServe1.jpg';
 import weServe2 from '../../assets/weServe2.jpg';
 import weServe3 from '../../assets/weServe3.jpg';
@@ -271,6 +272,10 @@ export default function OurProducts() {
           <div className='slide5' style={{display:'flex', flexDirection:'column',alignItems:'center', justifyContent:'center', width:'10%', minWidth:'150px', gap:"3px", padding:'50px 0px'}}>
             <img src={Allbeans} alt='pic1' style={{width:'50px', objectFit:'cover' ,aspectRatio:1/0.9, borderRadius:'50%'}}/>
             <div style={{fontSize:'5px',}}>Beans of all types</div>
+          </div>
+          <div className='slide6' style={{display:'flex', flexDirection:'column',alignItems:'center', justifyContent:'center', width:'10%', minWidth:'150px', gap:"3px", padding:'50px 0px'}}>
+            <img src={Maize} alt='pic1' style={{width:'50px', objectFit:'cover' ,aspectRatio:1/0.9, borderRadius:'50%'}}/>
+            <div style={{fontSize:'5px',}}>Maize</div>
           </div>
         </div>
       </div>
