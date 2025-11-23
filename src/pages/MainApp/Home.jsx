@@ -40,6 +40,15 @@ export default function Home() {
 function SlideShow() {
   const images = [pic2, pic1, pic3, pic4, pic5];
 
+  // Preload big slideshow images
+  useEffect(() => {
+    images.forEach(src => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, []);
+
+
   // Text for each slide (same order as images)
   const texts = [
     "Professionalism & Integrity",
@@ -179,6 +188,24 @@ function MiniHome() {
     <Card2 img={Slide2pic5}  text="High-quality storage during transport ensures product safety"/>,
     <Card2 img={Slide2pic4}  text=" We export products on basis of FOB or CIF depending on established agreements "/>,
   ];
+
+
+  // PRELOAD slide images (WHY OUR COMPANY)
+  useEffect(() => {
+    slides.forEach(slide => {
+      const img = new Image();
+      img.src = slide.props.img;
+    });
+  }, []);
+
+
+  // PRELOAD slide2 images (HOW WE OPERATE)
+  useEffect(() => {
+    slides2.forEach(slide => {
+      const img = new Image();
+      img.src = slide.props.img;
+    });
+  }, []);
 
   /* ----- INDEPENDENT STATE FOR BOTH ----- */
   const [index1, setIndex1] = useState(0);
