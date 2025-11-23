@@ -122,7 +122,7 @@ function SlideShow() {
       <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", backgroundColor: "rgba(0,0,0,0)" }} />
 
       {/* Text */}
-      <div className={`${animate ? 'slideTop' : ''}`} style={{ ...topSlideshowTexts, color: '#2b6603ff' }}>
+      <div className={`${animate ? 'slideTop' : ''}`} style={{ ...topSlideshowTexts, color: 'black' }}>
         {texts[index]}
       </div>
 
