@@ -114,7 +114,7 @@ export default function AboutUs() {
           <img src={SospeterPic} alt='Sospeter Gunga Owuor' 
           style={{borderRadius:'50%', width:'150px',aspectRatio:1/0.95, objectFit:'cover'
           }}/>
-          <div style={{fontSize:'20px', fontWeight:500}}>Sospeter Gunga Owuor</div>
+          <div style={{fontSize:'20px', fontWeight:500}}>Sospeter Owuor</div>
           <div>
             He holds a bachelor’s degree in Business Administration (Entrepreneurship Development) from Mzumbe University. He has attended several business courses from Philanthropy University. He co-founded Brice Agribusiness Ltd and worked as company operation director for 03 years, and has worked with Room to Read for five years as a Research, Monitoring and Evaluation Associate. He has extensive network with coffee industrial-based government institutions and he is much experienced with coffee exportation. He is the Managing Director of the company
           </div>
@@ -127,7 +127,7 @@ export default function AboutUs() {
           }}>
           <img src={EvodiusPic} alt='Sospeter Gunga Owuor' 
           style={{borderRadius:'50%', width:'150px',aspectRatio:1/0.95, objectFit:'cover'}}/>
-          <div style={{fontSize:'20px', fontWeight:500}}>Evodius Vedastos Tihibika</div>
+          <div style={{fontSize:'20px', fontWeight:500}}>Evodius Tihibika</div>
           <div>
             He and his family have been active coffee producers for many years in the Karagwe District of Kagera, the country's heartland of Robusta coffee production. He has over 30 years of substantial experience in the coffee sector and a wide network of local coffee stakeholders. He is well acquainted with the product of coffee. He is Operations Director of the company
           </div>
@@ -140,7 +140,7 @@ export default function AboutUs() {
           }}>
           <img src={OmaryPic} alt='Sospeter Gunga Owuor' 
           style={{borderRadius:'50%', width:'150px',aspectRatio:1/0.95, objectFit:'cover'}}/>
-          <div style={{fontSize:'20px', fontWeight:500}}>Omary Khalfani Mkandawile</div>
+          <div style={{fontSize:'20px', fontWeight:500}}>Omary Mkandawile</div>
           <div>
             He holds a bachelor’s degree in Business Administration (Entrepreneurship Development) from Mzumbe University. He has a deep coffee marketing expertise of more than 03 years’ experience. He worked with Salute Finance for two years an assistant accountant before co-founding Brice Agribusiness Ltd and worked as a marketing and sales director for 03 years. He is knowledgably with coffee products and very familiar with both local and international coffee clients. He handles Marketing and Sales
           </div>
