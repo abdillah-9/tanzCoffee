@@ -10,6 +10,10 @@ html, body{
   overflow-x: hidden;
   background-color: white;
 }
+
+/* colors */
+/* #dd9d6dff - Brown */
+
 .opacityAnimation{
   animation: opacityAnim 0.8s ease-in;
 }
@@ -221,7 +225,7 @@ html, body{
 
 @keyframes slideLeft {
   from {
-    opacity: 0;
+    opacity: 0.8;
     transform: translateX(40px);
   }
   to {
@@ -237,7 +241,7 @@ html, body{
 @keyframes slideRight {
   from { 
     transform: translateX(-40px);  
-    opacity: 0;
+    opacity: 0.8;
   }
   to { 
     transform: translateX(0);    

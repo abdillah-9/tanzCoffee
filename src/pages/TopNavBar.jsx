@@ -1,14 +1,15 @@
 import React, { useContext, useState } from 'react'
 import { NavStates } from '../App';
-import logo from '../assets/logoWHITE.png';
+import logo from '../assets/tanzBrown.png';
 import { PiInstagramLogoFill, PiWhatsappLogoFill } from 'react-icons/pi';
 import { TbBrandLinkedinFilled } from 'react-icons/tb';
 import { FaBars } from 'react-icons/fa6';
 
+ {/* #E2A16F #dd9d6dff*/}
 export default function TopNavBar() {
   return (
     <div style={{display:'flex',flexWrap:'wrap', width:'100vw',minHeight:'100px', 
-        padding:'10px 15px',backgroundColor:'rgba(116, 80, 4, 1)',
+        padding:'10px 15px',backgroundColor:'#1E5128',
         justifyContent:'space-between', alignItems:'center', gap:'20px'}}>
       <LogoxName/>
       <NavLinks/>
@@ -97,26 +98,26 @@ function NavLinks(){
                     display:'flex',
                     flexDirection:'column',
                     gap:'10px',
-                    backgroundColor:'rgba(116, 80, 4, 1)',
+                    backgroundColor:'#1E5128',
                     padding:'0px',
                     marginTop:'10px',
                     borderRadius:'5px',
                     color:'white'
                 }}>
                     <div onClick={()=>{setActiveLink('Home'); setOpen(false)}}
-                        style={activeLink == 'Home' ? {backgroundColor:'rgba(185,130,12,1)', padding:'12px', width:'100vw'} : {backgroundColor:'rgba(0,0,0,0)'}}>
+                        style={activeLink == 'Home' ? {backgroundColor:'#dd9d6dff', padding:'12px', width:'100vw'} : {backgroundColor:'rgba(0,0,0,0)'}}>
                             Home
                     </div>
-                    <div onClick={()=>{setActiveLink('About Us'); setOpen(false)}} style={activeLink == 'About Us' ? {backgroundColor:'rgba(185,130,12,1)', padding:'12px', width:'100vw'} : {backgroundColor:'rgba(0,0,0,0)'}}>
+                    <div onClick={()=>{setActiveLink('About Us'); setOpen(false)}} style={activeLink == 'About Us' ? {backgroundColor:'#dd9d6dff', padding:'12px', width:'100vw'} : {backgroundColor:'rgba(0,0,0,0)'}}>
                         About Us
                     </div>
-                    <div onClick={()=>{setActiveLink('Business Services'); setOpen(false)}} style={activeLink == 'Business Services' ? {backgroundColor:'rgba(185,130,12,1)', padding:'12px', width:'100vw'} : {backgroundColor:'rgba(0,0,0,0)'}}>
+                    <div onClick={()=>{setActiveLink('Business Services'); setOpen(false)}} style={activeLink == 'Business Services' ? {backgroundColor:'#dd9d6dff', padding:'12px', width:'100vw'} : {backgroundColor:'rgba(0,0,0,0)'}}>
                         Business Services
                     </div>
-                    <div onClick={()=>{setActiveLink('Our Products'); setOpen(false)}} style={activeLink == 'Our Products' ? {backgroundColor:'rgba(185,130,12,1)', padding:'12px', width:'100vw'} : {backgroundColor:'rgba(0,0,0,0)'}}>
+                    <div onClick={()=>{setActiveLink('Our Products'); setOpen(false)}} style={activeLink == 'Our Products' ? {backgroundColor:'#dd9d6dff', padding:'12px', width:'100vw'} : {backgroundColor:'rgba(0,0,0,0)'}}>
                         Our Products
                     </div>
-                    <div onClick={()=>{setActiveLink('Contacts Information'); setOpen(false)}} style={activeLink == 'Contacts Information' ? {backgroundColor:'rgba(185,130,12,1)', padding:'12px', width:'100vw'} : {backgroundColor:'rgba(0,0,0,0)'}}>
+                    <div onClick={()=>{setActiveLink('Contacts Information'); setOpen(false)}} style={activeLink == 'Contacts Information' ? {backgroundColor:'#dd9d6dff', padding:'12px', width:'100vw'} : {backgroundColor:'rgba(0,0,0,0)'}}>
                         Contacts Information
                     </div>
                 </div>
@@ -127,5 +128,5 @@ function NavLinks(){
 }
 
 const active ={
-    backgroundColor:"rgba(185, 130, 12, 1)",
+    backgroundColor:"#dd9d6dff",
 }

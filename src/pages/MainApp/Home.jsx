@@ -272,7 +272,7 @@ function MiniHome() {
       </div>
 
       {/* HOW WE OPERATE */}
-      <div style={{ display: 'flex', flexWrap: 'wrap', borderRadius: '5px', padding: "20px 30px 50px 30px", backgroundColor: 'rgba(185,130,12,1)', gap: '10px', width: "100%", justifyContent: 'center' }}>
+      <div style={{ display: 'flex', flexWrap: 'wrap', borderRadius: '5px', padding: "20px 30px 50px 30px", backgroundColor: '#dd9d6dff', gap: '10px', width: "100%", justifyContent: 'center' }}>
         <div style={{ fontSize: '50px', fontWeight: 700, width: "100%", textAlign: 'center' }}>How We Operate</div>
         <div style={{ width: '100%', maxWidth: '85vw', fontSize: '18px', paddingBottom: '30px', color: 'white', textAlign: 'center', fontWeight: 600 }}>
           The company trades both high-quality Arabica and Robusta coffee products...
@@ -280,7 +280,7 @@ function MiniHome() {
 
         <div style={{ display: 'flex', width: '100%', alignItems: 'center', justifyContent: 'space-around', gap: '10px' }}>
           <div style={{ borderRadius: '50%', padding: '10px 13px', backgroundColor: 'white', cursor: 'pointer' }} onClick={prev2}>
-            <CgChevronLeft style={{ fontSize: '25px', color: 'rgba(185,130,12,1)' }} />
+            <CgChevronLeft style={{ fontSize: '25px', color: '#dd9d6dff' }} />
           </div>
 
           <div style={{ maxWidth: '350px' }}>
@@ -288,7 +288,7 @@ function MiniHome() {
           </div>
 
           <div style={{ borderRadius: '50%', padding: '10px 13px', backgroundColor: 'white', cursor: 'pointer' }} onClick={next2}>
-            <CgChevronRight style={{ fontSize: '25px', color: 'rgba(185,130,12,1)' }} />
+            <CgChevronRight style={{ fontSize: '25px', color: '#dd9d6dff' }} />
           </div>
         </div>
       </div>
@@ -298,7 +298,7 @@ function MiniHome() {
         <div style={{ fontSize: '50px', fontWeight: 700, width: "100%", paddingBottom: '20px', textAlign: 'center' }}>Why Our Company</div>
 
         <div style={{ display: 'flex', width: '100%', alignItems: 'center', justifyContent: 'space-around', gap: '10px' }}>
-          <div style={{ borderRadius: '50%', padding: '10px 13px', backgroundColor: 'rgba(185,130,12,1)', cursor: 'pointer' }} onClick={prev1}>
+          <div style={{ borderRadius: '50%', padding: '10px 13px', backgroundColor: '#dd9d6dff', cursor: 'pointer' }} onClick={prev1}>
             <CgChevronLeft style={{ fontSize: '25px', color: 'white' }} />
           </div>
 
@@ -306,7 +306,7 @@ function MiniHome() {
             <SlideShow2 index={index1} slides={slides} animeClass={animate1 ? 'slideRight' : ''} />
           </div>
 
-          <div style={{ borderRadius: '50%', padding: '10px 13px', backgroundColor: 'rgba(185,130,12,1)', cursor: 'pointer' }} onClick={next1}>
+          <div style={{ borderRadius: '50%', padding: '10px 13px', backgroundColor: '#dd9d6dff', cursor: 'pointer' }} onClick={next1}>
             <CgChevronRight style={{ fontSize: '25px', color: 'white' }} />
           </div>
         </div>
@@ -328,7 +328,7 @@ function Card({ img, text }) {
           style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }}
         />
       </div>
-      <div className='homeDescSlide2 slidesHeight' style={{ padding: '10px', backgroundColor: 'rgba(185,130,12,1)', color: 'white', fontSize: '16px', fontWeight: 400, borderRadius: '0 0 10px 10px' }}>
+      <div className='homeDescSlide2 slidesHeight' style={{ padding: '10px', backgroundColor: '#dd9d6dff', color: 'white', fontSize: '16px', fontWeight: 400, borderRadius: '0 0 10px 10px' }}>
         {text}
       </div>
     </div>
@@ -345,7 +345,7 @@ function Card2({ img, text }) {
           style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }}
         />
       </div>
-      <div className='homeDescSlide2 slidesHeight2' style={{ padding: '10px', backgroundColor: 'white', color: 'rgba(185,130,12,1)', fontSize: '16px', fontWeight: 400, borderRadius: '0 0 10px 10px' }}>
+      <div className='homeDescSlide2 slidesHeight2' style={{ padding: '10px', backgroundColor: 'white', color: '#dd9d6dff', fontSize: '16px', fontWeight: 400, borderRadius: '0 0 10px 10px' }}>
         {text}
       </div>
     </div>
