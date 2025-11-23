@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { CgChevronLeft, CgChevronRight } from 'react-icons/cg';
 
 // import GreenCoffee from '../../assets/TanzCoffeeDeck.avif';
 import pic1 from '../../assets/quality_storageCroped.avif';
@@ -7,7 +6,6 @@ import pic2 from '../../assets/profesionalism_IntergrityCroped.avif';
 import pic3 from '../../assets/natural_tanzanian_coffee.avif';
 import pic4 from '../../assets/natural_green_coffeeCroped.avif';
 import pic5 from '../../assets/product_handlingCroped.avif';
-
 // built
 import ReductionBrokenCoffee from '../../assets/pic1.avif';
 import WellOrganizedFirm from '../../assets/pic2.avif';
@@ -15,7 +13,6 @@ import ProperFacilities from '../../assets/pic3.avif';
 import ProfesionalServices from '../../assets/pic4.avif';
 import ProductQuality from '../../assets/pic5.avif';
 import SecureTransaction from '../../assets/pic6.avif';
-
 // slide2
 import Slide2pic1 from '../../assets/Slide2pic1NewCroped.avif';
 import Slide2pic2 from '../../assets/Slide2pic2.avif';
@@ -24,6 +21,8 @@ import Slide2pic4 from '../../assets/Slide2pic4.avif';
 import Slide2pic5 from '../../assets/Slide2pic5New.avif';
 import Slide2pic6 from '../../assets/Slide2pic6.avif';
 import Slide2pic7 from '../../assets/Slide2pic7.avif';
+
+import { CgChevronLeft, CgChevronRight } from 'react-icons/cg';
 
 export default function Home() {
   return (
@@ -40,10 +39,9 @@ export default function Home() {
 function SlideShow() {
   const [animate, setAnimate] = useState(true);
   const [index, setIndex] = useState(0);
-  const [loadedImages, setLoadedImages] = useState([]);
-  const [allLoaded, setAllLoaded] = useState(false);
 
   const images = [pic2, pic1, pic3, pic4, pic5];
+
   const texts = [
     "Professionalism & Integrity",
     "Quality Storage",
@@ -52,125 +50,145 @@ function SlideShow() {
     "Product Handling Excellence"
   ];
 
-  // Preload all images
+  // Preload images
   useEffect(() => {
-    let temp = [];
-    let loadedCount = 0;
-
     images.forEach(src => {
       const img = new Image();
       img.src = src;
-      img.onload = () => {
-        loadedCount++;
-        temp.push(img);
-        if (loadedCount === images.length) {
-          setLoadedImages(temp);
-          setAllLoaded(true);
-        }
-      };
     });
   }, []);
 
-  // Auto-slide only after images loaded
+  // Auto-slide with animation trigger
   useEffect(() => {
-    if (!allLoaded) return;
     const timer = setInterval(() => {
       setAnimate(false);
       setTimeout(() => {
-        setIndex(prev => (prev + 1) % loadedImages.length);
+        setIndex(prev => (prev + 1) % images.length);
         setAnimate(true);
       }, 20);
     }, 7000);
+
     return () => clearInterval(timer);
-  }, [allLoaded]);
+  }, []);
 
   const next = () => {
-    if (!allLoaded) return;
     setAnimate(false);
     setTimeout(() => {
-      setIndex(prev => (prev + 1) % loadedImages.length);
+      setIndex(prev => (prev + 1) % images.length);
       setAnimate(true);
     }, 20);
   };
 
   const prev = () => {
-    if (!allLoaded) return;
     setAnimate(false);
     setTimeout(() => {
-      setIndex(prev => (prev - 1 + loadedImages.length) % loadedImages.length);
+      setIndex(prev => (prev - 1 + images.length) % images.length);
       setAnimate(true);
     }, 20);
   };
 
-  if (!allLoaded) {
-    // Placeholder while images load
-    return <div style={{ height: "400px", width: "100%", backgroundColor: "#eee" }} />;
-  }
-
   return (
-    <div className={`slideShowHeight ${animate ? 'slideScale' : ''}`} style={{ width: "100vw", position: "relative", overflow: "hidden" }}>
+    <div className={`slideShowHeight ${animate ? 'slideScale' : ''}`}
+      style={{
+        width: "100vw",
+        position: "relative",
+        overflow: "hidden",
+      }}
+    >
       {/* Image */}
       <div style={{ position: 'relative', width: '100%', paddingTop: '56.25%', minHeight:'400px' }}>
         <img
-          src={loadedImages[index].src}
+          src={images[index]}
           alt="slide"
-          style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }}
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover'
+          }}
         />
       </div>
 
       {/* Overlay */}
-      <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", backgroundColor: "rgba(0,0,0,0)" }} />
+      <div
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          backgroundColor: "rgba(0,0,0,0)",
+        }}
+      />
 
       {/* Text */}
-      <div className={`${animate ? 'slideTop' : ''}`} style={{ ...topSlideshowTexts, color: '#0f2914ff' }}>
+      <div className={`${animate ? 'slideTop' : ''}`}
+        style={ texts[index] == 'Professionalism & Integrity' ? {...topSlideshowTexts , color : '#0f2914ff'} :
+        texts[index] == "Quality Storage" ? {...topSlideshowTexts , color : '#0f2914ff'} :
+      texts[index] == "Natural Green Coffee" ? {...topSlideshowTexts , color : '#0f2914ff'} :
+    texts[index] == "Natural Tanzanian Coffee" ? {...topSlideshowTexts , color : '#0f2914ff'} :
+  texts[index] == "Product Handling Excellence" ? {...topSlideshowTexts , color : '#0f2914ff'} : 
+  {...topSlideshowTexts , color : 'white'}}
+      >
         {texts[index]}
       </div>
 
       {/* NEXT/PREV BUTTONS */}
-      <div style={{ position: "absolute", top: "50%", left: '2%', transform: "translateY(-50%)", zIndex: 10, borderRadius: '50%', padding: '10px 13px', backgroundColor: '#dd9d6dff', cursor: 'pointer' }} onClick={prev}>
+      <div
+        style={{
+          position: "absolute",
+          top: "50%",
+          left: '2%',
+          transform: "translateY(-50%)",
+          zIndex: 10,
+          borderRadius: '50%',
+          padding: '10px 13px',
+          backgroundColor: '#dd9d6dff',
+          cursor: 'pointer',
+        }}
+        onClick={prev}
+      >
         <CgChevronLeft style={{ fontSize: '35px', color: 'white' }} />
       </div>
 
-      <div style={{ position: "absolute", top: "50%", right: '2%', transform: "translateY(-50%)", zIndex: 10, borderRadius: '50%', padding: '10px 13px', backgroundColor: '#dd9d6dff', cursor: 'pointer' }} onClick={next}>
+      <div
+        style={{
+          position: "absolute",
+          top: "50%",
+          right: '2%',
+          transform: "translateY(-50%)",
+          zIndex: 10,
+          borderRadius: '50%',
+          padding: '10px 13px',
+          backgroundColor: '#dd9d6dff',
+          cursor: 'pointer',
+        }}
+        onClick={next}
+      >
         <CgChevronRight style={{ fontSize: '35px', color: 'white' }} />
       </div>
     </div>
   );
 }
 
+
 /* -----------------------------------------------------------
    SLIDESHOW 2 — CARDS
 ----------------------------------------------------------- */
 function SlideShow2({ index, slides, animeClass }) {
-  const [loadedSlides, setLoadedSlides] = useState([]);
-  const [allLoaded, setAllLoaded] = useState(false);
-
-  // Preload slide images
-  useEffect(() => {
-    let temp = [];
-    let loadedCount = 0;
-
-    slides.forEach(slide => {
-      const img = new Image();
-      img.src = slide.props.img;
-      img.onload = () => {
-        loadedCount++;
-        temp.push(slide);
-        if (loadedCount === slides.length) {
-          setLoadedSlides(temp);
-          setAllLoaded(true);
-        }
-      };
-    });
-  }, [slides]);
-
-  if (!allLoaded) {
-    return <div style={{ height: "200px", width: "100%", backgroundColor: "#eee" }} />;
-  }
-
   return (
-    <div className={animeClass} style={{ width: "100%", minHeight: "200px", display: "flex", justifyContent: "center", alignItems: "center" }}>
-      {loadedSlides[index]}
+    <div className={animeClass}
+      style={{
+        width: "100%",
+        minHeight: "200px",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      {slides[index]}
     </div>
   );
 }
@@ -181,12 +199,30 @@ function SlideShow2({ index, slides, animeClass }) {
 function MiniHome() {
   /* ----- SLIDES FOR WHY OUR COMPANY ----- */
   const slides = [
-    <Card img={ReductionBrokenCoffee} text="Reduction of broken coffee and high retention rate through the use of highly developed, high-capacity processing machines" />,
-    <Card img={WellOrganizedFirm} text="A well-organized firm administrative structure that ensures exceptional customer service" />,
-    <Card img={ProperFacilities} text="Proper facilities and product handling for quality" />,
-    <Card img={ProfesionalServices} text="Maintaining professional services through hiring skilled and experienced staff." />,
-    <Card img={ProductQuality} text="Product quality is ensured by professional quality team and advanced production facilities" />,
-    <Card img={SecureTransaction} text="The company accepts all secured legal payment terms for international clients such as Letter of Credit and Cash Against Documents." />,
+    <Card
+      img={ReductionBrokenCoffee}
+      text="Reduction of broken coffee and high retention rate through the use of highly developed, high-capacity processing machines"
+    />,
+    <Card
+      img={WellOrganizedFirm}
+      text="A well-organized firm administrative structure that ensures exceptional customer service"
+    />,
+    <Card
+      img={ProperFacilities}
+      text="Proper facilities and product handling for quality"
+    />,
+    <Card
+      img={ProfesionalServices}
+      text="Maintaining professional services through hiring skilled and experienced staff."
+    />,
+    <Card
+      img={ProductQuality}
+      text="Product quality is ensured by professional quality team and advanced production facilities"
+    />,
+    <Card
+      img={SecureTransaction}
+      text="The company accepts all secured legal payment terms for international clients such as Letter of Credit and Cash Against Documents."
+    />,
   ];
 
   /* ----- SLIDES FOR HOW WE OPERATE ----- */
@@ -200,6 +236,18 @@ function MiniHome() {
     <Card2 img={Slide2pic4} text="We export products on basis of FOB or CIF depending on established agreements " />,
   ];
 
+  /* ----- PRELOAD IMAGES ----- */
+  useEffect(() => {
+    slides.forEach(slide => {
+      const img = new Image();
+      img.src = slide.props.img;
+    });
+    slides2.forEach(slide => {
+      const img = new Image();
+      img.src = slide.props.img;
+    });
+  }, []);
+
   /* ----- STATE ----- */
   const [index1, setIndex1] = useState(0);
   const [animate1, setAnimate1] = useState(true);
@@ -207,20 +255,59 @@ function MiniHome() {
   const [index2, setIndex2] = useState(0);
   const [animate2, setAnimate2] = useState(true);
 
-  /* ----- SLIDE HANDLERS ----- */
-  const next1 = () => { setAnimate1(false); setTimeout(() => { setIndex1(prev => (prev + 1) % slides.length); setAnimate1(true); }, 20); };
-  const prev1 = () => { setAnimate1(false); setTimeout(() => { setIndex1(prev => (prev - 1 + slides.length) % slides.length); setAnimate1(true); }, 20); };
-  const next2 = () => { setAnimate2(false); setTimeout(() => { setIndex2(prev => (prev + 1) % slides2.length); setAnimate2(true); }, 20); };
-  const prev2 = () => { setAnimate2(false); setTimeout(() => { setIndex2(prev => (prev - 1 + slides2.length) % slides2.length); setAnimate2(true); }, 20); };
+  /* ----- SLIDE HANDLERS WITH ANIMATION ----- */
+  const next1 = () => {
+    setAnimate1(false);
+    setTimeout(() => {
+      setIndex1(prev => (prev + 1) % slides.length);
+      setAnimate1(true);
+    }, 20);
+  };
 
-  /* ----- AUTO SLIDES ----- */
+  const prev1 = () => {
+    setAnimate1(false);
+    setTimeout(() => {
+      setIndex1(prev => (prev - 1 + slides.length) % slides.length);
+      setAnimate1(true);
+    }, 20);
+  };
+
+  const next2 = () => {
+    setAnimate2(false);
+    setTimeout(() => {
+      setIndex2(prev => (prev + 1) % slides2.length);
+      setAnimate2(true);
+    }, 20);
+  };
+
+  const prev2 = () => {
+    setAnimate2(false);
+    setTimeout(() => {
+      setIndex2(prev => (prev - 1 + slides2.length) % slides2.length);
+      setAnimate2(true);
+    }, 20);
+  };
+
+  /* ----- AUTO SLIDES WITH ANIMATION ----- */
   useEffect(() => {
-    const timer = setInterval(() => next1(), 7000);
+    const timer = setInterval(() => {
+      setAnimate1(false);
+      setTimeout(() => {
+        next1();
+        setAnimate1(true);
+      }, 20);
+    }, 7000);
     return () => clearInterval(timer);
   }, []);
 
   useEffect(() => {
-    const timer = setInterval(() => next2(), 7000);
+    const timer = setInterval(() => {
+      setAnimate2(false);
+      setTimeout(() => {
+        next2();
+        setAnimate2(true);
+      }, 20);
+    }, 7000);
     return () => clearInterval(timer);
   }, []);
 
@@ -285,7 +372,11 @@ function Card({ img, text }) {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', maxWidth: '350px', width: '100%' }}>
       <div className='homePicSlide2' style={{ position: 'relative', width: '100%', paddingTop: '75%', borderRadius: '10px 10px 0 0', overflow: 'hidden' }}>
-        <img src={img} alt="slide" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
+        <img
+          src={img}
+          alt="slide"
+          style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }}
+        />
       </div>
       <div className='homeDescSlide2 slidesHeight' style={{ padding: '10px', backgroundColor: '#dd9d6dff', color: 'white', fontSize: '16px', fontWeight: 400, borderRadius: '0 0 10px 10px' }}>
         {text}
@@ -298,7 +389,11 @@ function Card2({ img, text }) {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', maxWidth: '350px', width: '100%' }}>
       <div className='homePicSlide2' style={{ position: 'relative', width: '100%', paddingTop: '75%', borderRadius: '10px 10px 0 0', overflow: 'hidden' }}>
-        <img src={img} alt="slide" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
+        <img
+          src={img}
+          alt="slide"
+          style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }}
+        />
       </div>
       <div className='homeDescSlide2 slidesHeight2' style={{ padding: '10px', backgroundColor: 'white', color: '#dd9d6dff', fontSize: '16px', fontWeight: 400, borderRadius: '0 0 10px 10px' }}>
         {text}
@@ -307,13 +402,13 @@ function Card2({ img, text }) {
   );
 }
 
-const topSlideshowTexts = {
-  position: "absolute",
-  top: "40%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  fontSize: "45px",
-  fontWeight: "700",
-  textAlign: "center",
-  width: "90%",
-}
+const topSlideshowTexts ={
+          position: "absolute",
+          top: "40%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+          fontSize: "45px",
+          fontWeight: "700",
+          textAlign: "center",
+          width: "90%",
+        }
