@@ -52,7 +52,7 @@ async function handleSubmit(e) {
         <div 
         style={{color:'rgba(185, 130, 12, 1)',width:"85vw", maxWidth:"700px",
         fontSize:'19px',textAlign:'center',paddingBottom:'20px'}}>
-          "Get in touch with us for Inquiries, Business Services and Feedback"
+          Get in touch with us for Inquiries, Business Services and Feedback
         </div>
         <div style={{display:'flex', gap:'30px', flexWrap:'wrap',justifyContent:'center',
           padding:'0px 10px 25px 10px',

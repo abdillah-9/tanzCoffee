@@ -175,7 +175,7 @@ function MiniHome() {
     <Card2 img={Slide2pic1}  text="We process the products in our own facilities for quality"/>,
     <Card2 img={Slide2pic3}  text="Our coffee products are less broken with high retention due to use of advanced machines"/>,
     <Card2 img={Slide2pic2}  text="Q-grader ensures our product quality before delivery"/>,
-    <Card2 img={Slide2pic7}  text="The products are then transported to Dar es Salaam port using food grade containers"/>,
+    <Card2 img={Slide2pic7}  text="The products are then packed in Standard food grade jute-bags for quality"/>,
     <Card2 img={Slide2pic5}  text="High-quality storage during transport ensures product safety"/>,
     <Card2 img={Slide2pic4}  text=" We export products on basis of FOB or CIF depending on established agreements "/>,
   ];

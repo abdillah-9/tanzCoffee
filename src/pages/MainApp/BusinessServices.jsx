@@ -23,7 +23,7 @@ export default function BusinessServices() {
         <div 
         style={{color:'rgba(185, 130, 12, 1)',width:"85vw", maxWidth:"700px",
         fontSize:'16px',}}>
-          Give brief desc like this -- TanzCoffee Trading Company Limited is a Tanzanian coffee
+          TanzCoffee Trading Company Limited is a Tanzanian coffee
           processing and exporting company. We have our processing 
           facilities located in Karagwe District, Kagera, Tanzania and
           we are planning to establish our administration office in Dar es Salaam, Tanzania.

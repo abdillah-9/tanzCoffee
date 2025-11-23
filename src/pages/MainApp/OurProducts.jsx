@@ -38,7 +38,7 @@ export default function OurProducts() {
 
           <div style={{display:'flex', flexDirection:'column', gap:'15px', justifyContent:'center', alignItems:'center'}}>
             <img style={{borderRadius:'50%', width:'170px', height:'160px', objectFit:'cover'}} src={naturalCoffee} alt='natural beans'/>
-            <div style={{textAlign:'center', fontSize:"16px", fontWeight:500}}>Natural Green Coffee Beans</div>
+            <div style={{textAlign:'center', fontSize:"16px", fontWeight:500}}>Natural Green Coffee</div>
           </div>
 
           <div style={{display:'flex', flexDirection:'column', gap:'15px', justifyContent:'center', alignItems:'center'}}>
@@ -141,7 +141,7 @@ export default function OurProducts() {
           <div 
           style={{color:'rgba(54, 35, 17, 1)',width:"100%",paddingBottom:'15px',
           fontSize:'18px', fontWeight:500, textAlign:'center'}}>
-            We serve both local and international coffee corporations with a diverse range of industries, including:
+            We are an international company and we serve both local and international coffee corporations with a diverse range of industries, including the following
           </div>
 
           <div style={{display:'flex', gap:"20px", justifyContent:"space-between",flexWrap:'wrap', padding:'20px 0px'}}>
@@ -167,7 +167,7 @@ export default function OurProducts() {
               borderRadius:'5px', padding:'10px',fontWeight:500,borderLeft:'0px solid black',
               boxShadow:'1px 0.5px 5px rgba(50,50,50,0.7)', display:'flex',flexGrow:1,
               minWidth:'290px'}}> 
-              Our Coffee Products Manufacturers
+              Coffee Products Manufacturers
             </div>
           </div>
   
@@ -254,7 +254,7 @@ export default function OurProducts() {
         <div style={{display:'flex',flexWrap:'wrap', justifyContent:'center', gap:'30px', width:'100vw', padding:"50px 0px 0px 0px"}} className='slidesGap'>
           <div className='slide1' style={{display:'flex', flexDirection:'column',alignItems:'center', justifyContent:'center', width:'10%', minWidth:'150px', gap:"3px", padding:'50px 0px'}}>
             <img src={Soybeans} alt='pic1' style={{width:'50px', objectFit:'cover' ,aspectRatio:1/0.9, borderRadius:'50%'}}/>
-            <div style={{fontSize:'5px',}}>Soy beans</div>
+            <div style={{fontSize:'5px',}}>Soybeans</div>
           </div>
           <div className='slide2' style={{display:'flex', flexDirection:'column',alignItems:'center', justifyContent:'center', width:'10%', minWidth:'150px', gap:"3px", padding:'50px 0px'}}>
             <img src={Sesameseeds} alt='pic1' style={{width:'50px', objectFit:'cover' ,aspectRatio:1/0.9, borderRadius:'50%'}}/>
