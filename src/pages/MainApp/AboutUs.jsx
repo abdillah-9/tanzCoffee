@@ -56,7 +56,7 @@ export default function AboutUs() {
           <div style={{fontSize:'20px', fontWeight:500,
             textAlign:'center',
           }}>Vision</div>
-          <div style={{textAlign:'center',}}>
+          <div style={{textAlign:'left',}}>
             Dedicated to be the leading world-class green coffee 
             processing and supplying company.
           </div>
@@ -73,7 +73,7 @@ export default function AboutUs() {
           <div style={{fontSize:'20px', fontWeight:500,
             textAlign:'center',
           }}>Mission</div>
-          <div style={{textAlign:'center',}}>
+          <div style={{textAlign:'left',}}>
             Sustainable processing of high quality and quantity coffee 
             beans by utilizing sophisticated machines and maintaining 
             positive business relationship with clients and regional farmers.
@@ -91,7 +91,7 @@ export default function AboutUs() {
           <div style={{fontSize:'20px', fontWeight:500,
             textAlign:'center',
           }}>Core-value</div>
-          <div style={{textAlign:'center',}}>
+          <div style={{textAlign:'left',}}>
             <div>•	We value collaboration and partnership for growth.</div>
             <div>•	We embrace new technologies for improvement.</div>
             <div>•	Environment Sustainability.</div>

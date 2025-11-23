@@ -230,7 +230,7 @@ function MiniHome() {
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '130px 0px 70px 0px', gap: '20px' }}>
         <div style={{ fontSize: '50px', fontWeight: 700 }}>Overview</div>
         <div style={{ color: 'rgba(185, 130, 12, 1)', width: "85vw", maxWidth: "700px", fontSize: '18px', fontWeight: 600, textAlign: 'center' }}>
-          Founded in 2024 and registered under registration number 177486825...
+          Founded in 2024 and registered under the registration number 177486825, TanzCoffee Trading Company Limited is a private limited company with its headquarters in Tanzania.
         </div>
       </div>
 
@@ -238,7 +238,7 @@ function MiniHome() {
       <div style={{ display: 'flex', flexWrap: 'wrap', borderRadius: '5px', padding: "20px 30px 50px 30px", backgroundColor: '#dd9d6dff', gap: '10px', width: "100%", justifyContent: 'center' }}>
         <div style={{ fontSize: '50px', fontWeight: 700, width: "100%", textAlign: 'center' }}>How We Operate</div>
         <div style={{ width: '100%', maxWidth: '85vw', fontSize: '18px', paddingBottom: '30px', color: 'white', textAlign: 'center', fontWeight: 600 }}>
-          The company trades both high-quality Arabica and Robusta coffee products...
+          The company supplies both Arabica and Robusta coffee products. Our factory processes premium Robusta green coffee products to suit international market requirements while simultaneously providing a ready market for the increasing coffee production in Tanzania.
         </div>
 
         <div style={{ display: 'flex', width: '100%', alignItems: 'center', justifyContent: 'space-around', gap: '10px' }}>
