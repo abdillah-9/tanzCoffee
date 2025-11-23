@@ -1,6 +1,6 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { NavStates } from '../App';
-import logo from '../assets/tanzBrown.png';
+import logo from '../assets/logoWHITE.png';
 import { PiInstagramLogoFill, PiWhatsappLogoFill } from 'react-icons/pi';
 import { TbBrandLinkedinFilled } from 'react-icons/tb';
 import { FaBars } from 'react-icons/fa6';
@@ -30,18 +30,87 @@ export default function TopNavBar() {
   )
 }
 
-function LogoxName(){
-    return(
-  <div style={{display:'flex', justifyContent:"center", gap:'7px', alignItems:'center'}}>
-     <div style={{ width:'65px', height:'65px', overflow:'hidden', borderRadius:'50%'}}>
-        <img src={logo} alt='logo' style={{width:'100%', height:'100%', scale:1.35}} />
-     </div>
-     <div style={{display:'flex', flexDirection:'column'}}>
-        <span style={{fontSize:'16px', color:"white", fontWeight:600}}>TanzCoffee Trading Company Ltd</span>
-        <span style={{fontSize:'13px',color:'white', fontStyle:'italic'}}>We are proud to serve you</span>
-     </div>
-  </div>
-    )
+function LogoxName() {
+  const [loaded, setLoaded] = useState(false);
+  const [preloadedSrc, setPreloadedSrc] = useState(null);
+
+  // ⭐ Preload image using new Image()
+  useEffect(() => {
+    const img = new Image();
+    img.src = logo;
+    img.onload = () => {
+      setPreloadedSrc(img.src);
+      setLoaded(true);
+    };
+  }, []);
+
+  return (
+    <div style={{
+      display: 'flex',
+      alignItems: 'center',
+      gap: '10px',
+    }}>
+
+      {/* Logo wrapper */}
+      <div style={{
+        width: '65px',
+        height: '65px',
+        borderRadius: '50%',
+        overflow: 'hidden',
+        backgroundColor: '#ffffff20',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center'
+      }}>
+        
+        {/* ⭐ Show only when the image is preloaded */}
+        {loaded ? (
+          <img
+            src={preloadedSrc}
+            alt="logo"
+            style={{
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              objectPosition: 'center',
+              display: 'block',
+              scale:1.32
+            }}
+          />
+        ) : (
+          // ⭐ Optional loader / skeleton
+          <div style={{
+            width: '100%',
+            height: '100%',
+            backgroundColor: 'rgba(255,255,255,0.2)',
+            animation: 'pulse 1.5s infinite',
+          }} />
+        )}
+      </div>
+
+      {/* Company text */}
+      <div style={{ display: 'flex', flexDirection: 'column' }}>
+        <span style={{
+          fontSize: '17px',
+          color: 'white',
+          fontWeight: 700,
+          whiteSpace: 'nowrap'
+        }}>
+          TanzCoffee Trading Company Ltd
+        </span>
+
+        <span style={{
+          fontSize: '13px',
+          color: 'white',
+          opacity: 0.85,
+          fontStyle: 'italic',
+          marginTop: '-3px'
+        }}>
+          We are proud to serve you
+        </span>
+      </div>
+    </div>
+  );
 }
 
 function NavLinks(){

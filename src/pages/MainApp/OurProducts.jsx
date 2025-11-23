@@ -75,7 +75,7 @@ export default function OurProducts() {
         <div style={{display:'flex', flexWrap:'wrap', gap:'100px', justifyContent:'center', paddingBottom:'50px', width:"100vw"}}>
           <div style={{width:'50%',maxWidth:'400px',boxShadow:'1px 0.5px 12px black', display:'flex',gap:'12px',
             borderRadius:'10px', padding:'10px',backgroundColor:'white',
-            borderLeft:'10px solid rgba(185, 130, 12 ,1)', flexGrow:1,
+            borderLeft:'#dd9d6dff', flexGrow:1,
             maxHeight:'170px',
             }}>
               <div style={{padding:'10px'}}>
@@ -93,7 +93,7 @@ export default function OurProducts() {
 
           <div style={{width:'50%',maxWidth:'400px',boxShadow:'1px 0.5px 12px black', display:'flex',gap:'12px',
             borderRadius:'10px', padding:'10px',backgroundColor:'white',
-            borderLeft:'10px solid rgba(185, 130, 12 ,1)', flexGrow:1,
+            borderLeft:'#dd9d6dff', flexGrow:1,
             maxHeight:'170px',
             }}>
               <div style={{padding:'10px'}}>
@@ -118,22 +118,22 @@ export default function OurProducts() {
         <div style={{display:'flex', gap:"20px", justifyContent:"space-between",flexWrap:'wrap',
           padding:'30px'
         }}>
-          <div style={{backgroundColor:'rgba(185, 130, 12, 1)', 
+          <div style={{backgroundColor:'#dd9d6dff', 
             borderRadius:'5px', padding:'10px', color:'white', display:'flex',flexGrow:1,
             minWidth:'270px'}}>
             Storage Temperature 18 – 20 degrees centigrade  
           </div>
-          <div style={{backgroundColor:'rgba(185, 130, 12, 1)', 
+          <div style={{backgroundColor:'#dd9d6dff', 
             borderRadius:'5px', padding:'10px', color:'white', display:'flex',flexGrow:1,
             minWidth:'270px'}}>
             Moisture: Not less than 12% max  
           </div>
-          <div style={{backgroundColor:'rgba(185, 130, 12, 1)', 
+          <div style={{backgroundColor:'#dd9d6dff', 
             borderRadius:'5px', padding:'10px', color:'white', display:'flex',flexGrow:1,
             minWidth:'270px'}}>
             Foreign matters: 0.5%  
           </div>
-          <div style={{backgroundColor:'rgba(185, 130, 12, 1)', 
+          <div style={{backgroundColor:'#dd9d6dff', 
             borderRadius:'5px', padding:'10px', color:'white', display:'flex',flexGrow:1,
             minWidth:'270px'}}> 
             Humidity 55% - 70% 
@@ -144,7 +144,7 @@ export default function OurProducts() {
       {/* Business Organizations */}
       <div style={{display: 'flex', flexWrap:'wrap', }}>
         <div style={{display:'flex', flexWrap:'wrap',
-         gap:"23px", color:"white", backgroundColor:'rgba(185, 130, 12, 1)',
+         gap:"23px", color:"white", backgroundColor:'#dd9d6dff',
          padding:'20px 20px 50px 20px',justifyContent:'center',alignItems:'center'
         }}
           className='opacityAnimation'

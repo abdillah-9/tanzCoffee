@@ -20,7 +20,7 @@ export default function AboutUs() {
       img.src = srcPath;
      });
   },[]);
-  
+
   return (
     <div style={{display:'flex', gap:'50px', padding:"20px 0px 0px 0px",
     flexDirection:'column', alignItems:'center'}}>
@@ -46,7 +46,7 @@ export default function AboutUs() {
         padding:"0px 15px", gap:'20px', width:'100%',}}>
         {/* Mission */}
         <div style={{display:'flex', flexDirection:'column', gap:'15px', minWidth:"200px",maxWidth:'380px', 
-          width:'25%', flexGrow:1, borderRadius:'20px', borderBottom:'10px solid rgba(185,130,12,1)',
+          width:'25%', flexGrow:1, borderRadius:'20px', borderBottom:'10px solid #dd9d6dff',
           boxShadow:'1px 0.5px 5px rgba(10,10,10,0.35)', padding:'15px', alignItems:'center'}}>
           <div style={{boxShadow:'1px 0.5px 5px rgba(10,10,10,0.35)',
             display:'flex',justifyContent:'center', padding:'10px',borderRadius:'50%',width:'fit-content',
@@ -63,7 +63,7 @@ export default function AboutUs() {
         </div>
         {/* Vision */}
         <div style={{display:'flex', flexDirection:'column', gap:'15px', minWidth:"200px",maxWidth:'380px', 
-          width:'25%', flexGrow:1, borderRadius:'20px', borderBottom:'10px solid rgba(185,130,12,1)',
+          width:'25%', flexGrow:1, borderRadius:'20px', borderBottom:'10px solid #dd9d6dff',
           boxShadow:'1px 0.5px 5px rgba(10,10,10,0.35)', padding:'15px', alignItems:'center'}}>
           <div style={{boxShadow:'1px 0.5px 5px rgba(10,10,10,0.35)',
             display:'flex',justifyContent:'center', padding:'10px',borderRadius:'50%',width:'fit-content',
@@ -81,7 +81,7 @@ export default function AboutUs() {
         </div>
         {/* Core-value */}
         <div style={{display:'flex', flexDirection:'column', gap:'15px', minWidth:"200px",maxWidth:'380px', 
-          width:'25%', flexGrow:1, borderRadius:'20px', borderBottom:'10px solid rgba(185,130,12,1)',
+          width:'25%', flexGrow:1, borderRadius:'20px', borderBottom:'10px solid #dd9d6dff',
           boxShadow:'1px 0.5px 5px rgba(10,10,10,0.35)', padding:'15px', alignItems:'center'}}>
           <div style={{boxShadow:'1px 0.5px 5px rgba(10,10,10,0.35)',
             display:'flex',justifyContent:'center', padding:'10px',borderRadius:'50%',width:'fit-content',
@@ -103,8 +103,8 @@ export default function AboutUs() {
       </div>
 
       {/* Founders */}
-      <div style={{display:'flex', backgroundColor:'rgba(185, 130, 12, 1)',width:'100%',
-        justifyContent:'space-between', flexWrap:'wrap', padding:"30px 15px", gap:'20px'}}>
+      <div style={{display:'flex', backgroundColor:'#dd9d6dff',width:'100%',
+        justifyContent:'space-between', flexWrap:'wrap', padding:"30px 15px 70px 15px", gap:'20px'}}>
         <div style={{fontSize:'50px', fontWeight:600, width:"100vw", textAlign:'center'}}>About Founders</div>
         {/* Sospeter Gunga Owuor */}
         <div style={{display:'flex', flexDirection:'column', padding:'20px',
@@ -153,7 +153,7 @@ export default function AboutUs() {
 
       {/* Ending paragraph*/}
       <div style={{display:"flex",flexDirection:'column',padding:'30px 0px 50px 0px',
-         alignItems:'center', justifyContent:'center', gap:'20px', backgroundColor:'rgba(185,130,12,1)',}}
+         alignItems:'center', justifyContent:'center', gap:'20px', backgroundColor:'#dd9d6dff',}}
           className='opacityAnimation'
          >
         <div style={{fontSize:'50px', fontWeight:600, width:'100vw', textAlign:'center'}}>Sustainability Commitment</div>

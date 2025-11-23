@@ -50,21 +50,21 @@ async function handleSubmit(e) {
             Contact Us
         </div>
         <div 
-        style={{color:'rgba(185, 130, 12, 1)',width:"85vw", maxWidth:"700px",
+        style={{color: '#a8510eff',width:"85vw", maxWidth:"700px",
         fontSize:'19px',textAlign:'center',paddingBottom:'20px'}}>
           Get in touch with us for Inquiries, Business Services and Feedback
         </div>
         <div style={{display:'flex', gap:'30px', flexWrap:'wrap',justifyContent:'center',
           padding:'0px 10px 25px 10px',
         }}>
-          <div style={{backgroundColor:'rgba(185, 130, 12, 1)', padding:'15px 30px' 
+          <div style={{backgroundColor: '#dd9d6dff', padding:'15px 30px' 
             ,borderRadius:'20px', color:'white', fontWeight:500, fontSize:'17px'}}
             onClick={scrollToForm}>
             Send Message
           </div>
           <a href='tel:+255788491086' style={{backgroundColor:'white', padding:'15px 30px' 
-            ,borderRadius:'20px', color:'rgba(185,130,12,1)',
-            border:'2px solid rgba(185, 130, 12,1)',fontSize:'17px'}}>
+            ,borderRadius:'20px', color: '#dd9d6dff',
+            border:'2px solid #dd9d6dff',fontSize:'17px'}}>
             Call Us Now
           </a>
         </div>
@@ -77,7 +77,7 @@ async function handleSubmit(e) {
 
       {/* Contacts links */}
       <div style={{width:'100%', display:'flex', flexWrap:'wrap', gap:'50px',
-          backgroundColor:'rgba(185, 130, 12 ,1)',padding:'40px 15px',
+          backgroundColor: '#dd9d6dff',padding:'40px 15px',
           justifyContent:'center',
       }}>
         {/* Contact details */}
@@ -86,7 +86,7 @@ async function handleSubmit(e) {
         }}>
           <div style={{boxShadow:'1px 0.5px 12px black', display:'flex',gap:'12px',
             borderRadius:'10px', padding:'10px',backgroundColor:'white',
-            borderLeft:'10px solid rgba(185, 130, 12 ,1)', flexGrow:1,
+            borderLeft:'10px solid #dd9d6dff', flexGrow:1,
             maxHeight:'170px',
             }}>
               <div style={{padding:'10px'}}>
@@ -104,7 +104,7 @@ async function handleSubmit(e) {
 
           <div style={{boxShadow:'1px 0.5px 12px black', display:'flex',gap:'12px',
             borderRadius:'10px', padding:'10px',backgroundColor:'white',
-            borderLeft:'10px solid rgba(185, 130, 12 ,1)', flexGrow:1,
+            borderLeft:'10px solid #dd9d6dff', flexGrow:1,
             maxHeight:'100px',
             }}>
               <div style={{padding:'10px'}}>
@@ -120,7 +120,7 @@ async function handleSubmit(e) {
 
           <div style={{boxShadow:'1px 0.5px 12px black', display:'flex',gap:'12px',
             borderRadius:'10px', padding:'10px',backgroundColor:'white',
-            borderLeft:'10px solid rgba(185, 130, 12 ,1)', flexGrow:1,
+            borderLeft:'10px solid #dd9d6dff', flexGrow:1,
             maxHeight:'100px',
             }}>
               <div style={{padding:'10px'}}>
@@ -186,7 +186,7 @@ async function handleSubmit(e) {
             <input type='submit' name='submit' style={{
               boxShadow:'1px 1px 17px rgba(20,20,20,0.7)',padding:'14px',
               fontSize:'16px', fontWeight:600,border:'1px solid rgba(20,20,20,0)',
-              borderRadius:'5px',backgroundColor:'rgba(185,130,12,1)',color:'white',
+              borderRadius:'5px',backgroundColor: '#dd9d6dff',color:'white',
             }} value={'SEND MESSAGE'}/>
           </div>
 
@@ -254,7 +254,7 @@ async function handleSubmit(e) {
           </div>
 
           <div style={{
-            backgroundColor:'rgba(185,130,12,1)', color:'white', fontSize:'15px',
+            backgroundColor: '#dd9d6dff', color:'white', fontSize:'15px',
             padding:'15px 18px',alignItems:'center', justifyContent:'center',
             display:'flex',gap:'4px',borderRadius:'10px'
           }}> <IoLocationOutline style={{fontSize:'22px', color:'white'}}  className='whiteColor' /> 

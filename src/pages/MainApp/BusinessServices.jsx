@@ -21,7 +21,7 @@ export default function BusinessServices() {
          >
         <div style={{fontSize:'50px', fontWeight:600}}>Business Services</div>
         <div 
-        style={{color:'rgba(185, 130, 12, 1)',width:"85vw", maxWidth:"700px",
+        style={{color:'#dd9d6dff',width:"85vw", maxWidth:"700px",
         fontSize:'16px',}}>
           TanzCoffee Trading Company Limited is a Tanzanian coffee
           processing and exporting company. We have our processing 
@@ -36,7 +36,7 @@ export default function BusinessServices() {
          gap:"10px", color:"white", padding:'10px 15px'}}
           className='opacityAnimation'
         >
-          <div style={{backgroundColor:'rgba(185, 130, 12, 1)', color:'white', width:'100%',
+          <div style={{backgroundColor:'#dd9d6dff', color:'white', width:'100%',
             borderRadius:'5px',maxWidth:'400px',flexGrow:1,padding:'1px',
             display:'flex',flexDirection:'column', gap:'10px',alignItems:'center',
           }}>
@@ -56,7 +56,7 @@ export default function BusinessServices() {
               products to suit international market requirements.
             </p>
           </div>
-          <div style={{backgroundColor:'rgba(185, 130, 12, 1)', color:'white', width:'100%',
+          <div style={{backgroundColor:'#dd9d6dff', color:'white', width:'100%',
             borderRadius:'5px',maxWidth:'400px',flexGrow:1,padding:'1px',
             display:'flex',flexDirection:'column', gap:'10px',alignItems:'center',
           }}>
@@ -76,7 +76,7 @@ export default function BusinessServices() {
             </p>
 
           </div>  
-          <div style={{backgroundColor:'rgba(185, 130, 12, 1)', color:'white', width:'100%',
+          <div style={{backgroundColor:'#dd9d6dff', color:'white', width:'100%',
             borderRadius:'5px',maxWidth:'400px',flexGrow:1,padding:'1px',
             display:'flex',flexDirection:'column', gap:'10px',alignItems:'center',
           }}>
@@ -96,7 +96,7 @@ export default function BusinessServices() {
             </p>
             
           </div>
-          <div style={{backgroundColor:'rgba(185, 130, 12, 1)', color:'white', width:'100%',
+          <div style={{backgroundColor:'#dd9d6dff', color:'white', width:'100%',
             borderRadius:'5px',maxWidth:'400px',flexGrow:1,padding:'1px',
             display:'flex',flexDirection:'column', gap:'10px',alignItems:'center',
           }}>
@@ -117,7 +117,7 @@ export default function BusinessServices() {
             </p>
 
           </div>
-          <div style={{backgroundColor:'rgba(185, 130, 12, 1)', color:'white', width:'100%',
+          <div style={{backgroundColor:'#dd9d6dff', color:'white', width:'100%',
             borderRadius:'5px',maxWidth:'400px',flexGrow:1,padding:'1px',
             display:'flex',flexDirection:'column', gap:'10px',alignItems:'center',
           }}>
@@ -137,7 +137,7 @@ export default function BusinessServices() {
             </p>
             
           </div> 
-          <div style={{backgroundColor:'rgba(185, 130, 12, 1)', color:'white', width:'100%',
+          <div style={{backgroundColor:'#dd9d6dff', color:'white', width:'100%',
             borderRadius:'5px',maxWidth:'400px',flexGrow:1,padding:'1px',
             display:'flex',flexDirection:'column', gap:'10px',alignItems:'center',
           }}>
