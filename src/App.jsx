@@ -19,7 +19,7 @@ export default function App() {
         </div>
         <MainApp/>
         {/*Paragraph for contacts footer */}
-        <div style={{minHeight:'60px', width:'100vw', backgroundColor:'rgba(28, 28, 59, 1)', display:'flex', justifyContent:'center', alignItems:'center'}}>
+        <div style={{minHeight:'60px', width:'100vw', backgroundColor:'rgba(28, 28, 59, 1)', display:'flex', justifyContent:'center', alignItems:'center', padding:'15px', textAlign:'cente'}}>
           <div style={{fontSize:'18px', color:'white', display:'flex', flexWrap:'wrap',alignItems:'center', gap:'5px'}}><span>Copyrights </span><LuCopyright style={{fontSize:'20px'}}/> <span> TanzCoffee Trading Company Limited All Rights Reserved</span></div>
         </div>
       </div>

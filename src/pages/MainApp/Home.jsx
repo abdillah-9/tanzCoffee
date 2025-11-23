@@ -79,7 +79,7 @@ function SlideShow() {
         overflow: "hidden",
       }}
     >
-      <div style={{ position: 'relative', width: '100%', paddingTop: '56.25%' }}>
+      <div style={{ position: 'relative', width: '100%', paddingTop: '56.25%', minHeight:'400px' }}>
         <img
           src={images[index]}
           alt="slide"
