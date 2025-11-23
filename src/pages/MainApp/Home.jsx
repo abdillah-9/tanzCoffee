@@ -79,11 +79,20 @@ function SlideShow() {
         overflow: "hidden",
       }}
     >
-      <img width={'300px'} height={'250px'}
-        src={images[index]}
-        alt="slide"
-        style={{ width: "100%", height: "100%", objectFit: "cover" }}
-      />
+      <div style={{ position: 'relative', width: '100%', paddingTop: '56.25%' }}>
+        <img
+          src={images[index]}
+          alt="slide"
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover'
+          }}
+        />
+      </div>
 
       <div
         style={{
@@ -196,39 +205,38 @@ function MiniHome() {
   const [index2, setIndex2] = useState(0);
   const [animate2, setAnimate2] = useState(true);
 
-/* ----- SLIDE HANDLERS WITH ANIMATION ----- */
-const next1 = () => {
-  setAnimate1(false);
-  setTimeout(() => {
-    setIndex1(prev => (prev + 1) % slides.length);
-    setAnimate1(true);
-  }, 20);
-};
+  /* ----- SLIDE HANDLERS WITH ANIMATION ----- */
+  const next1 = () => {
+    setAnimate1(false);
+    setTimeout(() => {
+      setIndex1(prev => (prev + 1) % slides.length);
+      setAnimate1(true);
+    }, 20);
+  };
 
-const prev1 = () => {
-  setAnimate1(false);
-  setTimeout(() => {
-    setIndex1(prev => (prev - 1 + slides.length) % slides.length);
-    setAnimate1(true);
-  }, 20);
-};
+  const prev1 = () => {
+    setAnimate1(false);
+    setTimeout(() => {
+      setIndex1(prev => (prev - 1 + slides.length) % slides.length);
+      setAnimate1(true);
+    }, 20);
+  };
 
-const next2 = () => {
-  setAnimate2(false);
-  setTimeout(() => {
-    setIndex2(prev => (prev + 1) % slides2.length);
-    setAnimate2(true);
-  }, 20);
-};
+  const next2 = () => {
+    setAnimate2(false);
+    setTimeout(() => {
+      setIndex2(prev => (prev + 1) % slides2.length);
+      setAnimate2(true);
+    }, 20);
+  };
 
-const prev2 = () => {
-  setAnimate2(false);
-  setTimeout(() => {
-    setIndex2(prev => (prev - 1 + slides2.length) % slides2.length);
-    setAnimate2(true);
-  }, 20);
-};
-
+  const prev2 = () => {
+    setAnimate2(false);
+    setTimeout(() => {
+      setIndex2(prev => (prev - 1 + slides2.length) % slides2.length);
+      setAnimate2(true);
+    }, 20);
+  };
 
   /* ----- AUTO SLIDES WITH ANIMATION ----- */
   useEffect(() => {
@@ -312,9 +320,13 @@ const prev2 = () => {
 ----------------------------------------------------------- */
 function Card({ img, text }) {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', maxWidth: '350px' }}>
-      <div className='homePicSlide2' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', maxWidth: '350px', width: '100%', borderRadius: '10px 10px 0 0', overflow: 'hidden' }}>
-        <img width={'300px'} height={'250px'} src={img} alt="slide" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+    <div style={{ display: 'flex', flexDirection: 'column', maxWidth: '350px', width: '100%' }}>
+      <div className='homePicSlide2' style={{ position: 'relative', width: '100%', paddingTop: '75%', borderRadius: '10px 10px 0 0', overflow: 'hidden' }}>
+        <img
+          src={img}
+          alt="slide"
+          style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }}
+        />
       </div>
       <div className='homeDescSlide2 slidesHeight' style={{ padding: '10px', backgroundColor: 'rgba(185,130,12,1)', color: 'white', fontSize: '16px', fontWeight: 400, borderRadius: '0 0 10px 10px' }}>
         {text}
@@ -325,9 +337,13 @@ function Card({ img, text }) {
 
 function Card2({ img, text }) {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', maxWidth: '350px' }}>
-      <div className='homePicSlide2' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', maxWidth: '350px', width: '100%', borderRadius: '10px 10px 0 0', overflow: 'hidden' }}>
-        <img width={'300px'} height={'250px'} src={img} alt="slide" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+    <div style={{ display: 'flex', flexDirection: 'column', maxWidth: '350px', width: '100%' }}>
+      <div className='homePicSlide2' style={{ position: 'relative', width: '100%', paddingTop: '75%', borderRadius: '10px 10px 0 0', overflow: 'hidden' }}>
+        <img
+          src={img}
+          alt="slide"
+          style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }}
+        />
       </div>
       <div className='homeDescSlide2 slidesHeight2' style={{ padding: '10px', backgroundColor: 'white', color: 'rgba(185,130,12,1)', fontSize: '16px', fontWeight: 400, borderRadius: '0 0 10px 10px' }}>
         {text}
