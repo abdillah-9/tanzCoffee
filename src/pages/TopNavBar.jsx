@@ -9,7 +9,7 @@ import { FaBars } from 'react-icons/fa6';
 export default function TopNavBar() {
   return (
     <div style={{display:'flex',flexWrap:'wrap', width:'100vw',minHeight:'100px', 
-        padding:'10px 15px',backgroundColor:'#0f2914ff',
+        padding:'10px 15px',backgroundColor:'#2b6603ff',
         justifyContent:'space-between', alignItems:'center', gap:'20px'}}>
       <LogoxName/>
       <NavLinks/>
@@ -66,27 +66,27 @@ function NavLinks(){
               className='navLinks'
             >
                 <div onClick={()=>{setActiveLink('Home')}} 
-                    style={ activeLink == 'Home' ? { cursor:'pointer',padding:"8px", ...active } : { cursor:'pointer',padding:"8px"}}
+                    style={ activeLink == 'Home' ? { cursor:'pointer',padding:"8px", borderRadius:'5px', ...active } : { cursor:'pointer',padding:"8px", borderRadius:'5px'}}
                 >
                     Home
                 </div>
                 <div onClick={()=>{setActiveLink('About Us')}}
-                    style={ activeLink == 'About Us' ? { cursor:'pointer',padding:"8px", ...active } : { cursor:'pointer',padding:"8px"}}
+                    style={ activeLink == 'About Us' ? { cursor:'pointer',padding:"8px", borderRadius:'5px', ...active } : { cursor:'pointer',padding:"8px", borderRadius:'5px'}}
                 >
                     About Us
                 </div>
                 <div onClick={()=>{setActiveLink('Business Services')}}
-                    style={ activeLink == 'Business Services' ? { cursor:'pointer',padding:"8px", ...active } : { cursor:'pointer',padding:"8px"}}
+                    style={ activeLink == 'Business Services' ? { cursor:'pointer',padding:"8px", borderRadius:'5px', ...active } : { cursor:'pointer',padding:"8px", borderRadius:'5px'}}
                 >
                     Business Services
                 </div>
                 <div onClick={()=>{setActiveLink('Our Products')}}
-                    style={ activeLink == 'Our Products' ? { cursor:'pointer',padding:"8px", ...active } : { cursor:'pointer',padding:"8px"}}
+                    style={ activeLink == 'Our Products' ? { cursor:'pointer',padding:"8px", borderRadius:'5px', ...active } : { cursor:'pointer',padding:"8px", borderRadius:'5px'}}
                 >
                     Our Products
                 </div>
                 <div onClick={()=>{setActiveLink('Contacts Information')}}
-                    style={ activeLink == 'Contacts Information' ? { cursor:'pointer',padding:"8px", ...active } : { cursor:'pointer',padding:"8px"}}
+                    style={ activeLink == 'Contacts Information' ? { cursor:'pointer',padding:"8px", borderRadius:'5px', ...active } : { cursor:'pointer',padding:"8px", borderRadius:'5px'}}
                 >
                     Contacts Information
                 </div>
