@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import CoffeeRoaster from '../../assets/roaster.jpg';
 import CoffeeUnion from '../../assets/unionCroped.jpg';
 import CoffeeTrader from '../../assets/traderCroped.jpg';
@@ -20,6 +20,20 @@ import weServe2 from '../../assets/weServe2.jpg';
 import weServe3 from '../../assets/weServe3.jpg';
 
 export default function OurProducts() {
+  const productImages = [
+    CoffeeRoaster, CoffeeUnion, CoffeeTrader, CoffeeManufacture,
+    Beans, naturalCoffee, naturalCoffee2, arabicaSVG,
+    Soybeans, Sesameseeds, Cashewnuts, Rice, Allbeans, Maize,
+    weServe1, weServe2, weServe3
+  ];
+
+  useEffect(() => {
+    productImages.forEach(imgPath => {
+      const img = new Image();
+      img.src = imgPath; // This preloads the image
+    });
+  }, []);
+
   return (
     <div style={{display:'flex', gap:'50px', padding:"20px 0px 20px 0px",
     flexDirection:'column', alignItems:'center'}}>

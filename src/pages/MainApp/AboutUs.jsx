@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import SospeterPic from '../../assets/SospeterPic2New.jpeg';
 import EvodiusPic from '../../assets/Evodius.png';
 import OmaryPic from '../../assets/Omary.png';
@@ -7,6 +7,20 @@ import { FaRegEye } from 'react-icons/fa6';
 import { GiDiamondHard, GiFlyingFlag } from 'react-icons/gi';
 
 export default function AboutUs() {
+  const aboutImages = [
+    SospeterPic,
+    EvodiusPic,
+    OmaryPic,
+    TanzCoffee_Investor_Deck
+  ];
+
+  useEffect(()=>{
+     aboutImages.forEach(srcPath => {
+      const img = new Image();
+      img.src = srcPath;
+     });
+  },[]);
+  
   return (
     <div style={{display:'flex', gap:'50px', padding:"20px 0px 0px 0px",
     flexDirection:'column', alignItems:'center'}}>
