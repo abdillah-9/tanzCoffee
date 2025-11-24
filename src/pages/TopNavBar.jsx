@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { NavStates } from '../App';
-import logo from '../assets/logoWHITE.png';
+import logo from '../assets/logoWHITE.webp';
 import { PiInstagramLogoFill, PiWhatsappLogoFill } from 'react-icons/pi';
 import { TbBrandLinkedinFilled } from 'react-icons/tb';
 import { FaBars } from 'react-icons/fa6';

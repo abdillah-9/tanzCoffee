@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import SospeterPic from '../../assets/SospeterPic2New.webp';
+import SospeterPic from '../../assets/SospeterPic2.webp';
 import EvodiusPic from '../../assets/Evodius.webp';
 import OmaryPic from '../../assets/Omary.webp';
 import TanzCoffee_Investor_Deck from '../../assets/TanzCoffee Investor Deck.webp';

@@ -2,7 +2,7 @@ import React from 'react'
 import { GiCoffeeBeans, GiFarmer } from 'react-icons/gi';
 import { PiShoppingCartFill } from 'react-icons/pi';
 import { FaBookOpenReader, FaHandHoldingHand, FaWarehouse } from 'react-icons/fa6';
-import videoServices from '../../assets/videoServices_hevc.mp4';
+import videoServices from '../../assets/videoServices.mp4';
 
 export default function BusinessServices() {
   return (
