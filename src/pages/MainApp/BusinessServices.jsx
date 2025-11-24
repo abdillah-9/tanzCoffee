@@ -1,11 +1,4 @@
 import React from 'react'
-import OperationsPIC from '../../assets/20250527_091654.avif';
-import GreenCoffee from '../../assets/WhatsApp Image 2025-07-12 at 14.25.59_5c57bb2a.avif';
-import ReadyMarket from '../../assets/Screenshot_20240924_194001_Instagram.avif';
-import FarmingEquipment from '../../assets/20251006_114627 (1).avif';
-import StorageService from '../../assets/IMG-20220720-WA0027.avif';
-import CompanyRegistrationService from '../../assets/IMG_20240513_131143_913.avif';
-import TradeConsultation from '../../assets/IMG-20230301-WA0016.avif';
 import { GiCoffeeBeans, GiFarmer } from 'react-icons/gi';
 import { PiShoppingCartFill } from 'react-icons/pi';
 import { FaBookOpenReader, FaHandHoldingHand, FaWarehouse } from 'react-icons/fa6';

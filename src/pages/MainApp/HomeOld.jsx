@@ -1,26 +1,26 @@
 import React, { useEffect, useState } from 'react';
 
-// import GreenCoffee from '../../assets/TanzCoffeeDeck.avif';
-import pic1 from '../../assets/quality_storageCroped.avif';
-import pic2 from '../../assets/profesionalism_IntergrityCroped.avif';
-import pic3 from '../../assets/natural_tanzanian_coffee.avif';
-import pic4 from '../../assets/natural_green_coffeeCroped.avif';
-import pic5 from '../../assets/product_handlingCroped.avif';
+// import GreenCoffee from '../../assets/TanzCoffeeDeck.webp';
+import pic1 from '../../assets/quality_storageCroped.webp';
+import pic2 from '../../assets/profesionalism_IntergrityCroped.webp';
+import pic3 from '../../assets/natural_tanzanian_coffee.webp';
+import pic4 from '../../assets/natural_green_coffeeCroped.webp';
+import pic5 from '../../assets/product_handlingCroped.webp';
 // built
-import ReductionBrokenCoffee from '../../assets/pic1.avif';
-import WellOrganizedFirm from '../../assets/pic2.avif';
-import ProperFacilities from '../../assets/pic3.avif';
-import ProfesionalServices from '../../assets/pic4.avif';
-import ProductQuality from '../../assets/pic5.avif';
-import SecureTransaction from '../../assets/pic6.avif';
+import ReductionBrokenCoffee from '../../assets/pic1.webp';
+import WellOrganizedFirm from '../../assets/pic2.webp';
+import ProperFacilities from '../../assets/pic3.webp';
+import ProfesionalServices from '../../assets/pic4.webp';
+import ProductQuality from '../../assets/pic5.webp';
+import SecureTransaction from '../../assets/pic6.webp';
 // slide2
-import Slide2pic1 from '../../assets/Slide2pic1NewCroped.avif';
-import Slide2pic2 from '../../assets/Slide2pic2.avif';
-import Slide2pic3 from '../../assets/Slide2pic3.avif';
-import Slide2pic4 from '../../assets/Slide2pic4.avif';
-import Slide2pic5 from '../../assets/Slide2pic5New.avif';
-import Slide2pic6 from '../../assets/Slide2pic6.avif';
-import Slide2pic7 from '../../assets/Slide2pic7.avif';
+import Slide2pic1 from '../../assets/Slide2pic1NewCroped.webp';
+import Slide2pic2 from '../../assets/Slide2pic2.webp';
+import Slide2pic3 from '../../assets/Slide2pic3.webp';
+import Slide2pic4 from '../../assets/Slide2pic4.webp';
+import Slide2pic5 from '../../assets/Slide2pic5New.webp';
+import Slide2pic6 from '../../assets/Slide2pic6.webp';
+import Slide2pic7 from '../../assets/Slide2pic7.webp';
 
 import { CgChevronLeft, CgChevronRight } from 'react-icons/cg';
 
