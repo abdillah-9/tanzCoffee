@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import SospeterPic from '../../assets/SospeterPic2New.jpeg';
 import EvodiusPic from '../../assets/Evodius.png';
 import OmaryPic from '../../assets/Omary.png';
-import TanzCoffee_Investor_Deck from '../../assets/TanzCoffee_Investor_Deck.png';
+import TanzCoffee_Investor_Deck from '../../assets/TanzCoffee Investor Deck.png';
 import { FaRegEye } from 'react-icons/fa6';
 import { GiDiamondHard, GiFlyingFlag } from 'react-icons/gi';
 
@@ -115,7 +115,7 @@ export default function AboutUs() {
           style={{borderRadius:'50%', width:'150px',aspectRatio:1/0.95, objectFit:'cover'
           }}/>
           <div style={{fontSize:'20px', fontWeight:500}}>Sospeter Owuor</div>
-          <div>
+          <div style={{textAlign:'justify'}}>
             He holds a bachelor’s degree in Business Administration (Entrepreneurship Development) from Mzumbe University. He has attended several business courses from Philanthropy University. He co-founded Brice Agribusiness Ltd and worked as company operation director for 03 years, and has worked with Room to Read for five years as a Research, Monitoring and Evaluation Associate. He has extensive network with coffee industrial-based government institutions and he is much experienced with coffee exportation. He is the Managing Director of the company
           </div>
         </div>
@@ -128,7 +128,7 @@ export default function AboutUs() {
           <img src={EvodiusPic} alt='Sospeter Gunga Owuor' 
           style={{borderRadius:'50%', width:'150px',aspectRatio:1/0.95, objectFit:'cover'}}/>
           <div style={{fontSize:'20px', fontWeight:500}}>Evodius Tihibika</div>
-          <div>
+          <div style={{textAlign:'justify'}}>
             He and his family have been active coffee producers for many years in the Karagwe District of Kagera, the country's heartland of Robusta coffee production. He has over 30 years of substantial experience in the coffee sector and a wide network of local coffee stakeholders. He is well acquainted with the product of coffee. He is Operations Director of the company
           </div>
         </div>
@@ -141,7 +141,7 @@ export default function AboutUs() {
           <img src={OmaryPic} alt='Sospeter Gunga Owuor' 
           style={{borderRadius:'50%', width:'150px',aspectRatio:1/0.95, objectFit:'cover'}}/>
           <div style={{fontSize:'20px', fontWeight:500}}>Omary Mkandawile</div>
-          <div>
+          <div style={{textAlign:'justify'}}>
             He holds a bachelor’s degree in Business Administration (Entrepreneurship Development) from Mzumbe University. He has a deep coffee marketing expertise of more than 03 years’ experience. He worked with Salute Finance for two years an assistant accountant before co-founding Brice Agribusiness Ltd and worked as a marketing and sales director for 03 years. He is knowledgably with coffee products and very familiar with both local and international coffee clients. He handles Marketing and Sales
           </div>
         </div>
