@@ -249,5 +249,15 @@ html, body{
   }
 }
 
+/* About text align */
+.textAlignment{
+  text-align: left;
+}
+@media screen and (min-width: 481px) {
+  .textAlignment{
+    text-align: justify;
+  } 
+}
+
 
 
