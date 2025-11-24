@@ -154,7 +154,7 @@ export default function BusinessServices() {
         </div>
       </div>
       {/*Video */}
-      <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', width:'100vw', padding:'60px', gap:'40px', backgroundColor:'white'}}>
+      <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', width:'100vw', padding:'60px', gap:'40px', backgroundColor:'white',flexWrap:'wrap'}}>
         <div style={{maxWidth:'500px',minWidth:'200px', flexGrow:1,aspectRatio: 1/0.7, width:'40%'}}>
           <video src={videoServices} style={{ objectFit:'cover', width:'100%',aspectRatio:1/1}} autoPlay loop controls muted preload='auto'/>
         </div>
