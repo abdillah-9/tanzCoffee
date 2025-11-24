@@ -1,11 +1,11 @@
 import React from 'react'
-import OperationsPIC from '../../assets/20250527_091654.jpg';
-import GreenCoffee from '../../assets/WhatsApp Image 2025-07-12 at 14.25.59_5c57bb2a.jpg';
-import ReadyMarket from '../../assets/Screenshot_20240924_194001_Instagram.jpg';
-import FarmingEquipment from '../../assets/20251006_114627 (1).jpg';
-import StorageService from '../../assets/IMG-20220720-WA0027.jpg';
-import CompanyRegistrationService from '../../assets/IMG_20240513_131143_913.jpg';
-import TradeConsultation from '../../assets/IMG-20230301-WA0016.jpg';
+import OperationsPIC from '../../assets/20250527_091654.avif';
+import GreenCoffee from '../../assets/WhatsApp Image 2025-07-12 at 14.25.59_5c57bb2a.avif';
+import ReadyMarket from '../../assets/Screenshot_20240924_194001_Instagram.avif';
+import FarmingEquipment from '../../assets/20251006_114627 (1).avif';
+import StorageService from '../../assets/IMG-20220720-WA0027.avif';
+import CompanyRegistrationService from '../../assets/IMG_20240513_131143_913.avif';
+import TradeConsultation from '../../assets/IMG-20230301-WA0016.avif';
 import { GiCoffeeBeans, GiFarmer } from 'react-icons/gi';
 import { PiShoppingCartFill } from 'react-icons/pi';
 import { FaBookOpenReader, FaHandHoldingHand, FaWarehouse } from 'react-icons/fa6';
@@ -161,11 +161,11 @@ export default function BusinessServices() {
         </div>
       </div>
       {/*Video */}
-      <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', width:'100vw', padding:'60px', gap:'40px', backgroundColor:'#dd9d6dff'}}>
+      <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', width:'100vw', padding:'60px', gap:'40px', backgroundColor:'white'}}>
         <div style={{maxWidth:'500px',minWidth:'200px', flexGrow:1,aspectRatio: 1/0.7, width:'40%'}}>
-          <video src={videoServices} style={{ objectFit:'cover', width:'100%',aspectRatio:1/0.7}} autoPlay loop controls muted preload='auto'/>
+          <video src={videoServices} style={{ objectFit:'cover', width:'100%',aspectRatio:1/1}} autoPlay loop controls muted preload='auto'/>
         </div>
-        <div style={{maxWidth:'500px',minWidth:'200px', display:'flex', flexGrow:1, fontSize:'18px',width:'40%', textAlign:'justify', fontWeight:500, color:'white'}}>
+        <div style={{maxWidth:'500px',minWidth:'200px', display:'flex', flexGrow:1, fontSize:'18px',width:'40%', textAlign:'justify', fontWeight:500, color:'black'}}>
           The purpose of this brief video is to provide potential customers with a quick overview of our business practices. The video is a brief demonstration of how we purchase, where we purchase from, how we process, how we inspect for quality, how we pack, how we export, and how quality is our top concern. I appreciate you watching
         </div>
       </div>

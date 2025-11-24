@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
-import SospeterPic from '../../assets/SospeterPic2New.jpeg';
-import EvodiusPic from '../../assets/Evodius.png';
-import OmaryPic from '../../assets/Omary.png';
-import TanzCoffee_Investor_Deck from '../../assets/TanzCoffee Investor Deck.png';
+import SospeterPic from '../../assets/SospeterPic2New.avif';
+import EvodiusPic from '../../assets/Evodius.avif';
+import OmaryPic from '../../assets/Omary.avif';
+import TanzCoffee_Investor_Deck from '../../assets/TanzCoffee Investor Deck.avif';
 import { FaRegEye } from 'react-icons/fa6';
 import { GiDiamondHard, GiFlyingFlag } from 'react-icons/gi';
 

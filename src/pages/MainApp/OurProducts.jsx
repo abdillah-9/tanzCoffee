@@ -1,23 +1,23 @@
 import React, { useEffect } from 'react'
-import CoffeeRoaster from '../../assets/roaster.jpg';
-import CoffeeUnion from '../../assets/unionCroped.jpg';
-import CoffeeTrader from '../../assets/traderCroped.jpg';
-import CoffeeManufacture from '../../assets/IMG-20240215-WA0016.jpg';
-import Beans from '../../assets/beans.jpg';
-import naturalCoffee from '../../assets/robustaCoffee2.jpg';
-import naturalCoffee2 from '../../assets/IMG_20241004_114341_116Croped.jpg';
+import CoffeeRoaster from '../../assets/roaster.avif';
+import CoffeeUnion from '../../assets/unionCroped.avif';
+import CoffeeTrader from '../../assets/traderCroped.avif';
+import CoffeeManufacture from '../../assets/IMG-20240215-WA0016.avif';
+import Beans from '../../assets/beans.avif';
+import naturalCoffee from '../../assets/robustaCoffee2.avif';
+import naturalCoffee2 from '../../assets/IMG_20241004_114341_116Croped.avif';
 import { IoLocationOutline } from 'react-icons/io5';
 import { GiCoffeeBeans, GiJellyBeans } from 'react-icons/gi';
 import arabicaSVG from '../../assets/arabicaSVG.svg';
-import Soybeans from '../../assets/soyabeans2.png';
-import Sesameseeds from '../../assets/sesameseeds.jpg';
-import Cashewnuts from '../../assets/cashewnuts.jpg';
-import Rice from '../../assets/rice.jpg';
-import Allbeans from '../../assets/allbeans.jpg';
-import Maize from '../../assets/whiteMaize.jpg';
-import weServe1 from '../../assets/weServe1.jpg';
-import weServe2 from '../../assets/weServe2.jpg';
-import weServe3 from '../../assets/weServe3.jpg';
+import Soybeans from '../../assets/soyabeans2.avif';
+import Sesameseeds from '../../assets/sesameseeds.avif';
+import Cashewnuts from '../../assets/cashewnuts.avif';
+import Rice from '../../assets/rice.avif';
+import Allbeans from '../../assets/allbeans.avif';
+import Maize from '../../assets/whiteMaize.avif';
+import weServe1 from '../../assets/weServe1.avif';
+import weServe2 from '../../assets/weServe2.avif';
+import weServe3 from '../../assets/weServe3.avif';
 
 export default function OurProducts() {
   const productImages = [
