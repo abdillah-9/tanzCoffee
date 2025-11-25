@@ -2,7 +2,9 @@ import React from 'react'
 import { GiCoffeeBeans, GiFarmer } from 'react-icons/gi';
 import { PiShoppingCartFill } from 'react-icons/pi';
 import { FaBookOpenReader, FaHandHoldingHand, FaWarehouse } from 'react-icons/fa6';
-import videoServices from '../../assets/videoServices.mp4';
+import videoServices_hevc from '../../assets/videoServices.mp4';
+import videoServices_h264 from '../../assets/videoServices_h264.mp4';
+import videoServices_webm from '../../assets/videoServices.webm';
 
 export default function BusinessServices() {
   return (
@@ -156,7 +158,19 @@ export default function BusinessServices() {
       {/*Video */}
       <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', width:'100vw', padding:'60px', gap:'40px', backgroundColor:'white',flexWrap:'wrap'}}>
         <div style={{maxWidth:'500px',minWidth:'200px', flexGrow:1,aspectRatio: 1/0.7, width:'40%'}}>
-          <video src={videoServices} style={{ objectFit:'cover', width:'100%',aspectRatio:1/1}} autoPlay loop controls muted preload='auto'/>
+          <video
+            style={{ objectFit: 'cover', width: '100%', aspectRatio: 1 / 1 }}
+            autoPlay
+            loop
+            controls
+            muted
+            preload="auto"
+          >
+            <source src={videoServices_hevc} type="video/mp4; codecs=hev1" />
+            <source src={videoServices_h264} type="video/mp4" />
+            <source src={videoServices_webm} type="video/webm" />
+            Your browser does not support the video tag.
+          </video>
         </div>
         <div style={{maxWidth:'500px',minWidth:'200px', display:'flex', flexGrow:1, fontSize:'18px',width:'40%', textAlign:'justify', fontWeight:500, color:'black'}}>
           The purpose of this brief video is to provide potential customers with a quick overview of our business practices. The video is a brief demonstration of how we purchase, where we purchase from, how we process, how we inspect for quality, how we pack, how we export, and how quality is our top concern. I appreciate you watching
