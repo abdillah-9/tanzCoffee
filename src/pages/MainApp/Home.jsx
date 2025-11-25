@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { CgChevronLeft, CgChevronRight } from 'react-icons/cg';
 
 // import GreenCoffee from '../../assets/TanzCoffeeDeck.webp';
-import pic1 from '../../assets/quality_storageCroped.webp';
-import pic2 from '../../assets/profesionalism_IntergrityCroped.webp';
+import pic1 from '../../assets/profesionalism_IntergrityCroped.webp';
+import pic2 from '../../assets/quality_storageCroped.webp';
 import pic3 from '../../assets/natural_tanzanian_coffee.webp';
 import pic4 from '../../assets/natural_green_coffeeCroped.webp';
 import pic5 from '../../assets/product_handlingCroped.webp';
@@ -43,7 +43,7 @@ function SlideShow() {
   const [loadedImages, setLoadedImages] = useState([]);
   const [allLoaded, setAllLoaded] = useState(false);
 
-  const images = [pic2, pic1, pic3, pic4, pic5];
+  const images = [pic1, pic2, pic3, pic4, pic5];
   const texts = [
     "Professionalism & Integrity",
     "Quality Storage",
@@ -53,23 +53,24 @@ function SlideShow() {
   ];
 
   // Preload all images
-  useEffect(() => {
-    let temp = [];
-    let loadedCount = 0;
+useEffect(() => {
+  const temp = new Array(images.length);
+  let loadedCount = 0;
 
-    images.forEach(src => {
-      const img = new Image();
-      img.src = src;
-      img.onload = () => {
-        loadedCount++;
-        temp.push(img);
-        if (loadedCount === images.length) {
-          setLoadedImages(temp);
-          setAllLoaded(true);
-        }
-      };
-    });
-  }, []);
+  images.forEach((src, index) => {
+    const img = new Image();
+    img.src = src;
+    img.onload = () => {
+      temp[index] = img;     // ✔️ always keep original order
+      loadedCount++;
+      if (loadedCount === images.length) {
+        setLoadedImages(temp);
+        setAllLoaded(true);
+      }
+    };
+  });
+}, []);
+
 
   // Auto-slide only after images loaded
   useEffect(() => {
@@ -167,30 +168,31 @@ function SlideShow2({ index, slides, animeClass }) {
   const [allLoaded, setAllLoaded] = useState(false);
 
   // Preload slide images
-  useEffect(() => {
-    let temp = [];
-    let loadedCount = 0;
+useEffect(() => {
+  let temp = new Array(slides.length);
+  let loadedCount = 0;
 
-    slides.forEach(slide => {
-      const img = new Image();
-      img.src = slide.props.img;
-      img.onload = () => {
-        loadedCount++;
-        temp.push(slide);
-        if (loadedCount === slides.length) {
-          setLoadedSlides(temp);
-          setAllLoaded(true);
-        }
-      };
-    });
-  }, [slides]);
+  slides.forEach((slide, index) => {
+    const img = new Image();
+    img.src = slide.props.img;
+    img.onload = () => {
+      temp[index] = slide;   // ✔️ keep correct slide order
+      loadedCount++;
+      if (loadedCount === slides.length) {
+        setLoadedSlides(temp);
+        setAllLoaded(true);
+      }
+    };
+  });
+}, [slides]);
+
 
   if (!allLoaded) {
     return <div style={{ height: "200px", width: "100%", backgroundColor: "#eee" }} />;
   }
 
   return (
-    <div className={animeClass} style={{ width: "100%", minHeight: "200px", display: "flex", justifyContent: "center", alignItems: "center" }}>
+    <div key={index} className={animeClass} style={{ width: "100%", minHeight: "200px", display: "flex", justifyContent: "center", alignItems: "center" }}>
       {loadedSlides[index]}
     </div>
   );
@@ -202,23 +204,23 @@ function SlideShow2({ index, slides, animeClass }) {
 function MiniHome() {
   /* ----- SLIDES FOR WHY OUR COMPANY ----- */
   const slides = [
-    <Card img={ReductionBrokenCoffee} text="Reduction of broken coffee and high retention rate through the use of highly developed, high-capacity processing machines" />,
-    <Card img={WellOrganizedFirm} text="A well-organized firm administrative structure that ensures exceptional customer service" />,
-    <Card img={ProperFacilities} text="Proper facilities and product handling for quality" />,
-    <Card img={ProfesionalServices} text="Maintaining professional services through hiring skilled and experienced staff." />,
-    <Card img={ProductQuality} text="Product quality is ensured by professional quality team and advanced production facilities" />,
-    <Card img={SecureTransaction} text="The company accepts all secured legal payment terms for international clients such as Letter of Credit and Cash Against Documents." />,
+    <Card key={'c1'} img={ReductionBrokenCoffee} text="Reduction of broken coffee and high retention rate through the use of highly developed, high-capacity processing machines" />,
+    <Card key={'c2'} img={WellOrganizedFirm} text="A well-organized firm administrative structure that ensures exceptional customer service" />,
+    <Card key={'c3'} img={ProperFacilities} text="Proper facilities and product handling for quality" />,
+    <Card key={'c4'} img={ProfesionalServices} text="Maintaining professional services through hiring skilled and experienced staff." />,
+    <Card key={'c5'} img={ProductQuality} text="Product quality is ensured by professional quality team and advanced production facilities" />,
+    <Card key={'c6'} img={SecureTransaction} text="The company accepts all secured legal payment terms for international clients such as Letter of Credit and Cash Against Documents." />,
   ];
 
   /* ----- SLIDES FOR HOW WE OPERATE ----- */
   const slides2 = [
-    <Card2 img={Slide2pic6} text="We buy fresh Tanzanian coffee cherries every season" />,
-    <Card2 img={Slide2pic1} text="We process the products in our own facilities for quality" />,
-    <Card2 img={Slide2pic3} text="Our coffee products are less broken with high retention due to use of advanced machines" />,
-    <Card2 img={Slide2pic2} text="Q-grader ensures our product quality before delivery" />,
-    <Card2 img={Slide2pic7} text="The products are then packed in Standard food grade jute-bags for quality" />,
-    <Card2 img={Slide2pic5} text="High-quality storage during transport ensures product safety" />,
-    <Card2 img={Slide2pic4} text="We export products on basis of FOB or CIF depending on established agreements " />,
+    <Card2 key={'d1'} img={Slide2pic6} text="We buy fresh Tanzanian coffee cherries every season" />,
+    <Card2 key={'d2'} img={Slide2pic1} text="We process the products in our own facilities for quality" />,
+    <Card2 key={'d3'} img={Slide2pic3} text="Our coffee products are less broken with high retention due to use of advanced machines" />,
+    <Card2 key={'d4'} img={Slide2pic2} text="Q-grader ensures our product quality before delivery" />,
+    <Card2 key={'d5'} img={Slide2pic7} text="The products are then packed in Standard food grade jute-bags for quality" />,
+    <Card2 key={'d6'} img={Slide2pic5} text="High-quality storage during transport ensures product safety" />,
+    <Card2 key={'d7'} img={Slide2pic4} text="We export products on basis of FOB or CIF depending on established agreements " />,
   ];
 
   /* ----- STATE ----- */
