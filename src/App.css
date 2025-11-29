@@ -259,5 +259,21 @@ html, body{
   } 
 }
 
+.spinner {
+  animation: spinner 1s linear infinite;
+}
+
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+    opacity: 0.8;
+  }
+  to {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+
+
 
 

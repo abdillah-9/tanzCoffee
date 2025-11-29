@@ -1,4 +1,16 @@
 <?php
+// Allow requests from your frontend domain
+header("Access-Control-Allow-Origin: https://www.tanzcoffee.co.tz");
+header("Access-Control-Allow-Methods: POST, OPTIONS");
+header("Access-Control-Allow-Headers: Content-Type");
+
+// Handle preflight request
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    http_response_code(200);
+    exit();
+}
+
+// Your existing code continues here...
 header("Content-Type: application/json");
 
 // Include PHPMailer
@@ -31,7 +43,7 @@ try {
     $mail->Host       = "mail.tanzcoffee.co.tz";
     $mail->SMTPAuth   = true;
     $mail->Username   = "info@tanzcoffee.co.tz";
-    $mail->Password   = "Tanzcoffee2024"; 
+    $mail->Password   = "Tanzcoffee2024"; // REAL password from your client
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // SSL
     $mail->Port       = 465;
 

@@ -1,11 +1,14 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import { IoCallOutline, IoLocationOutline } from 'react-icons/io5'
 import { MdOutlineEmail } from 'react-icons/md';
 import emailjs from '@emailjs/browser';
+import { VscLoading } from 'react-icons/vsc';
+import { CgSpinner } from 'react-icons/cg';
 
 export default function ContactsInformation() {
 
   const sendMessageRef = useRef(null);
+  const [loading, setLoading] = useState(false);
 
   const scrollToForm = ()=>{
      sendMessageRef.current?.scrollIntoView({behavior:'smooth'});
@@ -13,11 +16,12 @@ export default function ContactsInformation() {
 
 async function handleSubmit(e) {
   e.preventDefault();
+  setLoading(true);
 
   const formData = new FormData(e.target);
 
   try {
-    const response = await fetch("https://tanzcoffee.co.tz/sendEmail.php", {
+    const response = await fetch("https://www.tanzcoffee.co.tz/api/sendEmail.php", {
       method: "POST",
       body: formData,
     });
@@ -25,13 +29,16 @@ async function handleSubmit(e) {
     const result = await response.json();
 
     if (result.status === "success") {
-      alert("Message is successfully sent to TanzCoffee L.T.D");
+      alert("Message is successfully sent to TanzCoffee L.t.d");
       e.target.reset();
     } else {
       alert("Something went wrong: " + result.message);
     }
   } catch (error) {
     alert("Network error — please try again later.");
+  }
+  finally{
+    setLoading(false);
   }
 }
 
@@ -182,7 +189,11 @@ async function handleSubmit(e) {
             }} rows={10}/>
           </div>
 
-          <div style={{display:'flex',flexDirection:'column',gap:'15px',}}>
+          <div style={{display:'flex',flexDirection:'column',gap:'15px',alignItems:'center'}}>
+            {
+              loading ? 
+              <CgSpinner  style={{fontSize:'30px', color:'#dd9d6dff'}} className='spinner' /> : ""
+            }
             <input type='submit' name='submit' style={{
               boxShadow:'1px 1px 17px rgba(20,20,20,0.7)',padding:'14px',
               fontSize:'16px', fontWeight:600,border:'1px solid rgba(20,20,20,0)',
